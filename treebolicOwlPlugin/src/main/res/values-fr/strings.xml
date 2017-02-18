@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- provider -->
+    <string name="description">Treebolic Owl fournit un modèle à partir de fichiers au format OWL</string>
+    <string name="requires">Treebolic Owl ne nécessite pas de données autres que le fichier OWL</string>
+
+    <!-- title -->
+    <string name="title_settings">Paramètres</string>
+    <string name="title_activity_app_settings">Application</string>
+    <string name="title_query">Lancer</string>
+    <string name="title_source">Choisir</string>
+    <string name="title_download">Télécharger</string>
+    <string name="title_demo">Démo</string>
+    <string name="title_finish">Finir</string>
+
+    <!-- ok/errors -->
+    <string name="fail_nullquery">Requête nulle</string>
+
+</resources>

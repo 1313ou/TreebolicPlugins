@@ -1,0 +1,5 @@
+<resources>
+
+    <string name="market_fail">No handler for market://details?id=org.treebolic</string>
+
+</resources>

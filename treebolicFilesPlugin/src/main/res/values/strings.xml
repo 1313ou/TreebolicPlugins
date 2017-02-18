@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="files">Files</string>
+
+    <!-- provider -->
+    <string name="description">Treebolic Files provides a model from the file system</string>
+    <string name="requires">Treebolic Files Provider does not require extra data but is bound by files system access permissions</string>
+
+    <!-- titles -->
+    <string name="title_query">Run</string>
+    <string name="title_choose">Choose</string>
+    <string name="title_demo">Demo</string>
+    <string name="title_finish">Finish</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_activity_app_settings">Application</string>
+
+</resources>

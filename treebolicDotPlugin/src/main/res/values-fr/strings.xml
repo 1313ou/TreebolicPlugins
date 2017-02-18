@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- provider -->
+    <string name="description">Treebolic Dot fournit un modèle à partie de fichiers au format Dot</string>
+    <string name="requires">Treebolic Dot ne nécessite pas de données en dehors des fichiers Dot</string>
+
+    <!-- title -->
+    <string name="title_settings">Paramètres</string>
+    <string name="title_activity_app_settings">Application</string>
+    <string name="title_query">Démarrer</string>
+    <string name="title_source">Choisir source</string>
+    <string name="title_download">Téléchargement</string>
+    <string name="title_demo">Démo</string>
+    <string name="title_finish">Finir</string>
+
+    <!-- ok/errors -->
+    <string name="fail_nullquery">Requête nulle</string>
+
+</resources>

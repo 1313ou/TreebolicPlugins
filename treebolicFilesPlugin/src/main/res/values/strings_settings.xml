@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- General settings -->
+    <string name="pref_header_general">General</string>
+
+    <!-- source -->
+    <string name="pref_title_source">Source</string>
+    <string name="pref_description_source">Source string</string>
+
+    <!-- base -->
+    <string name="pref_title_base">Base</string>
+    <string name="pref_description_base">Base URL</string>
+
+    <!-- image base -->
+    <string name="pref_title_imagebase">Image base</string>
+    <string name="pref_description_imagebase">Image base URL</string>
+
+</resources>

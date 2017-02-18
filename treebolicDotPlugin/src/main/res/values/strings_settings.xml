@@ -1,0 +1,28 @@
+<resources>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- General settings -->
+    <string name="pref_header_general">General</string>
+
+    <!-- source -->
+    <string name="pref_title_source">Source</string>
+    <string name="pref_description_source">Source string</string>
+
+    <!-- base -->
+    <string name="pref_title_base">Base</string>
+    <string name="pref_description_base">Base URL</string>
+
+    <!-- image base -->
+    <string name="pref_title_imagebase">Image base</string>
+    <string name="pref_description_imagebase">Image base URL</string>
+
+    <!-- settings -->
+    <string name="pref_title_settings">Rendering</string>
+    <string name="pref_description_settings">Rendering properties</string>
+
+    <!-- download -->
+    <string name="pref_title_download">Download URL</string>
+    <string name="pref_description_download">Download URL for extra data</string>
+
+</resources>

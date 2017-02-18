@@ -1,0 +1,5 @@
+<resources>
+
+    <string name="market_fail">Ne sait comment gérer market://details?id=org.treebolic</string>
+
+</resources>

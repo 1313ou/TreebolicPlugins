@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="treebolic-provider-graphviz">
+    <CLASSES>
+      <root url="jar:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/libs/treebolic-provider-graphviz.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

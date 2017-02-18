@@ -1,0 +1,6 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="pref_title_download">Adresse de téléchargement</string>
+    <string name="pref_description_download">Adresse (URL) de téléchargement de données supplémentaires</string>
+
+</resources>
