@@ -1,14 +1,6 @@
 package org.treebolic.owl;
 
-import java.io.File;
-import java.io.IOException;
-
-import org.treebolic.TreebolicIface;
-import org.treebolic.filechooser.EntryChooser;
-import org.treebolic.filechooser.FileChooserActivity;
-import org.treebolic.plugin.Checker;
-import org.treebolic.storage.Storage;
-
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.ComponentName;
@@ -26,6 +18,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import org.treebolic.TreebolicIface;
+import org.treebolic.filechooser.EntryChooser;
+import org.treebolic.filechooser.FileChooserActivity;
+import org.treebolic.plugin.Checker;
+import org.treebolic.storage.Storage;
+
+import java.io.File;
+import java.io.IOException;
+
 /**
  * Treebolic Owl main activity
  *
@@ -36,17 +37,12 @@ public class MainActivity extends Activity
 	/**
 	 * Log tag
 	 */
-	static private final String TAG = "Treebolic Owl Activity"; //$NON-NLS-1$
+	static private final String TAG = "TreebolicOwlA"; //$NON-NLS-1$
 
 	/**
 	 * File request code
 	 */
 	private static final int REQUEST_FILE_CODE = 1;
-
-	/**
-	 * Fragment
-	 */
-	private PlaceholderFragment fragment;
 
 	// L I F E C Y C L E
 
@@ -72,8 +68,8 @@ public class MainActivity extends Activity
 		// fragment
 		if (savedInstanceState == null)
 		{
-			this.fragment = new PlaceholderFragment();
-			getFragmentManager().beginTransaction().add(R.id.container, this.fragment).commit();
+			PlaceholderFragment fragment = new PlaceholderFragment();
+			getFragmentManager().beginTransaction().add(R.id.container, fragment).commit();
 		}
 	}
 
@@ -146,6 +142,7 @@ public class MainActivity extends Activity
 	/**
 	 * Initialize
 	 */
+	@SuppressLint("CommitPrefEdits")
 	private void initialize()
 	{
 		final SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
@@ -359,8 +356,8 @@ public class MainActivity extends Activity
 	 *
 	 * @param context
 	 *            context
-	 * @param model
-	 *            model
+	 * @param source
+	 *            source
 	 * @param base
 	 *            base
 	 * @param imageBase
@@ -419,8 +416,7 @@ public class MainActivity extends Activity
 		@Override
 		public View onCreateView(final LayoutInflater inflater, final ViewGroup container, final Bundle savedInstanceState)
 		{
-			final View rootView = inflater.inflate(R.layout.fragment_main, container, false);
-			return rootView;
+			return inflater.inflate(R.layout.fragment_main, container, false);
 		}
 	}
 }
