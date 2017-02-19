@@ -1,9 +1,5 @@
 package org.treebolic.files;
 
-import java.util.List;
-
-import org.treebolic.TreebolicIface;
-
 import android.content.Context;
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -11,6 +7,10 @@ import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
+
+import org.treebolic.TreebolicIface;
+
+import java.util.List;
 
 /**
  * A {@link PreferenceActivity} that presents a set of application settings. On handset devices, settings are presented as a single list. On tablets, settings
@@ -79,9 +79,7 @@ public class SettingsActivity extends PreferenceActivity
 	@Override
 	protected boolean isValidFragment(final String fragmentName)
 	{
-		if (GeneralPreferenceFragment.class.getName().equals(fragmentName))
-			return true;
-		return false;
+		return GeneralPreferenceFragment.class.getName().equals(fragmentName);
 	}
 
 	/** {@inheritDoc} */
@@ -106,6 +104,7 @@ public class SettingsActivity extends PreferenceActivity
 	 */
 	private static boolean isSimplePreferences(final Context context)
 	{
+		//noinspection ConstantConditions
 		return SettingsActivity.ALWAYS_SIMPLE_PREFS || !SettingsActivity.isLargeTablet(context);
 	}
 
@@ -114,7 +113,7 @@ public class SettingsActivity extends PreferenceActivity
 	/**
 	 * A preference value change listener that updates the preference's summary to reflect its new value.
 	 */
-	private static Preference.OnPreferenceChangeListener listener = new Preference.OnPreferenceChangeListener()
+	private static final Preference.OnPreferenceChangeListener listener = new Preference.OnPreferenceChangeListener()
 	{
 		@Override
 		public boolean onPreferenceChange(final Preference preference, final Object value)

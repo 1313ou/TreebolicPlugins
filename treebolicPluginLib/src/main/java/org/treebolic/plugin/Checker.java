@@ -19,7 +19,6 @@ public class Checker
 			System.out.println(Checker.APP + " is not installed"); //$NON-NLS-1$
 			Toast.makeText(context, Checker.APP + " needed", Toast.LENGTH_LONG).show(); //$NON-NLS-1$
 			Checker.install(context);
-			return;
 		}
 		// launch if the package is already installed
 		// final Intent launchIntent = context.getPackageManager().getLaunchIntentForPackage(APP);
@@ -42,7 +41,7 @@ public class Checker
 	static private boolean isAppInstalled(final String uri, final Context context)
 	{
 		final PackageManager packageManager = context.getPackageManager();
-		boolean isInstalled = false;
+		boolean isInstalled;
 		try
 		{
 			packageManager.getPackageInfo(uri, PackageManager.GET_ACTIVITIES);
