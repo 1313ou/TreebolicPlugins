@@ -67,11 +67,6 @@ public class SettingsActivity extends PreferenceActivity
 
 	// D E T E C T I O N
 
-	/*
-	 * (non-Javadoc)
-	 *
-	 * @see android.preference.PreferenceActivity#isValidFragment(java.lang.String)
-	 */
 	@Override
 	protected boolean isValidFragment(final String fragmentName)
 	{
@@ -144,11 +139,6 @@ public class SettingsActivity extends PreferenceActivity
 
 	public static class GeneralPreferenceFragment extends PreferenceFragment
 	{
-		/*
-		 * (non-Javadoc)
-		 *
-		 * @see android.preference.PreferenceFragment#onCreate(android.os.Bundle)
-		 */
 		@SuppressWarnings("synthetic-access")
 		@Override
 		public void onCreate(final Bundle savedInstanceState)

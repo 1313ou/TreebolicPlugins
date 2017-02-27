@@ -66,18 +66,12 @@ public class SettingsActivity extends PreferenceActivity
 
 	// D E T E C T I O N
 
-	/*
-	 * (non-Javadoc)
-	 *
-	 * @see android.preference.PreferenceActivity#isValidFragment(java.lang.String)
-	 */
 	@Override
 	protected boolean isValidFragment(final String fragmentName)
 	{
 		return GeneralPreferenceFragment.class.getName().equals(fragmentName);
 	}
 
-	/** {@inheritDoc} */
 	@Override
 	public boolean onIsMultiPane()
 	{
