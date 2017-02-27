@@ -28,11 +28,6 @@ public class SettingsActivity extends PreferenceActivity
 	private static final boolean ALWAYS_SIMPLE_PREFS = false;
 
 	// E V E N T S
-	/*
-	 * (non-Javadoc)
-	 *
-	 * @see android.app.Activity#onPostCreate(android.os.Bundle)
-	 */
 	@Override
 	protected void onPostCreate(final Bundle savedInstanceState)
 	{

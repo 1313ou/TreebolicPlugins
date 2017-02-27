@@ -140,7 +140,7 @@ public class Settings
 			intent.putExtra(appPkgName, pkgName);
 		}
 
-		// start Activity
+		// start activity
 		context.startActivity(intent);
 	}
 }

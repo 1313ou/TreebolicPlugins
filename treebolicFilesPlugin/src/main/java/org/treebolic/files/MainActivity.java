@@ -1,8 +1,8 @@
 package org.treebolic.files;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
-import android.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.Fragment;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -30,7 +30,7 @@ import java.io.File;
  *
  * @author Bernard Bou
  */
-public class MainActivity extends Activity
+public class MainActivity extends AppCompatActivity
 {
 	/**
 	 * Log tag
@@ -44,11 +44,6 @@ public class MainActivity extends Activity
 
 	// L I F E C Y C L E
 
-	/*
-	 * (non-Javadoc)
-	 *
-	 * @see android.app.Activity#onCreate(android.os.Bundle)
-	 */
 	@Override
 	protected void onCreate(final Bundle savedInstanceState)
 	{
@@ -67,15 +62,10 @@ public class MainActivity extends Activity
 		if (savedInstanceState == null)
 		{
 			PlaceholderFragment fragment = new PlaceholderFragment();
-			getFragmentManager().beginTransaction().add(R.id.container, fragment).commit();
+			getSupportFragmentManager().beginTransaction().add(R.id.container, fragment).commit();
 		}
 	}
 
-	/*
-	 * (non-Javadoc)
-	 *
-	 * @see android.app.Activity#onCreateOptionsMenu(android.view.Menu)
-	 */
 	@Override
 	public boolean onCreateOptionsMenu(final Menu menu)
 	{
@@ -85,11 +75,6 @@ public class MainActivity extends Activity
 		return true;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 *
-	 * @see android.app.Activity#onOptionsItemSelected(android.view.MenuItem)
-	 */
 	@Override
 	public boolean onOptionsItemSelected(final MenuItem item)
 	{
@@ -99,39 +84,39 @@ public class MainActivity extends Activity
 		final int id = item.getItemId();
 		switch (id)
 		{
-		case R.id.action_settings:
-			startActivity(new Intent(this, SettingsActivity.class));
-			return true;
+			case R.id.action_settings:
+				startActivity(new Intent(this, SettingsActivity.class));
+				return true;
 
-		case R.id.action_query:
-			final String fileUri = Settings.getStringPref(this, TreebolicIface.PREF_SOURCE);
-			MainActivity.tryStartTreebolic(this, fileUri);
-			return true;
+			case R.id.action_query:
+				final String fileUri = Settings.getStringPref(this, TreebolicIface.PREF_SOURCE);
+				MainActivity.tryStartTreebolic(this, fileUri);
+				return true;
 
-		case R.id.action_choose:
-			final Intent intent = new Intent(this, org.treebolic.filechooser.FileChooserActivity.class);
-			intent.setType("inode/directory"); //$NON-NLS-1$
-			intent.putExtra(FileChooserActivity.ARG_FILECHOOSER_INITIAL_DIR, Storage.getExternalStorage());
-			intent.putExtra(FileChooserActivity.ARG_FILECHOOSER_CHOOSE_DIR, true);
-			intent.putExtra(FileChooserActivity.ARG_FILECHOOSER_EXTENSION_FILTER, new String[] {});
-			intent.addCategory(Intent.CATEGORY_OPENABLE);
-			startActivityForResult(intent, MainActivity.REQUEST_DIR_CODE);
-			return true;
+			case R.id.action_choose:
+				final Intent intent = new Intent(this, org.treebolic.filechooser.FileChooserActivity.class);
+				intent.setType("inode/directory"); //$NON-NLS-1$
+				intent.putExtra(FileChooserActivity.ARG_FILECHOOSER_INITIAL_DIR, Storage.getExternalStorage());
+				intent.putExtra(FileChooserActivity.ARG_FILECHOOSER_CHOOSE_DIR, true);
+				intent.putExtra(FileChooserActivity.ARG_FILECHOOSER_EXTENSION_FILTER, new String[]{});
+				intent.addCategory(Intent.CATEGORY_OPENABLE);
+				startActivityForResult(intent, MainActivity.REQUEST_DIR_CODE);
+				return true;
 
-		case R.id.action_demo:
-			MainActivity.tryStartTreebolic(this, Storage.getExternalStorage() + "/"); //$NON-NLS-1$
-			return true;
+			case R.id.action_demo:
+				MainActivity.tryStartTreebolic(this, Storage.getExternalStorage() + "/"); //$NON-NLS-1$
+				return true;
 
-		case R.id.action_app_settings:
-			Settings.applicationSettings(this, "org.treebolic.files"); //$NON-NLS-1$
-			return true;
+			case R.id.action_app_settings:
+				Settings.applicationSettings(this, "org.treebolic.files"); //$NON-NLS-1$
+				return true;
 
-		case R.id.action_finish:
-			finish();
-			return true;
+			case R.id.action_finish:
+				finish();
+				return true;
 
-		default:
-			break;
+			default:
+				break;
 		}
 		return super.onOptionsItemSelected(item);
 	}
@@ -147,7 +132,9 @@ public class MainActivity extends Activity
 		// test if initialized
 		final boolean result = sharedPref.getBoolean(Settings.PREF_INITIALIZED, false);
 		if (result)
+		{
 			return;
+		}
 
 		// default settings
 		Settings.setDefaults(this);
@@ -158,16 +145,11 @@ public class MainActivity extends Activity
 
 	// S P E C I F I C R E T U R N S
 
-	/*
-	 * (non-Javadoc)
-	 *
-	 * @see android.app.Activity#onActivityResult(int, int, android.content.Intent)
-	 */
 	@Override
 	protected void onActivityResult(final int requestCode, final int resultCode, final Intent returnIntent)
 	{
 		// handle selection of input by other activity which returns selected input
-		if (resultCode == Activity.RESULT_OK)
+		if (resultCode == AppCompatActivity.RESULT_OK)
 		{
 			final Uri fileUri = returnIntent.getData();
 			if (fileUri != null)
@@ -175,12 +157,12 @@ public class MainActivity extends Activity
 				Toast.makeText(this, fileUri.toString(), Toast.LENGTH_SHORT).show();
 				switch (requestCode)
 				{
-				case REQUEST_DIR_CODE:
-					Settings.putStringPref(this, TreebolicIface.PREF_SOURCE, fileUri.getPath());
-					MainActivity.tryStartTreebolic(this, fileUri.getPath());
-					break;
-				default:
-					break;
+					case REQUEST_DIR_CODE:
+						Settings.putStringPref(this, TreebolicIface.PREF_SOURCE, fileUri.getPath());
+						MainActivity.tryStartTreebolic(this, fileUri.getPath());
+						break;
+					default:
+						break;
 				}
 			}
 		}
@@ -192,10 +174,8 @@ public class MainActivity extends Activity
 	/**
 	 * Start Treebolic plugin activity from root
 	 *
-	 * @param context
-	 *            context
-	 * @param root
-	 *            root directory to explore
+	 * @param context context
+	 * @param root    root directory to explore
 	 */
 	static public void tryStartTreebolic(final Context context, final String root)
 	{
@@ -211,14 +191,10 @@ public class MainActivity extends Activity
 	/**
 	 * Make Treebolic intent
 	 *
-	 * @param context
-	 *            content
-	 * @param source
-	 *            source
-	 * @param base
-	 *            base
-	 * @param imageBase
-	 *            image base
+	 * @param context   content
+	 * @param source    source
+	 * @param base      base
+	 * @param imageBase image base
 	 * @return intent
 	 */
 	static public Intent makeTreebolicIntent(final Context context, final String source, final String base, final String imageBase)
