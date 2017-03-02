@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity
 	/**
 	 * Log tag
 	 */
-	static private final String TAG = "TreebolicFilesA"; //$NON-NLS-1$
+	static private final String TAG = "TreebolicFilesA";
 
 	/**
 	 * Dir request code
@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity
 
 			case R.id.action_choose:
 				final Intent intent = new Intent(this, org.treebolic.filechooser.FileChooserActivity.class);
-				intent.setType("inode/directory"); //$NON-NLS-1$
+				intent.setType("inode/directory");
 				intent.putExtra(FileChooserActivity.ARG_FILECHOOSER_INITIAL_DIR, Storage.getExternalStorage());
 				intent.putExtra(FileChooserActivity.ARG_FILECHOOSER_CHOOSE_DIR, true);
 				intent.putExtra(FileChooserActivity.ARG_FILECHOOSER_EXTENSION_FILTER, new String[]{});
@@ -104,11 +104,11 @@ public class MainActivity extends AppCompatActivity
 				return true;
 
 			case R.id.action_demo:
-				MainActivity.tryStartTreebolic(this, Storage.getExternalStorage() + "/"); //$NON-NLS-1$
+				MainActivity.tryStartTreebolic(this, Storage.getExternalStorage() + "/");
 				return true;
 
 			case R.id.action_app_settings:
-				Settings.applicationSettings(this, "org.treebolic.files"); //$NON-NLS-1$
+				Settings.applicationSettings(this, "org.treebolic.files");
 				return true;
 
 			case R.id.action_finish:
@@ -184,7 +184,7 @@ public class MainActivity extends AppCompatActivity
 		final String base = null;
 		final String imageBase = null;
 		final Intent intent = MainActivity.makeTreebolicIntent(context, source, base, imageBase);
-		Log.d(MainActivity.TAG, "Start treebolic from root " + root); //$NON-NLS-1$
+		Log.d(MainActivity.TAG, "Start treebolic from root " + root);
 		context.startActivity(intent);
 	}
 
@@ -208,8 +208,8 @@ public class MainActivity extends AppCompatActivity
 		intent.setComponent(new ComponentName(TreebolicIface.PKG_TREEBOLIC, TreebolicIface.ACTIVITY_PLUGIN));
 
 		// model passing
-		intent.putExtra(TreebolicIface.ARG_PLUGINPKG, "org.treebolic.files"); //$NON-NLS-1$
-		intent.putExtra(TreebolicIface.ARG_PROVIDER, "treebolic.provider.files.Provider"); //$NON-NLS-1$
+		intent.putExtra(TreebolicIface.ARG_PLUGINPKG, "org.treebolic.files");
+		intent.putExtra(TreebolicIface.ARG_PROVIDER, "treebolic.provider.files.Provider");
 		intent.putExtra(TreebolicIface.ARG_SOURCE, source);
 
 		// other parameters passing
@@ -218,7 +218,7 @@ public class MainActivity extends AppCompatActivity
 
 		// parent passing
 		intent.putExtra(TreebolicIface.ARG_PARENTACTIVITY, parentIntent);
-		intent.putExtra(TreebolicIface.ARG_URLSCHEME, "directory:"); //$NON-NLS-1$
+		intent.putExtra(TreebolicIface.ARG_URLSCHEME, "directory:");
 
 		return intent;
 	}

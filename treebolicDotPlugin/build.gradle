@@ -24,12 +24,12 @@ dependencies {
     //compile project(':treebolic')
     compile project(':treebolicPluginLib')
     compile project(':treebolicIface')
-
     compile project(':downloadLib')
     compile project(':storageLib')
     compile project(':fileChooserLib')
     compile project(':preferenceLib')
     compile project(':searchLib')
-
     compile files('libs/treebolic-provider-graphviz.jar')
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    compile 'com.android.support:support-v4:25.2.0'
 }

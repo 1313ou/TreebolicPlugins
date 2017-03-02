@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity
 	/**
 	 * Log tag
 	 */
-	static private final String TAG = "TreebolicOwlA"; //$NON-NLS-1$
+	static private final String TAG = "TreebolicOwlA";
 
 	/**
 	 * File request code
@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity
 				return true;
 
 			case R.id.action_app_settings:
-				Settings.applicationSettings(this, "org.treebolic.owl"); //$NON-NLS-1$
+				Settings.applicationSettings(this, "org.treebolic.owl");
 				return true;
 
 			case R.id.action_finish:
@@ -215,7 +215,7 @@ public class MainActivity extends AppCompatActivity
 					final Uri parentUri = Uri.fromFile(parentFile);
 					final String query = file.getName();
 					String base = parentUri.toString();
-					if (base != null && !base.endsWith("/")) //$NON-NLS-1$
+					if (base != null && !base.endsWith("/"))
 					{
 						base += '/';
 					}
@@ -238,9 +238,9 @@ public class MainActivity extends AppCompatActivity
 	{
 		final Intent intent = new Intent();
 		intent.setComponent(new ComponentName(this, org.treebolic.filechooser.FileChooserActivity.class));
-		intent.setType("application/rdf+xml"); //$NON-NLS-1$
+		intent.setType("application/rdf+xml");
 		intent.putExtra(FileChooserActivity.ARG_FILECHOOSER_INITIAL_DIR, Settings.getStringPref(this, TreebolicIface.PREF_BASE));
-		intent.putExtra(FileChooserActivity.ARG_FILECHOOSER_EXTENSION_FILTER, new String[]{"owl", "rdf"}); //$NON-NLS-1$ //$NON-NLS-2$
+		intent.putExtra(FileChooserActivity.ARG_FILECHOOSER_EXTENSION_FILTER, new String[]{"owl", "rdf"});
 		intent.addCategory(Intent.CATEGORY_OPENABLE);
 		startActivityForResult(intent, MainActivity.REQUEST_FILE_CODE);
 	}
@@ -262,14 +262,14 @@ public class MainActivity extends AppCompatActivity
 				@Override
 				public void onSelect(final String zipEntry)
 				{
-					final String base = "jar:" + archiveUri.toString() + "!/"; //$NON-NLS-1$ //$NON-NLS-2$
+					final String base = "jar:" + archiveUri.toString() + "!/";
 					MainActivity.tryStartTreebolic(MainActivity.this, zipEntry, base, Settings.getStringPref(MainActivity.this, TreebolicIface.PREF_IMAGEBASE), Settings.getStringPref(MainActivity.this, TreebolicIface.PREF_SETTINGS));
 				}
 			});
 		}
 		catch (final IOException e)
 		{
-			Log.d(MainActivity.TAG, "Failed to start treebolic from bundle uri " + archiveUri, e); //$NON-NLS-1$
+			Log.d(MainActivity.TAG, "Failed to start treebolic from bundle uri " + archiveUri, e);
 		}
 	}
 
@@ -298,7 +298,7 @@ public class MainActivity extends AppCompatActivity
 	static public void tryStartTreebolic(final Context context, final String source, final String base, final String imagebase, final String settings)
 	{
 		final Intent intent = MainActivity.makeTreebolicIntent(context, source, base, imagebase, settings);
-		Log.d(MainActivity.TAG, "Start treebolic from source " + source + " and base " + base); //$NON-NLS-1$ //$NON-NLS-2$
+		Log.d(MainActivity.TAG, "Start treebolic from source " + source + " and base " + base);
 		context.startActivity(intent);
 	}
 
@@ -337,8 +337,8 @@ public class MainActivity extends AppCompatActivity
 		intent.setComponent(new ComponentName(TreebolicIface.PKG_TREEBOLIC, TreebolicIface.ACTIVITY_PLUGIN));
 
 		// model passing
-		intent.putExtra(TreebolicIface.ARG_PLUGINPKG, "org.treebolic.owl"); //$NON-NLS-1$
-		intent.putExtra(TreebolicIface.ARG_PROVIDER, "treebolic.provider.owl.owlapi.Provider"); //$NON-NLS-1$
+		intent.putExtra(TreebolicIface.ARG_PLUGINPKG, "org.treebolic.owl");
+		intent.putExtra(TreebolicIface.ARG_PROVIDER, "treebolic.provider.owl.owlapi.Provider");
 		intent.putExtra(TreebolicIface.ARG_SOURCE, source);
 
 		// other parameters passing
@@ -348,7 +348,7 @@ public class MainActivity extends AppCompatActivity
 
 		// parent passing
 		intent.putExtra(TreebolicIface.ARG_PARENTACTIVITY, parentIntent);
-		intent.putExtra(TreebolicIface.ARG_URLSCHEME, "owl:"); //$NON-NLS-1$
+		intent.putExtra(TreebolicIface.ARG_URLSCHEME, "owl:");
 
 		return intent;
 	}

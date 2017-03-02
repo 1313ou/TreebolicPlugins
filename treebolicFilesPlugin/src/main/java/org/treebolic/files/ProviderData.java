@@ -4,12 +4,12 @@ public class ProviderData
 {
 	public static String[] getProviderClasses()
 	{
-		return new String[] { "treebolic.provider.files.Provider" }; //$NON-NLS-1$
+		return new String[] { "treebolic.provider.files.Provider" };
 	}
 
 	public static String getMimetype()
 	{
-		return "inode/directory"; //$NON-NLS-1$
+		return "inode/directory";
 	}
 
 	public static String getExtensions()
@@ -19,7 +19,7 @@ public class ProviderData
 
 	public static String getUrlScheme()
 	{
-		return "directory:"; //$NON-NLS-1$
+		return "directory:";
 	}
 
 	public static String getStyle()

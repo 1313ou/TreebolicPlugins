@@ -4,22 +4,25 @@ import android.content.Context;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.preference.Preference;
-import android.preference.PreferenceActivity;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
+import android.support.v4.app.NavUtils;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.contrib.AppCompatPreferenceActivity;
+import android.view.MenuItem;
 
 import org.treebolic.TreebolicIface;
 
 import java.util.List;
 
 /**
- * A {@link PreferenceActivity} that presents a set of application settings. On handset devices, settings are presented as a single list. On tablets, settings
+ * A AppCompatPreferenceActivity that presents a set of application settings. On handset devices, settings are presented as a single list. On tablets, settings
  * are split by category, with category headers shown to the left of the list of settings.
  * <p>
  * See <a href="http://developer.android.com/design/patterns/settings.html"> Android Design: Settings</a> for design guidelines and the <a
  * href="http://developer.android.com/guide/topics/ui/settings.html">Settings API Guide</a> for more information on developing a Settings UI.
  */
-public class SettingsActivity extends PreferenceActivity
+public class SettingsActivity extends AppCompatPreferenceActivity
 {
 	/**
 	 * Determines whether to always show the simplified settings UI, where settings are presented in a single list. When false, settings are shown as a
@@ -30,6 +33,20 @@ public class SettingsActivity extends PreferenceActivity
 	// E V E N T S
 
 	@Override
+	protected void onCreate(final Bundle savedInstanceState)
+	{
+		// super
+		super.onCreate(savedInstanceState);
+
+		// set up the action bar
+		final ActionBar actionBar = getSupportActionBar();
+		if (actionBar != null)
+		{
+			actionBar.setDisplayOptions(ActionBar.DISPLAY_USE_LOGO | ActionBar.DISPLAY_SHOW_TITLE | ActionBar.DISPLAY_SHOW_HOME | ActionBar.DISPLAY_HOME_AS_UP);
+		}
+	}
+
+	@Override
 	protected void onPostCreate(final Bundle savedInstanceState)
 	{
 		super.onPostCreate(savedInstanceState);
@@ -38,6 +55,18 @@ public class SettingsActivity extends PreferenceActivity
 		{
 			setupSimplePreferencesScreen();
 		}
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(final MenuItem item)
+	{
+		switch (item.getItemId())
+		{
+			case android.R.id.home:
+				NavUtils.navigateUpFromSameTask(this);
+				return true;
+		}
+		return super.onOptionsItemSelected(item);
 	}
 
 	// S E T U P
@@ -55,7 +84,6 @@ public class SettingsActivity extends PreferenceActivity
 		addPreferencesFromResource(R.xml.pref_general);
 	}
 
-	/** {@inheritDoc} */
 	@Override
 	public void onBuildHeaders(final List<Header> target)
 	{
@@ -73,7 +101,6 @@ public class SettingsActivity extends PreferenceActivity
 		return GeneralPreferenceFragment.class.getName().equals(fragmentName);
 	}
 
-	/** {@inheritDoc} */
 	@Override
 	public boolean onIsMultiPane()
 	{
@@ -132,7 +159,7 @@ public class SettingsActivity extends PreferenceActivity
 
 		// Trigger the listener immediately with the preference's current value.
 		SettingsActivity.listener.onPreferenceChange(preference,
-				PreferenceManager.getDefaultSharedPreferences(preference.getContext()).getString(preference.getKey(), "")); //$NON-NLS-1$
+				PreferenceManager.getDefaultSharedPreferences(preference.getContext()).getString(preference.getKey(), ""));
 	}
 
 	// F R A G M E N T S
