@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="files">Files</string>
+	<string name="files">Files</string>
 
-    <!-- provider -->
-    <string name="description">Treebolic Files fournit un modèle à partir du système de fichiers</string>
-    <string name="requires">Treebolic Files Provider ne nécessite pas de données autres que celles du système de fichiers mais est limité par les permissions du sstème de fichier</string>
+	<!-- provider -->
+	<string name="description">Treebolic Files fournit un modèle à partir du système de fichiers</string>
+	<string name="requires">Treebolic Files Provider ne nécessite pas de données autres que celles du système de fichiers mais est limité par les permissions du sstème de fichier</string>
 
-    <!-- titles -->
-    <string name="title_query">Lancer</string>
-    <string name="title_choose">Choisir</string>
-    <string name="title_demo">Démo</string>
-    <string name="title_finish">Finir</string>
-    <string name="title_settings">Paramètres</string>
-    <string name="title_activity_app_settings">Application</string>
+	<!-- titles -->
+	<string name="title_query">Lancer</string>
+	<string name="title_choose">Choisir</string>
+	<string name="title_choose_directory">Choisir un dossier</string>
+	<string name="title_demo">Démo</string>
+	<string name="title_finish">Finir</string>
+	<string name="title_settings">Paramètres</string>
+	<string name="title_activity_app_settings">Application</string>
+
+	<string name="action_ok">Ok</string>
+	<string name="action_cancel">Annuler</string>
+	<string name="status_fail">Échec</string>
 
 </resources>

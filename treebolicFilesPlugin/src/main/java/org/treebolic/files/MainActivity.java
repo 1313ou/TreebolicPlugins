@@ -1,21 +1,26 @@
 package org.treebolic.files;
 
 import android.annotation.SuppressLint;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v4.app.Fragment;
+import android.app.AlertDialog;
 import android.content.ComponentName;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import org.treebolic.TreebolicIface;
@@ -104,7 +109,8 @@ public class MainActivity extends AppCompatActivity
 				return true;
 
 			case R.id.action_demo:
-				MainActivity.tryStartTreebolic(this, Storage.getExternalStorage() + "/");
+				//MainActivity.tryStartTreebolic(this, Environment.getExternalStorageDirectory().getAbsolutePath());
+				choose();
 				return true;
 
 			case R.id.action_app_settings:
@@ -119,6 +125,74 @@ public class MainActivity extends AppCompatActivity
 				break;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	/**
+	 * Choose dir to scan
+	 */
+	private void choose()
+	{
+		final Pair<CharSequence[], CharSequence[]> result = Storage.getDirectoriesTypesValues(this);
+		final CharSequence[] types = result.first;
+		final CharSequence[] values = result.second;
+
+		final AlertDialog.Builder alert = new AlertDialog.Builder(this);
+		alert.setTitle(R.string.title_choose);
+		alert.setMessage(R.string.title_choose_directory);
+
+		final RadioGroup input = new RadioGroup(this);
+		for (int i = 0; i < types.length && i < values.length; i++)
+		{
+			final CharSequence value = values[i];
+			final File dir = new File(value.toString());
+			if (dir.exists())
+			{
+				final RadioButton radioButton = new RadioButton(this);
+				radioButton.setText(dir.getAbsolutePath());
+				radioButton.setTag(dir.getAbsolutePath());
+				input.addView(radioButton);
+			}
+		}
+		alert.setView(input);
+		alert.setPositiveButton(R.string.action_ok, new DialogInterface.OnClickListener()
+		{
+			@Override
+			public void onClick(DialogInterface dialog, int whichButton)
+			{
+				dialog.dismiss();
+
+				int childCount = input.getChildCount();
+				for (int i = 0; i < childCount; i++)
+				{
+					final RadioButton radioButton = (RadioButton) input.getChildAt(i);
+					if (radioButton.getId() == input.getCheckedRadioButtonId())
+					{
+						final String sourceFile = radioButton.getTag().toString();
+						final File sourceDir = new File(sourceFile);
+						if (sourceDir.exists() && sourceDir.isDirectory())
+						{
+							MainActivity.tryStartTreebolic(MainActivity.this, sourceFile + File.separatorChar);
+						}
+						else
+						{
+							final AlertDialog.Builder alert2 = new AlertDialog.Builder(MainActivity.this);
+							alert2.setTitle(sourceFile) //
+									.setMessage(getString(R.string.status_fail)) //
+									.show();
+						}
+					}
+				}
+			}
+		});
+		alert.setNegativeButton(R.string.action_cancel, new DialogInterface.OnClickListener()
+		{
+			@Override
+			public void onClick(DialogInterface dialog, int whichButton)
+			{
+				// canceled.
+			}
+		});
+		alert.show();
 	}
 
 	/**

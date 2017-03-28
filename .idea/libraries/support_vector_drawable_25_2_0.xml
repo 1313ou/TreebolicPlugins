@@ -1,11 +1,12 @@
 <component name="libraryTable">
   <library name="support-vector-drawable-25.2.0">
     <CLASSES>
-      <root url="file:///mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/downloadLib/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.2.0/res" />
-      <root url="jar:///mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/downloadLib/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.2.0/jars/classes.jar!/" />
+      <root url="file:///mnt/data2/android/build-cache/7cabab5e6858c20a573d64ffaf9aa4022a81c667/output/res" />
+      <root url="jar:///mnt/data2/android/build-cache/7cabab5e6858c20a573d64ffaf9aa4022a81c667/output/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../androidstudio/sdk/extras/android/m2repository/com/android/support/support-vector-drawable/25.2.0/support-vector-drawable-25.2.0-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../../androidstudio/sdk/extras/android/m2repository/com/android/support/support-vector-drawable/25.2.0/support-vector-drawable-25.2.0-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../../androidstudio/sdk/extras/android/m2repository/com/android/support/support-vector-drawable/25.2.0/support-vector-drawable-25.2.0-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../../androidstudio/sdk/extras/android/m2repository/com/android/support/support-vector-drawable/25.2.0/support-vector-drawable-25.2.0-sources.jar!/" />
