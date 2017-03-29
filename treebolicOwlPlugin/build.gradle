@@ -30,6 +30,6 @@ dependencies {
     compile project(':preferenceLib')
     compile project(':searchLib')
     compile files('libs/treebolic-provider-owl-owlapi-min.jar')
-    compile 'com.android.support:appcompat-v7:25.2.0'
-    compile 'com.android.support:support-v4:25.2.0'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
 }

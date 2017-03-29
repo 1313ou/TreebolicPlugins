@@ -9,10 +9,8 @@
     <!-- blue -->
     <item name="dark_blue_color" type="color">#FF293073</item>
     <item name="blue_color" type="color">#FF4251bd</item>
-    <item name="blue1_color" type="color">#FF3765B1</item>
-    <item name="blue2_color" type="color">#FF3765B1</item>
 
-    <!-- gray -->
+	<!-- gray -->
     <color name="light_gray">#ffB0B0B0</color>
 
     <!-- MAIN -->
@@ -27,7 +25,5 @@
     <item name="accent" type="color">@color/pink_color</item>
 
     <!-- button -->
-    <item name="button_color" type="color">@color/blue1_color</item>
-    <item name="button_border_color" type="color">@color/blue2_color</item>
 
 </resources>

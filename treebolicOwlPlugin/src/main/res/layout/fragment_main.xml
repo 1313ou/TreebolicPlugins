@@ -28,8 +28,7 @@
         android:text="@string/description" />
 
     <TextView
-        android:id="@+id/requires"
-        style="@style/Information"
+	    style="@style/Information"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/description"

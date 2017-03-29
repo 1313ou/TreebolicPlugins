@@ -86,18 +86,18 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 25 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="support-v4-25.2.0" level="project" />
-    <orderEntry type="library" exported="" name="support-compat-25.2.0" level="project" />
+    <orderEntry type="library" exported="" name="support-core-ui-25.3.1" level="project" />
+    <orderEntry type="library" exported="" name="support-v4-25.3.1" level="project" />
+    <orderEntry type="library" exported="" name="support-media-compat-25.3.1" level="project" />
+    <orderEntry type="library" exported="" name="support-v13-25.3.1" level="project" />
     <orderEntry type="library" exported="" name="treebolic-provider-graphviz" level="project" />
-    <orderEntry type="library" exported="" name="support-media-compat-25.2.0" level="project" />
-    <orderEntry type="library" exported="" name="support-core-ui-25.2.0" level="project" />
-    <orderEntry type="library" exported="" name="support-v13-25.2.0" level="project" />
-    <orderEntry type="library" exported="" name="appcompat-v7-25.2.0" level="project" />
-    <orderEntry type="library" exported="" name="support-annotations-25.2.0" level="project" />
-    <orderEntry type="library" exported="" name="support-vector-drawable-25.2.0" level="project" />
-    <orderEntry type="library" exported="" name="support-core-utils-25.2.0" level="project" />
-    <orderEntry type="library" exported="" name="support-fragment-25.2.0" level="project" />
-    <orderEntry type="library" exported="" name="animated-vector-drawable-25.2.0" level="project" />
+    <orderEntry type="library" exported="" name="support-annotations-25.3.1" level="project" />
+    <orderEntry type="library" exported="" name="appcompat-v7-25.3.1" level="project" />
+    <orderEntry type="library" exported="" name="support-vector-drawable-25.3.1" level="project" />
+    <orderEntry type="library" exported="" name="support-compat-25.3.1" level="project" />
+    <orderEntry type="library" exported="" name="support-core-utils-25.3.1" level="project" />
+    <orderEntry type="library" exported="" name="support-fragment-25.3.1" level="project" />
+    <orderEntry type="library" exported="" name="animated-vector-drawable-25.3.1" level="project" />
     <orderEntry type="module" module-name="searchLib" exported="" />
     <orderEntry type="module" module-name="treebolicGlueIface" exported="" />
     <orderEntry type="module" module-name="treebolicPortable" exported="" />
@@ -111,5 +111,20 @@
     <orderEntry type="module" module-name="treebolicPluginLib" exported="" />
     <orderEntry type="module" module-name="storageLib" exported="" />
     <orderEntry type="module" module-name="treebolicIface" exported="" />
+    <orderEntry type="library" exported="" name="nineoldandroids-2.2.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="espresso-core-2.2.2" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="runner-0.5" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="exposed-instrumentation-api-publish-0.5" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="espresso-idling-resource-2.2.2" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="rules-0.5" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="hamcrest-library-1.3" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="javax.annotation-api-1.2" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="javax.inject-1" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="hamcrest-integration-1.3" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="javawriter-2.1.1" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="hamcrest-core-1.3" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="junit-4.12" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="jsr305-2.0.1" level="project" />
+    <orderEntry type="library" exported="" name="commons-compress-proguard-1.8.1" level="project" />
   </component>
 </module>
