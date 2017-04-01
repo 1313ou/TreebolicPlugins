@@ -11,7 +11,9 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.util.Pair;
 import android.view.LayoutInflater;
@@ -54,14 +56,25 @@ public class MainActivity extends AppCompatActivity
 	{
 		super.onCreate(savedInstanceState);
 
+		// layout
+		setContentView(R.layout.activity_main);
+
+		// toolbar
+		final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+		setSupportActionBar(toolbar);
+
+		// set up the action bar
+		final ActionBar actionBar = getSupportActionBar();
+		if (actionBar != null)
+		{
+			actionBar.setDisplayOptions(ActionBar.DISPLAY_USE_LOGO | ActionBar.DISPLAY_SHOW_TITLE | ActionBar.DISPLAY_HOME_AS_UP);
+		}
+
 		// initialize
 		initialize();
 
 		// check
 		Checker.check(this);
-
-		// view
-		setContentView(R.layout.activity_main);
 
 		// fragment
 		if (savedInstanceState == null)
