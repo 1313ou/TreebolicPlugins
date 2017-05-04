@@ -29,11 +29,9 @@
  
     <TextView
 	    style="@style/Information"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/description"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
-        android:text="@string/requires" />
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/requires"
+	    android:layout_alignParentBottom="true"/>
     
 </RelativeLayout>
