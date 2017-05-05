@@ -40,6 +40,9 @@ public class SettingsActivity extends AppCompatPreferenceActivity
 		super.onCreate(savedInstanceState);
 
 		// toolbar
+		setupToolbar(R.layout.toolbar, R.id.toolbar);
+
+		// toolbar
 		final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 		setSupportActionBar(toolbar);
 
