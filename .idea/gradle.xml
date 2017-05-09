@@ -7,7 +7,6 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="/mnt/data2/devel/android-treebolic-as/Treebolic/treebolic" />
             <option value="/mnt/data2/devel/android-treebolic-as/TreebolicLib/treebolicGlue" />
             <option value="/mnt/data2/devel/android-treebolic-as/TreebolicLib/treebolicGlueIface" />
             <option value="/mnt/data2/devel/android-treebolic-as/TreebolicLib/treebolicGraph" />
@@ -21,19 +20,11 @@
             <option value="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin" />
             <option value="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin" />
             <option value="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicPluginLib" />
-            <option value="/mnt/data2/devel/android-treebolic-as/TreebolicServices/treebolicAidl" />
-            <option value="/mnt/data2/devel/android-treebolic-as/TreebolicServices/treebolicClientsIface" />
-            <option value="/mnt/data2/devel/android-treebolic-as/TreebolicServices/treebolicClientsLib" />
-            <option value="/mnt/data2/devel/android-treebolic-as/TreebolicServices/treebolicParcel" />
-            <option value="/mnt/data2/devel/android-treebolic-as/TreebolicServices/treebolicServicesIface" />
-            <option value="/mnt/data2/devel/android-treebolic-as/TreebolicServices/treebolicServicesLib" />
             <option value="/mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/downloadLib" />
             <option value="/mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/fileChooserLib" />
             <option value="/mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/guideLib" />
             <option value="/mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/preferenceLib" />
-            <option value="/mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/searchLib" />
             <option value="/mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/storageLib" />
-            <option value="/mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/wheelLib" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
