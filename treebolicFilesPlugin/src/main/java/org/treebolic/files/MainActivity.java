@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity
 
 			case R.id.action_demo:
 				//MainActivity.tryStartTreebolic(this, Environment.getExternalStorageDirectory().getAbsolutePath());
-				choose();
+				chooseAndTryStartTreebolic();
 				return true;
 
 			case R.id.action_app_settings:
@@ -143,7 +143,7 @@ public class MainActivity extends AppCompatActivity
 	/**
 	 * Choose dir to scan
 	 */
-	private void choose()
+	private void chooseAndTryStartTreebolic()
 	{
 		final Pair<CharSequence[], CharSequence[]> result = Storage.getDirectoriesTypesValues(this);
 		final CharSequence[] types = result.first;
