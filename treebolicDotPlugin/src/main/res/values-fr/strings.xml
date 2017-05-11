@@ -8,8 +8,8 @@
     <!-- title -->
     <string name="title_settings">Paramètres</string>
     <string name="title_activity_app_settings">Application</string>
-    <string name="title_query">Démarrer</string>
-    <string name="title_source">Choisir source</string>
+    <string name="title_query">Lancer</string>
+    <string name="title_source">Source</string>
     <string name="title_download">Téléchargement</string>
     <string name="title_demo">Démo</string>
     <string name="title_finish">Finir</string>

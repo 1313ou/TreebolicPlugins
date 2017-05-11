@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:export-ydpi="5.4420452"
+   inkscape:export-xdpi="5.4420452"
+   inkscape:export-filename="treebolic-logo32.png"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   sodipodi:docname="ic_treebolic.svg"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:version="0.32"
+   id="svg2"
+   width="533.33331"
+   height="533.33331"
+   version="1.0">
+  <sodipodi:namedview
+     inkscape:window-height="1176"
+     inkscape:window-width="1871"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showgrid="false"
+     inkscape:zoom="0.69462777"
+     inkscape:cx="-1037.9841"
+     inkscape:cy="233.11776"
+     inkscape:window-x="49"
+     inkscape:window-y="24"
+     inkscape:current-layer="svg2"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     borderlayer="true"
+     inkscape:snap-page="true" />
+  <metadata
+     id="metadata29">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <title
+     id="title4"> Example showing a blue circle with 3D highlighting effect </title>
+  <desc
+     id="desc6"> Picture of a blue sphere (circle with 3D highlighting) </desc>
+  <style
+     type="text/css"
+     id="style8">
+      .Border { fill: lightGray; stroke: black; stroke-width: 4; }
+      .Label { font-size:24; font-family:Arial; fill:black; }
+   </style>
+  <defs
+     id="defs10" />
+  <g
+     id="g14959"
+     style="stroke:#ffffff"
+     transform="matrix(1.0162232,0,0,1.0217506,-0.4705451,-0.33634324)">
+    <path
+       inkscape:export-ydpi="9.05721"
+       inkscape:export-xdpi="9.05721"
+       inkscape:export-filename="/home/bbou/Images/svg/logo.png"
+       sodipodi:nodetypes="cc"
+       id="path3243"
+       d="M 237.81733,304.11307 C 179.9598,380.95211 111.04182,403.76518 79.735635,402.67987"
+       style="fill:none;stroke:#ffffff;stroke-width:10.66666698;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:export-ydpi="9.05721"
+       inkscape:export-xdpi="9.05721"
+       inkscape:export-filename="/home/bbou/Images/svg/logo.png"
+       sodipodi:nodetypes="cc"
+       id="path3239"
+       d="M 361.75338,75.387536 C 201.55996,199.57733 120.25773,228.2153 70.883072,218.18304"
+       style="fill:none;stroke:#ffffff;stroke-width:10.66666698;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:export-ydpi="9.05721"
+       inkscape:export-xdpi="9.05721"
+       inkscape:export-filename="/home/bbou/Images/svg/logo.png"
+       sodipodi:nodetypes="cccc"
+       id="path3241"
+       d="M 467.98429,306.64043 C 408.10012,276.78114 356.19678,265.09184 357.95942,77.914889 322.57357,151.82778 298.08997,220.29375 237.81733,306.64043 c -28.371,108.8299 -15.07462,150.0026 10.11723,171.86007"
+       style="fill:none;stroke:#ffffff;stroke-width:10.66666698;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     id="g14945"
+     style="fill:#ffffff"
+     transform="matrix(1.0162232,0,0,1.0217506,-0.4705451,-1.8719378)">
+    <g
+       inkscape:export-ydpi="9.05721"
+       inkscape:export-xdpi="9.05721"
+       inkscape:export-filename="/home/bbou/Images/svg/logo.png"
+       id="g3276"
+       transform="matrix(0.45517179,0,0,0.45482033,59.626127,144.16807)"
+       style="fill:#ffffff;stroke:#6c5d53">
+      <circle
+         transform="rotate(-132.29516)"
+         id="path2407"
+         style="fill:#ffffff;fill-opacity:1;stroke:#6c5d53;stroke-width:0.35670954"
+         cx="-810.53302"
+         cy="-183.54868"
+         r="80.514435" />
+    </g>
+    <g
+       style="fill:#ffffff;fill-opacity:1;stroke:#6c5d53"
+       inkscape:export-ydpi="9.05721"
+       inkscape:export-xdpi="9.05721"
+       inkscape:export-filename="/home/bbou/Images/svg/logo.png"
+       id="g3302"
+       transform="matrix(0.45517179,0,0,0.45482033,278.98045,-21.373612)">
+      <circle
+         transform="rotate(-132.29516)"
+         id="path3306"
+         style="fill:#ffffff;fill-opacity:1;stroke:#6c5d53;stroke-width:0.35670954"
+         cx="-810.53302"
+         cy="-183.54868"
+         r="80.514435" />
+    </g>
+    <g
+       style="fill:#ffffff;fill-opacity:1;stroke:#6c5d53"
+       inkscape:export-ydpi="9.05721"
+       inkscape:export-xdpi="9.05721"
+       inkscape:export-filename="/home/bbou/Images/svg/logo.png"
+       id="g3316"
+       transform="matrix(0.45517179,0,0,0.45482033,-106.73888,70.874809)">
+      <circle
+         transform="rotate(-132.29516)"
+         id="path3320"
+         style="fill:#ffffff;fill-opacity:1;stroke:#6c5d53;stroke-width:0.35670954"
+         cx="-810.53302"
+         cy="-183.54868"
+         r="80.514435" />
+    </g>
+    <g
+       style="fill:#ffffff;fill-opacity:1;stroke:#6c5d53"
+       inkscape:export-ydpi="9.05721"
+       inkscape:export-xdpi="9.05721"
+       inkscape:export-filename="/home/bbou/Images/svg/logo.png"
+       id="g3330"
+       transform="matrix(0.45517179,0,0,0.45482033,50.078155,-22.637292)">
+      <circle
+         transform="rotate(-132.29516)"
+         id="path3334"
+         style="fill:#ffffff;fill-opacity:1;stroke:#6c5d53;stroke-width:0.35670954"
+         cx="-810.53302"
+         cy="-183.54868"
+         r="80.514435" />
+    </g>
+    <g
+       style="fill:#ffffff;fill-opacity:1;stroke:#6c5d53"
+       inkscape:export-ydpi="9.05721"
+       inkscape:export-xdpi="9.05721"
+       inkscape:export-filename="/home/bbou/Images/svg/logo.png"
+       id="g3344"
+       transform="matrix(0.45517179,0,0,0.45482033,-120.65007,-117.41307)">
+      <circle
+         transform="rotate(-132.29516)"
+         id="path3348"
+         style="fill:#ffffff;fill-opacity:1;stroke:#6c5d53;stroke-width:0.35670954"
+         cx="-810.53302"
+         cy="-183.54868"
+         r="80.514435" />
+    </g>
+    <g
+       inkscape:export-ydpi="9.05721"
+       inkscape:export-xdpi="9.05721"
+       inkscape:export-filename="/home/bbou/Images/svg/logo.png"
+       id="g6393"
+       transform="matrix(0.45517179,0,0,0.45482033,179.0539,-276.76591)"
+       style="fill:#ffffff;stroke:#6c5d53">
+      <circle
+         transform="rotate(-132.29516)"
+         id="path6397"
+         style="fill:#ffffff;fill-opacity:1;stroke:#6c5d53;stroke-width:0.35670954"
+         cx="-810.53302"
+         cy="-183.54868"
+         r="80.514435" />
+    </g>
+  </g>
+</svg>

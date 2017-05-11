@@ -21,8 +21,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import org.treebolic.TreebolicIface;
@@ -85,6 +87,15 @@ public class MainActivity extends AppCompatActivity
 	}
 
 	@Override
+	protected void onResume()
+	{
+		updateButton();
+		super.onResume();
+	}
+
+	// M E N U
+
+	@Override
 	public boolean onCreateOptionsMenu(final Menu menu)
 	{
 		// inflate the menu; this adds items to the action bar if it is present.
@@ -111,14 +122,8 @@ public class MainActivity extends AppCompatActivity
 				MainActivity.tryStartTreebolic(this, fileUri);
 				return true;
 
-			case R.id.action_choose:
-				final Intent intent = new Intent(this, org.treebolic.filechooser.FileChooserActivity.class);
-				intent.setType("inode/directory");
-				intent.putExtra(FileChooserActivity.ARG_FILECHOOSER_INITIAL_DIR, Storage.getExternalStorage());
-				intent.putExtra(FileChooserActivity.ARG_FILECHOOSER_CHOOSE_DIR, true);
-				intent.putExtra(FileChooserActivity.ARG_FILECHOOSER_EXTENSION_FILTER, new String[]{});
-				intent.addCategory(Intent.CATEGORY_OPENABLE);
-				startActivityForResult(intent, MainActivity.REQUEST_DIR_CODE);
+			case R.id.action_source:
+				requestSource();
 				return true;
 
 			case R.id.action_demo:
@@ -140,73 +145,7 @@ public class MainActivity extends AppCompatActivity
 		return super.onOptionsItemSelected(item);
 	}
 
-	/**
-	 * Choose dir to scan
-	 */
-	private void chooseAndTryStartTreebolic()
-	{
-		final Pair<CharSequence[], CharSequence[]> result = Storage.getDirectoriesTypesValues(this);
-		final CharSequence[] types = result.first;
-		final CharSequence[] values = result.second;
-
-		final AlertDialog.Builder alert = new AlertDialog.Builder(this);
-		alert.setTitle(R.string.title_choose);
-		alert.setMessage(R.string.title_choose_directory);
-
-		final RadioGroup input = new RadioGroup(this);
-		for (int i = 0; i < types.length && i < values.length; i++)
-		{
-			final CharSequence value = values[i];
-			final File dir = new File(value.toString());
-			if (dir.exists())
-			{
-				final RadioButton radioButton = new RadioButton(this);
-				radioButton.setText(dir.getAbsolutePath());
-				radioButton.setTag(dir.getAbsolutePath());
-				input.addView(radioButton);
-			}
-		}
-		alert.setView(input);
-		alert.setPositiveButton(R.string.action_ok, new DialogInterface.OnClickListener()
-		{
-			@Override
-			public void onClick(DialogInterface dialog, int whichButton)
-			{
-				dialog.dismiss();
-
-				int childCount = input.getChildCount();
-				for (int i = 0; i < childCount; i++)
-				{
-					final RadioButton radioButton = (RadioButton) input.getChildAt(i);
-					if (radioButton.getId() == input.getCheckedRadioButtonId())
-					{
-						final String sourceFile = radioButton.getTag().toString();
-						final File sourceDir = new File(sourceFile);
-						if (sourceDir.exists() && sourceDir.isDirectory())
-						{
-							MainActivity.tryStartTreebolic(MainActivity.this, sourceFile + File.separatorChar);
-						}
-						else
-						{
-							final AlertDialog.Builder alert2 = new AlertDialog.Builder(MainActivity.this);
-							alert2.setTitle(sourceFile) //
-									.setMessage(getString(R.string.status_fail)) //
-									.show();
-						}
-					}
-				}
-			}
-		});
-		alert.setNegativeButton(R.string.action_cancel, new DialogInterface.OnClickListener()
-		{
-			@Override
-			public void onClick(DialogInterface dialog, int whichButton)
-			{
-				// canceled.
-			}
-		});
-		alert.show();
-	}
+	// I N I T I A L I Z E
 
 	/**
 	 * Initialize
@@ -230,7 +169,21 @@ public class MainActivity extends AppCompatActivity
 		sharedPref.edit().putBoolean(Settings.PREF_INITIALIZED, true).commit();
 	}
 
-	// S P E C I F I C R E T U R N S
+	// R E Q U E S T (choose source)
+
+	/**
+	 * Request directory source
+	 */
+	private void requestSource()
+	{
+		final Intent intent = new Intent(this, org.treebolic.filechooser.FileChooserActivity.class);
+		intent.setType("inode/directory");
+		intent.putExtra(FileChooserActivity.ARG_FILECHOOSER_INITIAL_DIR, Storage.getExternalStorage());
+		intent.putExtra(FileChooserActivity.ARG_FILECHOOSER_CHOOSE_DIR, true);
+		intent.putExtra(FileChooserActivity.ARG_FILECHOOSER_EXTENSION_FILTER, new String[]{});
+		intent.addCategory(Intent.CATEGORY_OPENABLE);
+		startActivityForResult(intent, MainActivity.REQUEST_DIR_CODE);
+	}
 
 	@Override
 	protected void onActivityResult(final int requestCode, final int resultCode, final Intent returnIntent)
@@ -246,7 +199,11 @@ public class MainActivity extends AppCompatActivity
 				{
 					case REQUEST_DIR_CODE:
 						Settings.putStringPref(this, TreebolicIface.PREF_SOURCE, fileUri.getPath());
-						MainActivity.tryStartTreebolic(this, fileUri.getPath());
+
+						updateButton();
+
+						// query
+						// query());
 						break;
 					default:
 						break;
@@ -256,7 +213,116 @@ public class MainActivity extends AppCompatActivity
 		super.onActivityResult(requestCode, resultCode, returnIntent);
 	}
 
+	/**
+	 * Choose dir to scan
+	 */
+	private void chooseAndTryStartTreebolic()
+	{
+		final Pair<CharSequence[], CharSequence[]> result = Storage.getDirectoriesTypesValues(this);
+		final CharSequence[] types = result.first;
+		final CharSequence[] values = result.second;
+
+		final AlertDialog.Builder alert = new AlertDialog.Builder(this);
+		alert.setTitle(R.string.title_choose);
+		alert.setMessage(R.string.title_choose_directory);
+
+		final RadioGroup input = new RadioGroup(this);
+		for (int i = 0; i < types.length && i < values.length; i++)
+		{
+			final CharSequence type = types[i];
+			final CharSequence value = values[i];
+			final File dir = new File(value.toString());
+			if (dir.exists())
+			{
+				final RadioButton radioButton = new RadioButton(this);
+				radioButton.setText(dir.getAbsolutePath() + ' ' + '[' + type + ']');
+				radioButton.setTag(dir.getAbsolutePath());
+				input.addView(radioButton);
+			}
+		}
+		alert.setView(input);
+		alert.setPositiveButton(R.string.action_ok, new DialogInterface.OnClickListener()
+		{
+			@Override
+			public void onClick(DialogInterface dialog, int whichButton)
+			{
+				dialog.dismiss();
+
+				int childCount = input.getChildCount();
+				for (int i = 0; i < childCount; i++)
+				{
+					final RadioButton radioButton = (RadioButton) input.getChildAt(i);
+					if (radioButton.getId() == input.getCheckedRadioButtonId())
+					{
+						final String sourceFile = radioButton.getTag().toString();
+						final File sourceDir = new File(sourceFile);
+						if (sourceDir.exists() && sourceDir.isDirectory())
+						{
+							query(sourceFile + File.separatorChar);
+						}
+						else
+						{
+							final AlertDialog.Builder alert2 = new AlertDialog.Builder(MainActivity.this);
+							alert2.setTitle(sourceFile) //
+									.setMessage(getString(R.string.status_fail)) //
+									.show();
+						}
+					}
+				}
+			}
+		});
+		alert.setNegativeButton(R.string.action_cancel, new DialogInterface.OnClickListener()
+		{
+			@Override
+			public void onClick(DialogInterface dialog, int whichButton)
+			{
+				// canceled.
+			}
+		});
+		alert.show();
+	}
+
+	// Q U E R Y
+
+	/**
+	 * Query request
+	 */
+	private void query()
+	{
+		// get query
+		final String query = Settings.getStringPref(this, TreebolicIface.PREF_SOURCE);
+		query(query);
+	}
+
+	/**
+	 * Query request
+	 *
+	 * @param source source
+	 */
+	private boolean query(final String source)
+	{
+		if (source == null || source.isEmpty())
+		{
+			Toast.makeText(MainActivity.this, R.string.fail_nullquery, Toast.LENGTH_SHORT).show();
+			return false;
+		}
+
+		MainActivity.tryStartTreebolic(this, source);
+		return true;
+	}
+
 	// S T A R T
+
+	/**
+	 * Start Treebolic plugin activity from root
+	 *
+	 * @param context context
+	 */
+	static public void tryStartTreebolic(final Context context)
+	{
+		final String root = Settings.getStringPref(context, TreebolicIface.PREF_SOURCE);
+		tryStartTreebolic(context, root);
+	}
 
 	/**
 	 * Start Treebolic plugin activity from root
@@ -268,9 +334,7 @@ public class MainActivity extends AppCompatActivity
 	{
 		final File file = new File(root);
 		final String source = file.getAbsolutePath();
-		final String base = null;
-		final String imageBase = null;
-		final Intent intent = MainActivity.makeTreebolicIntent(context, source, base, imageBase);
+		final Intent intent = MainActivity.makeTreebolicIntent(context, source);
 		Log.d(MainActivity.TAG, "Start treebolic from root " + root);
 		context.startActivity(intent);
 	}
@@ -278,13 +342,11 @@ public class MainActivity extends AppCompatActivity
 	/**
 	 * Make Treebolic intent
 	 *
-	 * @param context   content
-	 * @param source    source
-	 * @param base      base
-	 * @param imageBase image base
+	 * @param context content
+	 * @param source  source
 	 * @return intent
 	 */
-	static public Intent makeTreebolicIntent(final Context context, final String source, final String base, final String imageBase)
+	static public Intent makeTreebolicIntent(final Context context, final String source)
 	{
 		// parent activity to return to
 		final Intent parentIntent = new Intent();
@@ -300,14 +362,58 @@ public class MainActivity extends AppCompatActivity
 		intent.putExtra(TreebolicIface.ARG_SOURCE, source);
 
 		// other parameters passing
-		intent.putExtra(TreebolicIface.ARG_BASE, base);
-		intent.putExtra(TreebolicIface.ARG_IMAGEBASE, imageBase);
+		intent.putExtra(TreebolicIface.ARG_BASE, (String) null);
+		intent.putExtra(TreebolicIface.ARG_IMAGEBASE, (String) null);
 
 		// parent passing
 		intent.putExtra(TreebolicIface.ARG_PARENTACTIVITY, parentIntent);
 		intent.putExtra(TreebolicIface.ARG_URLSCHEME, "directory:");
 
 		return intent;
+	}
+
+	// H E L P E R
+
+	private void updateButton()
+	{
+		final ImageButton button = (ImageButton) findViewById(R.id.queryButton);
+		final TextView sourceText = (TextView) findViewById(R.id.querySource);
+		final String source = Settings.getStringPref(this, TreebolicIface.PREF_SOURCE);
+		final boolean qualifies = sourceQualifies(source);
+		button.setVisibility(qualifies ? View.VISIBLE : View.INVISIBLE);
+		sourceText.setVisibility(qualifies ? View.VISIBLE : View.INVISIBLE);
+		if (qualifies)
+		{
+			sourceText.setText(source);
+		}
+	}
+
+	/**
+	 * Whether source qualifies
+	 *
+	 * @return true if source qualifies
+	 */
+	private boolean sourceQualifies(final String source)
+	{
+		if (source != null && !source.isEmpty())
+		{
+			final File file = new File(source);
+			Log.d(MainActivity.TAG, "file=" + file);
+			return file.exists() && file.isDirectory();
+		}
+		return false;
+	}
+
+	// C L I C K
+
+	/**
+	 * Click listener
+	 *
+	 * @param view view
+	 */
+	public void onClick(final View view)
+	{
+		query();
 	}
 
 	// F R A G M E N T
@@ -317,14 +423,6 @@ public class MainActivity extends AppCompatActivity
 	 */
 	public static class PlaceholderFragment extends Fragment
 	{
-		/**
-		 * Constructor
-		 */
-		public PlaceholderFragment()
-		{
-			//
-		}
-
 		@Override
 		public View onCreateView(final LayoutInflater inflater, final ViewGroup container, final Bundle savedInstanceState)
 		{

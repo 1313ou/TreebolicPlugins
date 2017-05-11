@@ -9,15 +9,19 @@
 
 	<!-- titles -->
 	<string name="title_query">Lancer</string>
-	<string name="title_choose">Choisir</string>
-	<string name="title_choose_directory">Choisir un dossier</string>
+	<string name="title_source">Source</string>
 	<string name="title_demo">Démo</string>
 	<string name="title_finish">Finir</string>
 	<string name="title_settings">Paramètres</string>
 	<string name="title_activity_app_settings">Application</string>
+	<string name="title_choose">Choisir</string>
+	<string name="title_choose_directory">Choisir un dossier</string>
 
 	<string name="action_ok">Ok</string>
 	<string name="action_cancel">Annuler</string>
 	<string name="status_fail">Échec</string>
+
+	<!-- ok/errors -->
+	<string name="fail_nullquery">Requête nulle</string>
 
 </resources>

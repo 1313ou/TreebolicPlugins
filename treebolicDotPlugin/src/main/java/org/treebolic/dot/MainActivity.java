@@ -18,6 +18,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import org.treebolic.TreebolicIface;
@@ -81,30 +83,14 @@ public class MainActivity extends AppCompatActivity
 		}
 	}
 
-	/**
-	 * Initialize
-	 */
-	@SuppressLint({"CommitPrefEdits", "ApplySharedPref"})
-	private void initialize()
+	@Override
+	protected void onResume()
 	{
-		final SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
-
-		// test if initialized
-		final boolean result = sharedPref.getBoolean(Settings.PREF_INITIALIZED, false);
-		if (result)
-		{
-			return;
-		}
-
-		// default settings
-		Settings.setDefaults(this);
-
-		// deploy
-		Storage.expandZipAssetFile(this, Settings.DEMOZIP);
-
-		// flag as initialized
-		sharedPref.edit().putBoolean(Settings.PREF_INITIALIZED, true).commit();
+		updateButton();
+		super.onResume();
 	}
+
+	// M E N U
 
 	@Override
 	public boolean onCreateOptionsMenu(final Menu menu)
@@ -162,6 +148,33 @@ public class MainActivity extends AppCompatActivity
 		return super.onOptionsItemSelected(item);
 	}
 
+	// I N I T I A L I Z E
+
+	/**
+	 * Initialize
+	 */
+	@SuppressLint({"CommitPrefEdits", "ApplySharedPref"})
+	private void initialize()
+	{
+		final SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+
+		// test if initialized
+		final boolean result = sharedPref.getBoolean(Settings.PREF_INITIALIZED, false);
+		if (result)
+		{
+			return;
+		}
+
+		// default settings
+		Settings.setDefaults(this);
+
+		// deploy
+		Storage.expandZipAssetFile(this, Settings.DEMOZIP);
+
+		// flag as initialized
+		sharedPref.edit().putBoolean(Settings.PREF_INITIALIZED, true).commit();
+	}
+
 	// Q U E R Y
 
 	/**
@@ -205,7 +218,21 @@ public class MainActivity extends AppCompatActivity
 		return true;
 	}
 
-	// S P E C I F I C R E T U R N S
+	// R E Q U E S T (choose source)
+
+	/**
+	 * Request Owl source
+	 */
+	private void requestSource()
+	{
+		final Intent intent = new Intent();
+		intent.setComponent(new ComponentName(this, org.treebolic.filechooser.FileChooserActivity.class));
+		intent.setType("text/vnd.graphviz");
+		intent.putExtra(FileChooserActivity.ARG_FILECHOOSER_INITIAL_DIR, Settings.getStringPref(this, TreebolicIface.PREF_BASE));
+		intent.putExtra(FileChooserActivity.ARG_FILECHOOSER_EXTENSION_FILTER, new String[]{"dot", "graphviz"});
+		intent.addCategory(Intent.CATEGORY_OPENABLE);
+		startActivityForResult(intent, MainActivity.REQUEST_FILE_CODE);
+	}
 
 	@Override
 	protected void onActivityResult(final int requestCode, final int resultCode, final Intent returnIntent)
@@ -234,28 +261,16 @@ public class MainActivity extends AppCompatActivity
 					}
 					Settings.save(this, query, base);
 
+					updateButton();
+
 					// query
-					query();
+					// query();
 				}
 				break;
 			default:
 				break;
 		}
 		super.onActivityResult(requestCode, resultCode, returnIntent);
-	}
-
-	/**
-	 * Request Owl source
-	 */
-	private void requestSource()
-	{
-		final Intent intent = new Intent();
-		intent.setComponent(new ComponentName(this, org.treebolic.filechooser.FileChooserActivity.class));
-		intent.setType("text/vnd.graphviz");
-		intent.putExtra(FileChooserActivity.ARG_FILECHOOSER_INITIAL_DIR, Settings.getStringPref(this, TreebolicIface.PREF_BASE));
-		intent.putExtra(FileChooserActivity.ARG_FILECHOOSER_EXTENSION_FILTER, new String[]{"dot", "graphviz"});
-		intent.addCategory(Intent.CATEGORY_OPENABLE);
-		startActivityForResult(intent, MainActivity.REQUEST_FILE_CODE);
 	}
 
 	// S T A R T
@@ -368,6 +383,52 @@ public class MainActivity extends AppCompatActivity
 		return intent;
 	}
 
+	// H E L P E R
+
+	private void updateButton()
+	{
+		final ImageButton button = (ImageButton) findViewById(R.id.queryButton);
+		final TextView sourceText = (TextView) findViewById(R.id.querySource);
+		final String source = Settings.getStringPref(this, TreebolicIface.PREF_SOURCE);
+		final boolean qualifies = sourceQualifies(source);
+		button.setVisibility(qualifies ? View.VISIBLE : View.INVISIBLE);
+		sourceText.setVisibility(qualifies ? View.VISIBLE : View.INVISIBLE);
+		if (qualifies)
+		{
+			sourceText.setText(source);
+		}
+	}
+
+	/**
+	 * Whether source qualifies
+	 *
+	 * @return true if source qualifies
+	 */
+	private boolean sourceQualifies(final String source)
+	{
+		final String base = Settings.getStringPref(this, TreebolicIface.PREF_BASE);
+		if (source != null && !source.isEmpty())
+		{
+			final File baseFile = base == null ? null : new File(Uri.parse(base).getPath());
+			final File file = new File(baseFile, source);
+			Log.d(MainActivity.TAG, "file=" + file);
+			return file.exists();
+		}
+		return false;
+	}
+
+	// C L I C K
+
+	/**
+	 * Click listener
+	 *
+	 * @param view view
+	 */
+	public void onClick(final View view)
+	{
+		query();
+	}
+
 	// F R A G M E N T
 
 	/**
@@ -375,14 +436,6 @@ public class MainActivity extends AppCompatActivity
 	 */
 	public static class PlaceholderFragment extends Fragment
 	{
-		/**
-		 * Constructor
-		 */
-		public PlaceholderFragment()
-		{
-			//
-		}
-
 		@Override
 		public View onCreateView(final LayoutInflater inflater, final ViewGroup container, final Bundle savedInstanceState)
 		{

@@ -12,8 +12,6 @@ import android.preference.PreferenceManager;
 import org.treebolic.TreebolicIface;
 import org.treebolic.storage.Storage;
 
-import java.io.File;
-
 /**
  * Settings
  *
@@ -36,15 +34,12 @@ public class Settings
 	static public void setDefaults(final Context context)
 	{
 		final String externalStorage = Storage.getExternalStorage();
-		final File treebolicStorage = Storage.getTreebolicStorage(context);
-		final Uri uri = Uri.fromFile(treebolicStorage);
-		final String treebolicBase = uri.toString() + '/';
+		//final File treebolicStorage = Storage.getTreebolicStorage(context);
+		//final Uri uri = Uri.fromFile(treebolicStorage);
 
 		final SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(context);
 		final Editor editor = sharedPref.edit();
 		editor.putString(TreebolicIface.PREF_SOURCE, externalStorage);
-		editor.putString(TreebolicIface.PREF_BASE, treebolicBase);
-		editor.putString(TreebolicIface.PREF_IMAGEBASE, treebolicBase);
 		editor.commit();
 	}
 

@@ -166,8 +166,7 @@ public class SettingsActivity extends AppCompatPreferenceActivity
 		preference.setOnPreferenceChangeListener(SettingsActivity.listener);
 
 		// Trigger the listener immediately with the preference's current value.
-		SettingsActivity.listener.onPreferenceChange(preference,
-				PreferenceManager.getDefaultSharedPreferences(preference.getContext()).getString(preference.getKey(), ""));
+		SettingsActivity.listener.onPreferenceChange(preference, PreferenceManager.getDefaultSharedPreferences(preference.getContext()).getString(preference.getKey(), ""));
 	}
 
 	// F R A G M E N T S
@@ -185,8 +184,6 @@ public class SettingsActivity extends AppCompatPreferenceActivity
 
 			// bind
 			SettingsActivity.bind(findPreference(TreebolicIface.PREF_SOURCE));
-			SettingsActivity.bind(findPreference(TreebolicIface.PREF_BASE));
-			SettingsActivity.bind(findPreference(TreebolicIface.PREF_IMAGEBASE));
 		}
 	}
 }
