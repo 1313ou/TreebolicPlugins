@@ -7,7 +7,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="bottom|center"
-                android:layout_marginBottom="@dimen/action_button_margin">
+                android:layout_marginBottom="@dimen/action_button_group_margin">
 
 	<TextView
 		android:id="@+id/querySource"
@@ -22,6 +22,7 @@
 		android:layout_height="wrap_content"
 		android:layout_below="@+id/querySource"
 		android:layout_centerHorizontal="true"
+		android:layout_marginBottom="@dimen/action_button_margin"
 		android:contentDescription="@string/title_query"
 		android:elevation="4dp"
 		android:onClick="onClick"
