@@ -21,115 +21,17 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1ad9775-637d-4494-8054-978db10d3578" name="Default" comment="change process to specific on activities">
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/ic_launcher-web.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/drawable-hdpi/ic_treebolic.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/drawable-mdpi/ic_treebolic.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/drawable-xhdpi/ic_treebolic.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/drawable-xxhdpi/ic_treebolic.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/drawable-xxxhdpi/ic_treebolic.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/ic_launcher-web.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/drawable-hdpi/ic_treebolic.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/drawable-mdpi/ic_treebolic.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/drawable-xhdpi/ic_treebolic.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/drawable-xxhdpi/ic_treebolic.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/drawable-xxxhdpi/ic_treebolic.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/ic_launcher-web.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/drawable-hdpi/ic_treebolic.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/drawable-mdpi/ic_treebolic.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/drawable-xhdpi/ic_treebolic.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/drawable-xxhdpi/ic_treebolic.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/drawable-xxxhdpi/ic_treebolic.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/artwork/ic_launcher.svg" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/artwork/ic_splash.svg" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/artwork/ic_treebolic.svg" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/artwork/make-artwork.sh" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/layout/actionbutton.xml" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/artwork/ic_launcher.svg" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/artwork/ic_splash.svg" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/artwork/ic_splash_backup.svg" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/artwork/ic_treebolic.svg" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/artwork/make-artwork.sh" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/layout/actionbutton.xml" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/artwork/ic_launcher.svg" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/artwork/ic_splash.svg" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/artwork/ic_treebolic.svg" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/artwork/make-artwork.sh" />
-      <change type="NEW" beforePath="" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/layout/actionbutton.xml" />
-      <change type="DELETED" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/layout-v21/toolbar.xml" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/layout-v21/toolbar.xml" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/layout-v21/toolbar.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/drawable-hdpi/ic_launcher.png" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/drawable-hdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/drawable-hdpi/ic_splash.png" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/drawable-hdpi/ic_splash.png" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/drawable-mdpi/ic_launcher.png" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/drawable-mdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/drawable-mdpi/ic_splash.png" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/drawable-mdpi/ic_splash.png" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/drawable-xhdpi/ic_launcher.png" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/drawable-xhdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/drawable-xhdpi/ic_splash.png" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/drawable-xhdpi/ic_splash.png" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/drawable-xxhdpi/ic_launcher.png" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/drawable-xxhdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/drawable-xxhdpi/ic_splash.png" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/drawable-xxhdpi/ic_splash.png" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/drawable-xxxhdpi/ic_launcher.png" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/drawable-xxxhdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/drawable-xxxhdpi/ic_splash.png" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/drawable-xxxhdpi/ic_splash.png" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/drawable-hdpi/ic_launcher.png" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/drawable-hdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/drawable-hdpi/ic_splash.png" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/drawable-hdpi/ic_splash.png" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/drawable-mdpi/ic_launcher.png" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/drawable-mdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/drawable-mdpi/ic_splash.png" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/drawable-mdpi/ic_splash.png" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/drawable-xhdpi/ic_launcher.png" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/drawable-xhdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/drawable-xhdpi/ic_splash.png" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/drawable-xhdpi/ic_splash.png" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/drawable-xxhdpi/ic_launcher.png" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/drawable-xxhdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/drawable-xxhdpi/ic_splash.png" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/drawable-xxhdpi/ic_splash.png" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/drawable-xxxhdpi/ic_launcher.png" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/drawable-xxxhdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/drawable-xxxhdpi/ic_splash.png" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/drawable-xxxhdpi/ic_splash.png" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/drawable-hdpi/ic_launcher.png" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/drawable-hdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/drawable-hdpi/ic_splash.png" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/drawable-hdpi/ic_splash.png" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/drawable-mdpi/ic_launcher.png" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/drawable-mdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/drawable-mdpi/ic_splash.png" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/drawable-mdpi/ic_splash.png" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/drawable-xhdpi/ic_launcher.png" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/drawable-xhdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/drawable-xhdpi/ic_splash.png" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/drawable-xhdpi/ic_splash.png" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/drawable-xxhdpi/ic_launcher.png" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/drawable-xxhdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/drawable-xxhdpi/ic_splash.png" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/drawable-xxhdpi/ic_splash.png" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/drawable-xxxhdpi/ic_launcher.png" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/drawable-xxxhdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/drawable-xxxhdpi/ic_splash.png" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/drawable-xxxhdpi/ic_splash.png" />
+    <list default="true" id="a1ad9775-637d-4494-8054-978db10d3578" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/.idea/misc.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/.idea/workspace.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/build.gradle" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/build.gradle" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/java/org/treebolic/dot/MainActivity.java" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/java/org/treebolic/dot/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/layout/activity_main.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/layout/fragment_main.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/layout/fragment_main.xml" />
       <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/layout/toolbar.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/layout/toolbar.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/values-fr/strings.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/values-fr/strings.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/values/colors.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/values/dimens.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/values/dimens.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/values/strings.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/values/styles-app.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/src/main/res/values/styles-app.xml" />
       <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/treebolicDotPlugin.iml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/treebolicDotPlugin.iml" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/build.gradle" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/build.gradle" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/java/org/treebolic/files/MainActivity.java" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/java/org/treebolic/files/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/java/org/treebolic/files/Settings.java" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/java/org/treebolic/files/Settings.java" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/java/org/treebolic/files/SettingsActivity.java" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/java/org/treebolic/files/SettingsActivity.java" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/layout/activity_main.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/layout/fragment_main.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/layout/fragment_main.xml" />
       <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/layout/toolbar.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/layout/toolbar.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/menu/main.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/menu/main.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/values-fr/strings.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/values-fr/strings.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/values-fr/strings_settings.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/values-fr/strings_settings.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/values/colors.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/values/dimens.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/values/dimens.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/values/strings.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/values/strings_nontranslatable.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/values/strings_nontranslatable.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/values/strings_settings.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/values/strings_settings.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/xml/pref_general.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/xml/pref_general.xml" />
+      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/values/styles-app.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/values/styles-app.xml" />
       <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/treebolicFilesPlugin.iml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/treebolicFilesPlugin.iml" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/build.gradle" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/build.gradle" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/java/org/treebolic/owl/MainActivity.java" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/java/org/treebolic/owl/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/layout/activity_main.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/layout/fragment_main.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/layout/fragment_main.xml" />
       <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/layout/toolbar.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/layout/toolbar.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/values-fr/strings.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/values-fr/strings.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/values/colors.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/values/dimens.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/values/dimens.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/values/strings.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/values/strings_nontranslatable.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/values/strings_nontranslatable.xml" />
       <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/values/styles-app.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/values/styles-app.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/values/styles.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/values/styles.xml" />
       <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/treebolicOwlPlugin.iml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/treebolicOwlPlugin.iml" />
       <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicPluginLib/treebolicPluginLib.iml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicPluginLib/treebolicPluginLib.iml" />
     </list>
@@ -585,18 +487,7 @@
     <favorites_list name="TreebolicPlugins" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Settings.java" pinned="false" current-in-tab="true">
-        <entry file="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/java/org/treebolic/files/Settings.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="37" column="57" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="GenerateSignedApkSettings">
     <option name="KEY_STORE_PATH" value="$PROJECT_DIR$/../dist/keystore/treebolic" />
@@ -15766,7 +15657,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane>
@@ -15778,6 +15668,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -16312,7 +16203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1494419021651</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="lint">
+      <created>1494522316615</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1494522316615</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -16326,22 +16224,21 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36320755" sideWeight="0.4434117" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36320755" sideWeight="0.42056075" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32264152" sideWeight="0.47828478" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32264152" sideWeight="0.47828478" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5621156" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.506986" sideWeight="0.49092907" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1131766" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924527" sideWeight="0.5762712" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection Results" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32924527" sideWeight="0.5762712" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46226415" sideWeight="0.6195712" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993644" sideWeight="0.4980864" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993644" sideWeight="0.4980864" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -16350,6 +16247,7 @@
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985157" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -16403,7 +16301,8 @@
     <MESSAGE value="trim down dependencies" />
     <MESSAGE value="fake 'provided' with aar" />
     <MESSAGE value="change process to specific on activities" />
-    <option name="LAST_COMMIT_MESSAGE" value="change process to specific on activities" />
+    <MESSAGE value="lint" />
+    <option name="LAST_COMMIT_MESSAGE" value="lint" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -16508,7 +16407,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -16649,7 +16547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -16658,7 +16555,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
@@ -16669,7 +16565,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="507">
           <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -16677,7 +16572,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -16685,7 +16579,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -16695,7 +16588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="91">
           <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
@@ -16706,7 +16598,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="8" column="69" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
@@ -16717,7 +16608,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -16725,7 +16615,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -16733,7 +16622,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
@@ -16746,9 +16634,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#784#824#0" expanded="true" />
-          </folding>
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
@@ -16759,7 +16644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
@@ -16770,9 +16654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="36" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding>
-            <element signature="e#842#855#0" expanded="false" />
-          </folding>
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
@@ -16783,7 +16664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
@@ -16792,7 +16672,7 @@
     </entry>
     <entry file="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/java/org/treebolic/files/Settings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
+        <state relative-caret-position="13">
           <caret line="37" column="57" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
           <folding />
         </state>
