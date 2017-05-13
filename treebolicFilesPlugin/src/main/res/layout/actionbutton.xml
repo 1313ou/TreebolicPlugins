@@ -22,7 +22,7 @@
 		android:layout_below="@+id/querySource"
 		android:layout_centerHorizontal="true"
 		android:layout_marginBottom="@dimen/action_button_margin"
-		android:contentDescription="@string/title_query"
+		android:contentDescription="@string/title_run"
 		android:elevation="4dp"
 		android:onClick="onClick"
 		android:visibility="invisible"

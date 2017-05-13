@@ -8,8 +8,9 @@
     <string name="requires">Treebolic Files Provider does not require extra data but is bound by files system access permissions</string>
 
     <!-- titles -->
-    <string name="title_query">Run</string>
+    <string name="title_run">Run</string>
     <string name="title_source">Source</string>
+    <string name="title_places">Places</string>
     <string name="title_demo">Demo</string>
     <string name="title_finish">Finish</string>
     <string name="title_settings">Settings</string>

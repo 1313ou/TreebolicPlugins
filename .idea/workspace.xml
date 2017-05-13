@@ -24,7 +24,17 @@
     <list default="true" id="a1ad9775-637d-4494-8054-978db10d3578" name="Default" comment="">
       <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/.idea/misc.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/.idea/workspace.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/treebolicDotPlugin.iml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/treebolicDotPlugin.iml" />
+      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/java/org/treebolic/files/MainActivity.java" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/java/org/treebolic/files/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/layout/actionbutton.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/layout/actionbutton.xml" />
+      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/menu/main.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/menu/main.xml" />
+      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/values-fr/strings.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/values-fr/strings.xml" />
+      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/values/strings.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/treebolicFilesPlugin.iml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/treebolicFilesPlugin.iml" />
+      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/values-fr/strings.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/values-fr/strings.xml" />
+      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/values/strings.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/values/strings_nontranslatable.xml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/values/strings_nontranslatable.xml" />
+      <change type="MODIFICATION" beforePath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/treebolicOwlPlugin.iml" afterPath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/treebolicOwlPlugin.iml" />
     </list>
     <ignored path="TreebolicPlugins.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -478,12 +488,12 @@
     <favorites_list name="TreebolicPlugins" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="strings_nontranslatable.xml" pinned="false" current-in-tab="true">
         <entry file="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/values/strings_nontranslatable.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="19" column="88" selection-start-line="19" selection-start-column="88" selection-end-line="19" selection-end-column="88" />
+            <state relative-caret-position="260">
+              <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -15635,8 +15645,8 @@
     <scope name="Analyzed" pattern="file[treebolicOwlPlugin]:src//*||file[treebolicDotPlugin]:src//*||file[treebolicPluginLib]:src//*||file[treebolicFilesPlugin]:src//*||file[TreebolicPlugins]:build.gradle||file[TreebolicPlugins]:local.properties||file[TreebolicPlugins]:settings.gradle||file[treebolicPluginLib]:build.gradle||file[treebolicOwlPlugin]:build.gradle||file[treebolicOwlPlugin]:lint.xml||file[treebolicFilesPlugin]:build.gradle||file[treebolicDotPlugin]:build.gradle" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="49" />
-    <option name="y" value="53" />
+    <option name="x" value="51" />
+    <option name="y" value="52" />
     <option name="width" value="1861" />
     <option name="height" value="1090" />
   </component>
@@ -15666,6 +15676,16 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -15718,18 +15738,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -15739,7 +15749,7 @@
     <property name="ExportApk.BuildType" value="release" />
     <property name="ExportApk.SignV1" value="true" />
     <property name="ExportApk.SignV2" value="true" />
-    <property name="device.picker.selection" value="avd_emu_tablet7_kitkat" />
+    <property name="device.picker.selection" value="avd_emu_phone_nougat" />
     <property name="DEBUGGABLE_DEVICE" value="emulator-5554" />
     <property name="DEBUGGABLE_PROCESS" value="org.treebolic.plugin.owl" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
@@ -15758,7 +15768,7 @@
       <recent name="/mnt/data2/devel/android-treebolic-as/Treebolic/treebolic/src/main/res/layout" />
     </key>
   </component>
-  <component name="RunManager" selected="Android App.treebolicDotPlugin">
+  <component name="RunManager" selected="Android App.treebolicFilesPlugin">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -16262,11 +16272,18 @@
       <option name="project" value="LOCAL" />
       <updated>1494615599614</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fixes default strings">
+      <created>1494615708270</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1494615708270</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="53" width="1861" height="1090" extended-state="0" />
+    <frame x="51" y="52" width="1861" height="1090" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -16274,15 +16291,15 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32032853" sideWeight="0.52831227" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.319598" sideWeight="0.53197205" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36320755" sideWeight="0.42056075" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32032853" sideWeight="0.47168773" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.319598" sideWeight="0.46802795" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5621156" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.506986" sideWeight="0.49092907" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11324904" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11230521" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -16357,7 +16374,8 @@
     <MESSAGE value="popup color" />
     <MESSAGE value="version++" />
     <MESSAGE value="fixes deploy&#10;fixes fab" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes deploy&#10;fixes fab" />
+    <MESSAGE value="fixes default strings" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes default strings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -16444,13 +16462,13 @@
       </provider>
     </entry>
     <entry file="file:///mnt/data2/android/build-cache/bfb89599943eb1733831bac15e88f7ce242ca4c5/output/res/layout/abc_screen_simple.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file:///mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/preferenceLib/build.gradle">
@@ -16552,13 +16570,13 @@
     </entry>
     <entry file="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/layout-v21/toolbar.xml" />
     <entry file="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/layout/actionbutton.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/values/colors.xml">
@@ -16578,13 +16596,13 @@
     <entry file="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/layout-v21/actionbutton.xml" />
     <entry file="file://$PROJECT_DIR$/captures/org.treebolic.plugin.owl_2017.05.10_17.36.li" />
     <entry file="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="91">
           <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/values/colors.xml">
@@ -16602,55 +16620,55 @@
       </provider>
     </entry>
     <entry file="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/layout/actionbutton.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
     </entry>
     <entry file="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/layout-v21/actionbutton.xml" />
     <entry file="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/layout-v21/toolbar.xml" />
     <entry file="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
         </state>
       </provider>
-    </entry>
-    <entry file="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/layout/toolbar.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
+    </entry>
+    <entry file="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/layout/toolbar.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
         </state>
       </provider>
-    </entry>
-    <entry file="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/layout/fragment_main.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
+    </entry>
+    <entry file="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/layout/fragment_main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="36" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
         </state>
       </provider>
-    </entry>
-    <entry file="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/layout/fragment_main.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
+    </entry>
+    <entry file="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/res/layout/fragment_main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/src/main/java/org/treebolic/files/Settings.java">
@@ -16661,13 +16679,13 @@
       </provider>
     </entry>
     <entry file="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/layout/toolbar.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="65">
           <caret line="5" column="70" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/values/styles-app.xml">
@@ -16731,8 +16749,8 @@
     </entry>
     <entry file="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/src/main/res/values/strings_nontranslatable.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="19" column="88" selection-start-line="19" selection-start-column="88" selection-end-line="19" selection-end-column="88" />
+        <state relative-caret-position="260">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
           <folding />
         </state>
       </provider>

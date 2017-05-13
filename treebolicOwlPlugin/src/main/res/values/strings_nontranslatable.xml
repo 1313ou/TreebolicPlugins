@@ -1,11 +1,15 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <string name="app_name" translatable="false">Treebolic Owl Plugin</string>
     <string name="owl" translatable="false">Owl</string>
+
+    <!-- treebolic -->
+    <string name="pref_default_source" translatable="false">pizza.owl</string>
+    <string name="pref_default_base" translatable="false">file:///storage/extSdCard/owl/</string>
+    <string name="pref_default_imagebase" translatable="false">file:///storage/extSdCard/owl/images/</string>
+    <string name="pref_default_settings" translatable="false">owl.properties</string>
 
     <!-- download -->
     <string name="pref_download_url_default" translatable="false">http://treebolic.sourceforge.net/data/owl/owl.zip</string>
-
     <string-array name="pref_download_urls" translatable="false" tools:ignore="InconsistentArrays">
         <item>@string/pref_download_url_default</item>
         <item>http://treebolic.sourceforge.net/data/owl/pizza.owl</item>
@@ -13,11 +17,5 @@
         <item>http://treebolic.sourceforge.net/data/owl/sumo.owl</item>
         <item>http://treebolic.sourceforge.net/data/owl/koala.owl</item>
     </string-array>
-
-    <!-- pref -->
-    <string name="pref_default_source" translatable="false">pizza.owl</string>
-    <string name="pref_default_base" translatable="false">file:///storage/extSdCard/owl/</string>
-    <string name="pref_default_imagebase" translatable="false">file:///storage/extSdCard/owl/images/</string>
-    <string name="pref_default_settings" translatable="false">owl.properties</string>
 
 </resources>

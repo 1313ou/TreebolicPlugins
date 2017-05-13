@@ -4,8 +4,12 @@
       tools:context="org.treebolic.files.MainActivity">
 
 	<item
-		android:id="@+id/action_query"
-		android:title="@string/title_query"
+		android:id="@+id/action_places"
+		android:title="@string/title_places"
+		app:showAsAction="ifRoom"/>
+	<item
+		android:id="@+id/action_run"
+		android:title="@string/title_run"
 		app:showAsAction="never"/>
 	<item
 		android:id="@+id/action_source"

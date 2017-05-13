@@ -8,8 +8,9 @@
 	<string name="requires">Treebolic Files Provider ne nécessite pas de données autres que celles du système de fichiers mais est limité par les permissions du sstème de fichier</string>
 
 	<!-- titles -->
-	<string name="title_query">Lancer</string>
+	<string name="title_run">Lancer</string>
 	<string name="title_source">Source</string>
+	<string name="title_places">Emplacements</string>
 	<string name="title_demo">Démo</string>
 	<string name="title_finish">Finir</string>
 	<string name="title_settings">Paramètres</string>

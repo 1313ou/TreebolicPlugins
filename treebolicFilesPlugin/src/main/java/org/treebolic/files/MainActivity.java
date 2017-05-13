@@ -113,17 +113,21 @@ public class MainActivity extends AppCompatActivity
 		final int id = item.getItemId();
 		switch (id)
 		{
-			case R.id.action_settings:
-				startActivity(new Intent(this, SettingsActivity.class));
-				return true;
-
-			case R.id.action_query:
-				final String fileUri = Settings.getStringPref(this, TreebolicIface.PREF_SOURCE);
-				MainActivity.tryStartTreebolic(this, fileUri);
+			case R.id.action_places:
+				chooseAndSave();
 				return true;
 
 			case R.id.action_source:
 				requestSource();
+				return true;
+
+			case R.id.action_settings:
+				startActivity(new Intent(this, SettingsActivity.class));
+				return true;
+
+			case R.id.action_run:
+				final String fileUri = Settings.getStringPref(this, TreebolicIface.PREF_SOURCE);
+				MainActivity.tryStartTreebolic(this, fileUri);
 				return true;
 
 			case R.id.action_demo:
@@ -153,6 +157,9 @@ public class MainActivity extends AppCompatActivity
 	@SuppressLint({"CommitPrefEdits", "ApplySharedPref"})
 	private void initialize()
 	{
+		// permissions
+		Permissions.check(this);
+
 		// test if initialized
 		final SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
 		final boolean initialized = sharedPref.getBoolean(Settings.PREF_INITIALIZED, false);
@@ -210,10 +217,49 @@ public class MainActivity extends AppCompatActivity
 		super.onActivityResult(requestCode, resultCode, returnIntent);
 	}
 
+	abstract class Runnable1
+	{
+		abstract public void run(final String arg);
+	}
+
 	/**
-	 * Choose dir to scan
+	 * Choose dir and scan
 	 */
 	private void chooseAndTryStartTreebolic()
+	{
+		choosePlace(new Runnable1()
+		{
+			@Override
+			public void run(final String arg)
+			{
+				query(arg + File.separatorChar);
+			}
+		});
+	}
+
+	/**
+	 * Choose dir and save
+	 */
+	private void chooseAndSave()
+	{
+		choosePlace(new Runnable1()
+		{
+			@Override
+			public void run(final String arg)
+			{
+				Settings.putStringPref(MainActivity.this, TreebolicIface.PREF_SOURCE, arg);
+				updateButton();
+			}
+		});
+	}
+
+	/**
+	 * Choose dir to scan
+	 *
+	 * @param runnable1 what to do
+	 */
+
+	private void choosePlace(final Runnable1 runnable1)
 	{
 		final Pair<CharSequence[], CharSequence[]> result = Storage.getDirectoriesTypesValues(this);
 		final CharSequence[] types = result.first;
@@ -255,7 +301,7 @@ public class MainActivity extends AppCompatActivity
 						final File sourceDir = new File(sourceFile);
 						if (sourceDir.exists() && sourceDir.isDirectory())
 						{
-							query(sourceFile + File.separatorChar);
+							runnable1.run(sourceFile + File.separatorChar);
 						}
 						else
 						{
