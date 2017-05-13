@@ -90,6 +90,13 @@ public class SettingsActivity extends AppCompatPreferenceActivity
 
 		// Add 'general' preferences.
 		addPreferencesFromResource(R.xml.pref_general);
+
+		// bind
+		final Preference sourcePreference = findPreference(TreebolicIface.PREF_SOURCE);
+		if (sourcePreference != null)
+		{
+			bind(sourcePreference);
+		}
 	}
 
 	@Override
@@ -166,8 +173,7 @@ public class SettingsActivity extends AppCompatPreferenceActivity
 		preference.setOnPreferenceChangeListener(SettingsActivity.listener);
 
 		// Trigger the listener immediately with the preference's current value.
-		SettingsActivity.listener.onPreferenceChange(preference,
-				PreferenceManager.getDefaultSharedPreferences(preference.getContext()).getString(preference.getKey(), ""));
+		SettingsActivity.listener.onPreferenceChange(preference, PreferenceManager.getDefaultSharedPreferences(preference.getContext()).getString(preference.getKey(), ""));
 	}
 
 	// F R A G M E N T S
