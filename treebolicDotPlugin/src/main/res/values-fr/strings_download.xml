@@ -1,5 +1,15 @@
 <resources>
 
-    <string name="title_activity_download">Téléchargement</string>
+	<string name="title_download">Télécharger</string>
+	<string name="title_activity_download">Téléchargement</string>
+
+	<!-- pref -->
+	<string name="pref_title_download">Adresse de téléchargement</string>
+	<string name="pref_description_download">Adresse (URL) de téléchargement de données supplémentaires</string>
+
+	<!-- see pref_download_urls, same order -->
+	<string-array name="pref_download_labels">
+		<item>Tous zippés</item>
+	</string-array>
 
 </resources>

@@ -21,8 +21,4 @@
     <string name="pref_title_settings">Rendu</string>
     <string name="pref_description_settings">Propriétés du rendu</string>
 
-    <!-- download -->
-    <string name="pref_title_download">Adresse de téléchargement</string>
-    <string name="pref_description_download">Adresse (URL) de téléchargement de données supplémentaires</string>
-
 </resources>

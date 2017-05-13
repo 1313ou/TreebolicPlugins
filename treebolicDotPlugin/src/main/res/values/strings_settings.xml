@@ -21,8 +21,4 @@
     <string name="pref_title_settings">Rendering</string>
     <string name="pref_description_settings">Rendering properties</string>
 
-    <!-- download -->
-    <string name="pref_title_download">Download URL</string>
-    <string name="pref_description_download">Download URL for extra data</string>
-
 </resources>

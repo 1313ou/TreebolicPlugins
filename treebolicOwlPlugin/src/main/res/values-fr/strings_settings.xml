@@ -13,7 +13,7 @@
     <string name="pref_title_base">Base</string>
     <string name="pref_description_base">URL de base</string>
 
-    <!-- imagebase -->
+    <!-- image base -->
     <string name="pref_title_imagebase">Base pour images</string>
     <string name="pref_description_imagebase">URL de base pour images</string>
 

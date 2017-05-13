@@ -1,5 +1,5 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:my="http://schemas.android.com/apk/res-auto" >
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
 
     <EditTextPreference
         android:capitalize="none"
@@ -11,6 +11,7 @@
         android:singleLine="true"
         android:summary="@string/pref_description_source"
         android:title="@string/pref_title_source" />
+
     <EditTextPreference
         android:capitalize="none"
         android:defaultValue="@string/pref_default_base"
@@ -21,6 +22,7 @@
         android:singleLine="true"
         android:summary="@string/pref_description_base"
         android:title="@string/pref_title_base" />
+
     <EditTextPreference
         android:capitalize="none"
         android:defaultValue="@string/pref_default_imagebase"
@@ -31,6 +33,7 @@
         android:singleLine="true"
         android:summary="@string/pref_description_imagebase"
         android:title="@string/pref_title_imagebase" />
+
     <EditTextPreference
         android:capitalize="none"
         android:defaultValue="@string/pref_default_settings"
@@ -42,16 +45,12 @@
         android:summary="@string/pref_description_settings"
         android:title="@string/pref_title_settings" />
 
-    <org.treebolic.preference.AutoEditTextPreference
-        android:capitalize="none"
+    <org.treebolic.preference.OpenEditTextPreference
         android:defaultValue="@string/pref_download_url_default"
-        android:inputType="textUri"
         android:key="pref_download"
-        android:maxLines="1"
-        android:selectAllOnFocus="true"
-        android:singleLine="true"
         android:summary="@string/pref_description_download"
         android:title="@string/pref_title_download"
-        my:values="@array/pref_download_urls" />
+        app:labels="@array/pref_download_labels"
+        app:values="@array/pref_download_urls"/>
 
 </PreferenceScreen>

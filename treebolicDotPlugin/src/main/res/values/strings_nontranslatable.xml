@@ -4,14 +4,15 @@
     <string name="dot" translatable="false">Dot</string>
 
     <!-- default preferences -->
-    <string name="pref_download_url_default" translatable="false">http://treebolic.sourceforge.net/data/dot/dot.zip</string>
     <string name="pref_default_source" translatable="false">test.dot</string>
     <string name="pref_default_base" translatable="false">file:///storage/sdcard/dot/</string>
     <string name="pref_default_imagebase" translatable="false">file:///storage/sdcard/dot/images/</string>
     <string name="pref_default_settings" translatable="false">test.properties</string>
 
+    <!-- download -->
+    <string name="pref_download_url_default" translatable="false">http://treebolic.sourceforge.net/data/dot/dot.zip</string>
     <string-array name="pref_download_urls" translatable="false">
-        <item>http://treebolic.sourceforge.net/data/dot/dot.zip</item>
+        <item>@string/pref_download_url_default</item>
     </string-array>
 
 </resources>
