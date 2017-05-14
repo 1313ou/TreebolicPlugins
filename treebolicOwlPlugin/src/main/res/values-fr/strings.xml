@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Treebolic Owl Plugin</string>
+    <string name="app_name">Treebolic OWL Plugin</string>
 
     <!-- provider -->
-    <string name="description">Treebolic Owl fournit un modèle à partir de fichiers au format OWL</string>
-    <string name="requires">Treebolic Owl ne nécessite pas de données autres que le fichier OWL</string>
+    <string name="description">Treebolic OWL fournit un modèle à partir de fichiers au format OWL</string>
+    <string name="requires">Treebolic OWL ne nécessite pas de données autres que le fichier OWL</string>
 
     <!-- title -->
     <string name="title_settings">Paramètres</string>

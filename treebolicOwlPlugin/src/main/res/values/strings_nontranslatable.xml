@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <string name="owl" translatable="false">Owl</string>
+    <string name="owl" translatable="false">OWL</string>
 
     <!-- treebolic -->
     <string name="pref_default_source" translatable="false">pizza.owl</string>
