@@ -1,6 +1,6 @@
 // CORE
 
-include ':treebolicLib'
+include ':treebolicLib', ':treebolicContactsPlugin'
 project(':treebolicLib').projectDir = new File('../TreebolicLib/treebolicLib/')
 
 include ':treebolicLibModel'
@@ -79,3 +79,4 @@ include ':treebolicPluginLib'
 include ':treebolicOwlPlugin'
 include ':treebolicDotPlugin'
 include ':treebolicFilesPlugin'
+
