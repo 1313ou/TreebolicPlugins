@@ -4,8 +4,8 @@
           package="org.treebolic.dot"
           android:installLocation="auto"
           android:sharedUserId="org.treebolic.userId"
-          android:versionCode="16"
-          android:versionName="1.16">
+          android:versionCode="17"
+          android:versionName="1.17">
 
 	<uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
 	<uses-permission android:name="android.permission.INTERNET"/>
