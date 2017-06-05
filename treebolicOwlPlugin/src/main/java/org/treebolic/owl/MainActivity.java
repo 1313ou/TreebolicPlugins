@@ -156,6 +156,9 @@ public class MainActivity extends AppCompatActivity
 	@SuppressLint({"CommitPrefEdits", "ApplySharedPref"})
 	private void initialize()
 	{
+		// permissions
+		Permissions.check(this);
+
 		// test if initialized
 		final SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
 		final boolean initialized = sharedPref.getBoolean(Settings.PREF_INITIALIZED, false);

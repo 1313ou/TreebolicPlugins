@@ -116,6 +116,5 @@
     <orderEntry type="module" module-name="storageLib" exported="" />
     <orderEntry type="module" module-name="preferenceLib" exported="" />
     <orderEntry type="module" module-name="treebolicIface" exported="" />
-    <orderEntry type="library" exported="" name="commons-compress-proguard-1.8.1" level="project" />
   </component>
 </module>
