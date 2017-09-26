@@ -27,6 +27,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.treebolic.AppCompatCommonActivity;
 import org.treebolic.TreebolicIface;
 import org.treebolic.filechooser.FileChooserActivity;
 import org.treebolic.plugin.Checker;
@@ -39,7 +40,7 @@ import java.io.File;
  *
  * @author Bernard Bou
  */
-public class MainActivity extends AppCompatActivity
+public class MainActivity extends AppCompatCommonActivity
 {
 	/**
 	 * Log tag

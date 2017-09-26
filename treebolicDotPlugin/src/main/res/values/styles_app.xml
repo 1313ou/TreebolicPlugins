@@ -1,13 +1,5 @@
 <resources>
 
-	<style name="CompatAppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
-		<item name="android:background">?attr/colorPrimary</item>item>
-	</style>
-
-	<style name="CompatAppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark">
-		<item name="android:background">?attr/colorPrimaryDark</item>item>
-	</style>
-
 	<style name="Description" parent="@android:style/TextAppearance.Small">
 		<item name="android:layout_height">wrap_content</item>
 		<item name="android:gravity">center</item>

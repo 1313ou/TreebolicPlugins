@@ -3,11 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/TreebolicPlugins.iml" filepath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/TreebolicPlugins.iml" />
+      <module fileurl="file:///mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/commonLib/commonLib.iml" filepath="/mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/commonLib/commonLib.iml" />
       <module fileurl="file:///mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/downloadLib/downloadLib.iml" filepath="/mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/downloadLib/downloadLib.iml" />
       <module fileurl="file:///mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/fileChooserLib/fileChooserLib.iml" filepath="/mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/fileChooserLib/fileChooserLib.iml" />
       <module fileurl="file:///mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/guideLib/guideLib.iml" filepath="/mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/guideLib/guideLib.iml" />
       <module fileurl="file:///mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/preferenceLib/preferenceLib.iml" filepath="/mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/preferenceLib/preferenceLib.iml" />
       <module fileurl="file:///mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/storageLib/storageLib.iml" filepath="/mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/storageLib/storageLib.iml" />
+      <module fileurl="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicContactsPlugin/treebolicContactsPlugin.iml" filepath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicContactsPlugin/treebolicContactsPlugin.iml" />
       <module fileurl="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicContactsPlugin/treebolicContactsPlugin.iml" filepath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicContactsPlugin/treebolicContactsPlugin.iml" />
       <module fileurl="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/treebolicDotPlugin.iml" filepath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/treebolicDotPlugin.iml" />
       <module fileurl="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/treebolicFilesPlugin.iml" filepath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/treebolicFilesPlugin.iml" />

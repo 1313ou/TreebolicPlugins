@@ -1,11 +1,9 @@
 apply plugin: 'com.android.application'
 
-//noinspection GroovyMissingReturnStatement
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.3"
 
-    //noinspection GroovyMissingReturnStatement
     defaultConfig {
         applicationId "org.treebolic.owl"
         minSdkVersion 14
@@ -26,6 +24,7 @@ dependencies {
 
     compile files('libs/treebolic-provider-owl-owlapi-min.jar')
 
+    compile project(':commonLib')
     compile project(':storageLib')
     compile project(':downloadLib')
     compile project(':fileChooserLib')

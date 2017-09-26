@@ -1,25 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- R A W -->
-
-    <!-- green -->
-    <item name="green_color" type="color">#FF86BA0C</item>
-    #
-
-    <!-- orange pink -->
-    <item name="orange_color" type="color">#FFEF7C00</item>
-    <item name="pink_color" type="color">#FFBD1789</item>
-
-    <!-- MAIN -->
-
-    <!-- app branding color for the app bar -->
-    <item name="primary" type="color">@color/orange_color</item>
-
-    <!-- darker variant for the status bar and contextual app bars -->
-    <item name="primary_dark" type="color">@color/pink_color</item>
-
-    <!-- theme UI controls like checkboxes and text fields -->
-    <item name="accent" type="color">@color/green_color</item>
+    <color name="default_primaryColor">#FFef7c00</color>
+    <color name="default_primaryDarkColor">#FFbd1789</color>
+    <color name="default_secondaryColor">#FF86ba0c</color>
 
 </resources>

@@ -22,6 +22,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.treebolic.AppCompatCommonActivity;
 import org.treebolic.TreebolicIface;
 import org.treebolic.filechooser.EntryChooser;
 import org.treebolic.filechooser.FileChooserActivity;
@@ -36,7 +37,7 @@ import java.io.IOException;
  *
  * @author Bernard Bou
  */
-public class MainActivity extends AppCompatActivity
+public class MainActivity extends AppCompatCommonActivity
 {
 	/**
 	 * Log tag

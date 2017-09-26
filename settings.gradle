@@ -29,6 +29,9 @@ project(':treebolicIface').projectDir = new File('../TreebolicLib/treebolicIface
 
 // LIBS
 
+include ':commonLib'
+project(':commonLib').projectDir = new File('../TreebolicSupportLibs/commonLib/')
+
 //include ':searchLib'
 //project(':searchLib').projectDir = new File('../TreebolicSupportLibs/searchLib/')
 

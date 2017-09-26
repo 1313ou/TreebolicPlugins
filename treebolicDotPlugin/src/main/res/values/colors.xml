@@ -1,24 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- R A W -->
-
-    <!-- pink -->
-    <item name="orange_color" type="color">#FFf4511e</item>
-
-    <!-- lt_blue -->
-    <item name="dark_teal_color" type="color">#FF004d40</item>
-    <item name="teal_color" type="color">#FF009688</item>
-
-	<!-- MAIN -->
-
-    <!-- app branding color for the app bar -->
-    <item name="primary" type="color">@color/teal_color</item>
-
-    <!-- darker variant for the status bar and contextual app bars -->
-    <item name="primary_dark" type="color">@color/dark_teal_color</item>
-
-    <!-- theme UI controls like checkboxes and text fields -->
-    <item name="accent" type="color">@color/orange_color</item>
+    <color name="default_primaryColor">#FF009688</color>
+    <color name="default_primaryDarkColor">#FF004d40</color>
+    <color name="default_secondaryColor">#FFf4511e</color>
 
 </resources>

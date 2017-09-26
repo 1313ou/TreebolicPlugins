@@ -1,11 +1,9 @@
 apply plugin: 'com.android.application'
 
-//noinspection GroovyMissingReturnStatement
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.3"
 
-    //noinspection GroovyMissingReturnStatement
     defaultConfig {
         applicationId "org.treebolic.dot"
         minSdkVersion 14
@@ -27,6 +25,7 @@ dependencies {
     compile project(':treebolicGraph')
     compile files('libs/treebolic-provider-graphviz.jar')
 
+    compile project(':commonLib')
     compile project(':storageLib')
     compile project(':downloadLib')
     compile project(':fileChooserLib')
