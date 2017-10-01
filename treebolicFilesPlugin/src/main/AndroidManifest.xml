@@ -32,14 +32,14 @@
 			android:label="@string/title_activity_settings"
 			android:parentActivityName=".MainActivity"
 			android:process="org.treebolic.plugin.files"
-			tools:ignore="UnusedAttribute">
+			tools:targetApi="jelly_bean">
 		</activity>
 
 		<activity
 			android:name="org.treebolic.filechooser.FileChooserActivity"
-			android:exported="false"
+			android:parentActivityName=".MainActivity"
 			android:process="org.treebolic.plugin.files"
-			tools:ignore="MissingRegistered">
+			tools:targetApi="jelly_bean">
 		</activity>
 
 	</application>

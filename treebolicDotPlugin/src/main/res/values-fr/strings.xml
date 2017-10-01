@@ -2,10 +2,8 @@
 <resources>
 
     <!-- provider -->
-    <string name="description">Treebolic Dot fournit un modèle à partie de fichiers au format Dot</string>
-    <string name="requires">Treebolic Dot ne nécessite pas de données en dehors des fichiers Dot</string>
 
-    <!-- title -->
+	<!-- title -->
     <string name="title_settings">Paramètres</string>
     <string name="title_activity_app_settings">Application</string>
     <string name="title_query">Lancer</string>

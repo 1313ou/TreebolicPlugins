@@ -201,6 +201,7 @@ public class MainActivity extends AppCompatCommonActivity
 	 *
 	 * @param source source
 	 */
+	@SuppressWarnings("UnusedReturnValue")
 	private boolean query(final String source)
 	{
 		return query(source, Settings.getStringPref(this, TreebolicIface.PREF_BASE), Settings.getStringPref(this, TreebolicIface.PREF_IMAGEBASE), Settings.getStringPref(this, TreebolicIface.PREF_SETTINGS));
@@ -215,6 +216,7 @@ public class MainActivity extends AppCompatCommonActivity
 	 * @param settings  settings
 	 * @return true if query was made
 	 */
+	@SuppressWarnings("WeakerAccess")
 	protected boolean query(final String source, final String base, final String imageBase, final String settings)
 	{
 		if (source == null || source.isEmpty())
@@ -332,6 +334,7 @@ public class MainActivity extends AppCompatCommonActivity
 	 * @param imagebase image base
 	 * @param settings  settings
 	 */
+	@SuppressWarnings("WeakerAccess")
 	static public void tryStartTreebolic(final Context context, final String source, final String base, final String imagebase, final String settings)
 	{
 		final Intent intent = MainActivity.makeTreebolicIntent(context, source, base, imagebase, settings);
@@ -363,6 +366,7 @@ public class MainActivity extends AppCompatCommonActivity
 	 * @param settings  settings
 	 * @return intent
 	 */
+	@SuppressWarnings("WeakerAccess")
 	static public Intent makeTreebolicIntent(final Context context, final String source, final String base, final String imageBase, final String settings)
 	{
 		// parent activity to return to
@@ -431,7 +435,7 @@ public class MainActivity extends AppCompatCommonActivity
 	 *
 	 * @param view view
 	 */
-	public void onClick(final View view)
+	public void onClick(@SuppressWarnings("UnusedParameters") final View view)
 	{
 		query();
 	}

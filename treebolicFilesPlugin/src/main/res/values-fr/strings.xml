@@ -4,8 +4,6 @@
 	<string name="files">Files</string>
 
 	<!-- provider -->
-	<string name="description">Treebolic Files fournit un modèle à partir du système de fichiers</string>
-	<string name="requires">Treebolic Files Provider ne nécessite pas de données autres que celles du système de fichiers mais est limité par les permissions du sstème de fichier</string>
 
 	<!-- titles -->
 	<string name="title_run">Lancer</string>

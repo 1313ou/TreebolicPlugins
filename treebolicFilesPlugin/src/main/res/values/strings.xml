@@ -4,10 +4,8 @@
     <string name="files">Files</string>
 
     <!-- provider -->
-    <string name="description">Treebolic Files provides a model from the file system</string>
-    <string name="requires">Treebolic Files Provider does not require extra data but is bound by files system access permissions</string>
 
-    <!-- titles -->
+	<!-- titles -->
     <string name="title_run">Run</string>
     <string name="title_source">Source</string>
     <string name="title_places">Places</string>

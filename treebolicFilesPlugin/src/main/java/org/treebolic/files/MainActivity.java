@@ -262,7 +262,7 @@ public class MainActivity extends AppCompatCommonActivity
 
 	private void choosePlace(final Runnable1 runnable1)
 	{
-		final Pair<CharSequence[], CharSequence[]> result = Storage.getDirectoriesTypesValues(this);
+		final Pair<CharSequence[], CharSequence[]> result = Storage.getDirectoriesTypesValues();
 		final CharSequence[] types = result.first;
 		final CharSequence[] values = result.second;
 
@@ -343,6 +343,7 @@ public class MainActivity extends AppCompatCommonActivity
 	 *
 	 * @param source source
 	 */
+	@SuppressWarnings("UnusedReturnValue")
 	private boolean query(final String source)
 	{
 		if (source == null || source.isEmpty())
@@ -374,6 +375,7 @@ public class MainActivity extends AppCompatCommonActivity
 	 * @param context context
 	 * @param root    root directory to explore
 	 */
+	@SuppressWarnings("WeakerAccess")
 	static public void tryStartTreebolic(final Context context, final String root)
 	{
 		final File file = new File(root);
@@ -390,6 +392,7 @@ public class MainActivity extends AppCompatCommonActivity
 	 * @param source  source
 	 * @return intent
 	 */
+	@SuppressWarnings("WeakerAccess")
 	static public Intent makeTreebolicIntent(final Context context, final String source)
 	{
 		// parent activity to return to
@@ -455,7 +458,7 @@ public class MainActivity extends AppCompatCommonActivity
 	 *
 	 * @param view view
 	 */
-	public void onClick(final View view)
+	public void onClick(@SuppressWarnings("UnusedParameters") final View view)
 	{
 		query();
 	}

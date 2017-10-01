@@ -1,2 +1,9 @@
-<manifest package="org.treebolic.plugin">
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="org.treebolic.plugin">
+
+	<application
+		android:process="org.treebolic">
+	</application>
+
 </manifest>

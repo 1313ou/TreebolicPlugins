@@ -38,7 +38,7 @@ public class Checker
 		}
 	}
 
-	static private boolean isAppInstalled(final String uri, final Context context)
+	static private boolean isAppInstalled(@SuppressWarnings("SameParameterValue") final String uri, final Context context)
 	{
 		final PackageManager packageManager = context.getPackageManager();
 		boolean isInstalled;

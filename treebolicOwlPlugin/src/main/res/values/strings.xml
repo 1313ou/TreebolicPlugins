@@ -4,10 +4,8 @@
     <string name="app_name">Treebolic OWL Plugin</string>
 
     <!-- provider -->
-    <string name="description">Treebolic OWL provides a model from OWL files</string>
-    <string name="requires">Treebolic OWL does not require extra data besides the OWL files</string>
 
-    <!-- title -->
+	<!-- title -->
     <string name="title_settings">Settings</string>
     <string name="title_activity_app_settings">Application</string>
     <string name="title_query">Run</string>

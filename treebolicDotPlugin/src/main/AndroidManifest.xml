@@ -36,7 +36,7 @@
 			android:label="@string/title_activity_settings"
 			android:parentActivityName=".MainActivity"
 			android:process="org.treebolic.plugin.dot"
-			tools:ignore="UnusedAttribute">
+			tools:targetApi="jelly_bean">
 		</activity>
 
 		<activity
@@ -44,14 +44,14 @@
 			android:label="@string/title_activity_download"
 			android:parentActivityName=".MainActivity"
 			android:process="org.treebolic.plugin.dot"
-			tools:ignore="UnusedAttribute">
+			tools:targetApi="jelly_bean">
 		</activity>
 
 		<activity
 			android:name="org.treebolic.filechooser.FileChooserActivity"
-			android:exported="false"
+			android:parentActivityName=".MainActivity"
 			android:process="org.treebolic.plugin.dot"
-			tools:ignore="MissingRegistered">
+			tools:targetApi="jelly_bean">
 		</activity>
 
 	</application>

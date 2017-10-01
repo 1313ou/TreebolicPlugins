@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="EntryPointsManager">
-    <entry_points version="2.0" />
+    <entry_points version="2.0">
+      <entry_point TYPE="implicit.constructor" FQNAME="org.treebolic.owl.DownloadActivity" />
+      <entry_point TYPE="implicit.constructor" FQNAME="org.treebolic.dot.DownloadActivity" />
+      <entry_point TYPE="method" FQNAME="org.treebolic.owl.MainActivity void tryStartTreebolic(android.content.Context context, android.net.Uri uri)" />
+      <entry_point TYPE="method" FQNAME="org.treebolic.files.MainActivity void tryStartTreebolic(android.content.Context context)" />
+      <entry_point TYPE="method" FQNAME="org.treebolic.dot.MainActivity void tryStartTreebolic(android.content.Context context, android.net.Uri uri)" />
+      <entry_point TYPE="method" FQNAME="org.treebolic.owl.MainActivity void onClick(android.view.View view)" />
+      <entry_point TYPE="implicit.constructor" FQNAME="org.treebolic.owl.MainActivity" />
+      <entry_point TYPE="method" FQNAME="org.treebolic.files.MainActivity void onClick(android.view.View view)" />
+      <entry_point TYPE="implicit.constructor" FQNAME="org.treebolic.files.MainActivity" />
+      <entry_point TYPE="method" FQNAME="org.treebolic.dot.MainActivity void onClick(android.view.View view)" />
+      <entry_point TYPE="implicit.constructor" FQNAME="org.treebolic.dot.MainActivity" />
+      <entry_point TYPE="method" FQNAME="org.treebolic.owl.ProviderData java.lang.String getStyle()" />
+      <entry_point TYPE="method" FQNAME="org.treebolic.owl.ProviderData java.lang.String getUrlScheme()" />
+      <entry_point TYPE="method" FQNAME="org.treebolic.owl.ProviderData java.lang.String getExtensions()" />
+      <entry_point TYPE="method" FQNAME="org.treebolic.owl.ProviderData java.lang.String getMimetype()" />
+      <entry_point TYPE="method" FQNAME="org.treebolic.owl.ProviderData java.lang.String[] getProviderClasses()" />
+      <entry_point TYPE="implicit.constructor" FQNAME="org.treebolic.owl.ProviderData" />
+      <entry_point TYPE="method" FQNAME="org.treebolic.files.ProviderData java.lang.String getStyle()" />
+      <entry_point TYPE="method" FQNAME="org.treebolic.files.ProviderData java.lang.String getUrlScheme()" />
+      <entry_point TYPE="method" FQNAME="org.treebolic.files.ProviderData java.lang.String getExtensions()" />
+      <entry_point TYPE="method" FQNAME="org.treebolic.files.ProviderData java.lang.String getMimetype()" />
+      <entry_point TYPE="method" FQNAME="org.treebolic.files.ProviderData java.lang.String[] getProviderClasses()" />
+      <entry_point TYPE="implicit.constructor" FQNAME="org.treebolic.files.ProviderData" />
+      <entry_point TYPE="method" FQNAME="org.treebolic.dot.ProviderData java.lang.String getStyle()" />
+      <entry_point TYPE="method" FQNAME="org.treebolic.dot.ProviderData java.lang.String getUrlScheme()" />
+      <entry_point TYPE="method" FQNAME="org.treebolic.dot.ProviderData java.lang.String getExtensions()" />
+      <entry_point TYPE="method" FQNAME="org.treebolic.dot.ProviderData java.lang.String getMimetype()" />
+      <entry_point TYPE="method" FQNAME="org.treebolic.dot.ProviderData java.lang.String[] getProviderClasses()" />
+      <entry_point TYPE="implicit.constructor" FQNAME="org.treebolic.dot.ProviderData" />
+      <entry_point TYPE="implicit.constructor" FQNAME="org.treebolic.owl.SettingsActivity" />
+      <entry_point TYPE="implicit.constructor" FQNAME="org.treebolic.files.SettingsActivity" />
+      <entry_point TYPE="implicit.constructor" FQNAME="org.treebolic.dot.SettingsActivity" />
+    </entry_points>
   </component>
   <component name="NullableNotNullManager">
     <option name="myDefaultNullable" value="android.support.annotation.Nullable" />

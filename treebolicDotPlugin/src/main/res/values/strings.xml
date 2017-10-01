@@ -2,8 +2,6 @@
 <resources>
 
     <!-- provider -->
-    <string name="description">Treebolic Dot provides a model from Dot files</string>
-    <string name="requires">Treebolic Dot does not require extra data besides the Dot files</string>
 
     <!-- title -->
     <string name="title_settings">Settings</string>
