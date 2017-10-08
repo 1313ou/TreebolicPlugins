@@ -50,7 +50,7 @@ public class DownloadActivity extends org.treebolic.download.DownloadActivity
 	@Override
 	protected boolean process(final InputStream inputStream) throws IOException
 	{
-		if(this.expandArchive)
+		if (this.expandArchive)
 		{
 			Deploy.expand(inputStream, Storage.getTreebolicStorage(this), false);
 			return true;

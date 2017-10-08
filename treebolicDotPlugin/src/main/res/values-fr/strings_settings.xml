@@ -1,24 +1,24 @@
 <resources>
 
-    <string name="title_activity_settings">Paramètres</string>
+	<string name="title_activity_settings">Paramètres</string>
 
-    <!-- General settings -->
-    <string name="pref_header_general">Général</string>
+	<!-- General settings -->
+	<string name="pref_header_general">Général</string>
 
-    <!-- source -->
-    <string name="pref_title_source">Source</string>
-    <string name="pref_description_source">Source (chaîne de caractères)</string>
+	<!-- source -->
+	<string name="pref_title_source">Source</string>
+	<string name="pref_description_source">Source (chaîne de caractères)</string>
 
-    <!-- base -->
-    <string name="pref_title_base">Base</string>
-    <string name="pref_description_base">URL de base</string>
+	<!-- base -->
+	<string name="pref_title_base">Base</string>
+	<string name="pref_description_base">URL de base</string>
 
-    <!-- image base -->
-    <string name="pref_title_imagebase">Base pour images</string>
-    <string name="pref_description_imagebase">URL de base pour images</string>
+	<!-- image base -->
+	<string name="pref_title_imagebase">Base pour images</string>
+	<string name="pref_description_imagebase">URL de base pour images</string>
 
-    <!-- settings -->
-    <string name="pref_title_settings">Rendu</string>
-    <string name="pref_description_settings">Propriétés du rendu</string>
+	<!-- settings -->
+	<string name="pref_title_settings">Rendu</string>
+	<string name="pref_description_settings">Propriétés du rendu</string>
 
 </resources>

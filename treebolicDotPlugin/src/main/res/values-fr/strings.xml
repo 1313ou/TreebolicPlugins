@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- provider -->
+	<!-- provider -->
 
 	<!-- title -->
-    <string name="title_settings">Paramètres</string>
-    <string name="title_activity_app_settings">Application</string>
-    <string name="title_query">Lancer</string>
-    <string name="title_source">Source</string>
-    <string name="title_demo">Démo</string>
-    <string name="title_finish">Finir</string>
+	<string name="title_settings">Paramètres</string>
+	<string name="title_activity_app_settings">Application</string>
+	<string name="title_query">Lancer</string>
+	<string name="title_source">Source</string>
+	<string name="title_demo">Démo</string>
+	<string name="title_finish">Finir</string>
 
-    <!-- ok/errors -->
-    <string name="fail_nullquery">Requête nulle</string>
+	<!-- ok/errors -->
+	<string name="fail_nullquery">Requête nulle</string>
 
 </resources>
