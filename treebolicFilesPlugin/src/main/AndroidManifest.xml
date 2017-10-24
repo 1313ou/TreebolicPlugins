@@ -33,6 +33,9 @@
 			android:parentActivityName=".MainActivity"
 			android:process="org.treebolic.plugin.files"
 			tools:targetApi="jelly_bean">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity" />
 		</activity>
 
 		<activity
@@ -40,6 +43,9 @@
 			android:parentActivityName=".MainActivity"
 			android:process="org.treebolic.plugin.files"
 			tools:targetApi="jelly_bean">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity" />
 		</activity>
 
 	</application>
