@@ -89,11 +89,10 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/check-manifest" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/classes" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-safeguard" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/javaPrecompile" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/jniLibs" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/lint" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/manifests" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/pre-dexed" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/prebuild" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/res" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/rs" />
@@ -113,7 +112,7 @@
     <orderEntry type="library" name="android.arch.lifecycle:common:1.0.3@jar" level="project" />
     <orderEntry type="library" name="com.android.support:support-annotations:27.0.2@jar" level="project" />
     <orderEntry type="library" name="com.android.support:design-27.0.2" level="project" />
-    <orderEntry type="library" name="com.android.support:support-v13-27.0.1" level="project" />
+    <orderEntry type="library" name="com.android.support:support-v13-27.0.2" level="project" />
     <orderEntry type="library" name="__local_aars__:/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/libs/treebolic-provider-files.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="android.arch.core:common:1.0.0@jar" level="project" />
     <orderEntry type="library" name="com.android.support:support-core-ui-27.0.2" level="project" />
