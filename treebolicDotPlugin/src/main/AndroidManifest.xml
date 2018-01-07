@@ -3,9 +3,7 @@
           xmlns:tools="http://schemas.android.com/tools"
           package="org.treebolic.dot"
           android:installLocation="auto"
-          android:sharedUserId="org.treebolic.userId"
-          android:versionCode="22"
-          android:versionName="1.22">
+          android:sharedUserId="org.treebolic.userId">
 
 	<uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
 	<uses-permission android:name="android.permission.INTERNET"/>

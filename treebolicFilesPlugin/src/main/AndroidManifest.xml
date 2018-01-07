@@ -2,9 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
           package="org.treebolic.files"
-          android:sharedUserId="org.treebolic.userId"
-          android:versionCode="22"
-          android:versionName="1.22">
+          android:sharedUserId="org.treebolic.userId">
 
 	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 

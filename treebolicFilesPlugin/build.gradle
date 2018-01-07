@@ -1,35 +1,52 @@
 apply plugin: 'com.android.application'
 
+def keystorePropertiesFile = rootProject.file("keystore.properties")
+def keystoreProperties = new Properties()
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
 android {
-    compileSdkVersion 27
+
+    compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {
         applicationId "org.treebolic.files"
-        minSdkVersion 14
-        targetSdkVersion 27
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        treebolic {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+         }
     }
 
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.treebolic
+            versionNameSuffix 'signed'
         }
     }
 }
 
 dependencies {
-    compile project(':treebolicPluginLib')
-    compile project(':treebolicIface')
-    compile project(':commonLib')
+    implementation project(':treebolicPluginLib')
+    implementation project(':treebolicIface')
+    implementation files('libs/treebolic-provider-files.jar')
 
-    compile files('libs/treebolic-provider-files.jar')
+    implementation project(':commonLib')
+    implementation project(':storageLib')
+    implementation project(':fileChooserLib')
+    implementation project(':preferenceLib')
 
-    compile project(':commonLib')
-    compile project(':storageLib')
-    compile project(':fileChooserLib')
-    compile project(':preferenceLib')
-
-    compile 'com.android.support:appcompat-v7:27.0.2'
-    compile 'com.android.support:support-v4:27.0.2'
-    compile 'com.android.support:design:27.0.2'
+    implementation 'com.android.support:appcompat-v7:27.0.2'
+    implementation 'com.android.support:support-v4:27.0.2'
+    implementation 'com.android.support:design:27.0.2'
 }
