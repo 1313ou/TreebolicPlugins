@@ -297,14 +297,10 @@ public class MainActivity extends AppCompatCommonActivity
 		try
 		{
 			// choose bundle entry
-			EntryChooser.choose(this, new File(archiveUri.getPath()), new EntryChooser.Callback()
+			EntryChooser.choose(this, new File(archiveUri.getPath()), zipEntry ->
 			{
-				@Override
-				public void onSelect(final String zipEntry)
-				{
-					final String base = "jar:" + archiveUri.toString() + "!/";
-					MainActivity.tryStartTreebolic(MainActivity.this, zipEntry, base, Settings.getStringPref(MainActivity.this, TreebolicIface.PREF_IMAGEBASE), Settings.getStringPref(MainActivity.this, TreebolicIface.PREF_SETTINGS));
-				}
+				final String base = "jar:" + archiveUri.toString() + "!/";
+				MainActivity.tryStartTreebolic(MainActivity.this, zipEntry, base, Settings.getStringPref(MainActivity.this, TreebolicIface.PREF_IMAGEBASE), Settings.getStringPref(MainActivity.this, TreebolicIface.PREF_SETTINGS));
 			});
 		}
 		catch (final IOException e)
@@ -436,7 +432,7 @@ public class MainActivity extends AppCompatCommonActivity
 	 *
 	 * @param view view
 	 */
-	public void onClick(@SuppressWarnings("UnusedParameters") final View view)
+	public void onClick(final View view)
 	{
 		query();
 	}

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+	<!-- base colors override -->
 	<color name="default_primaryColor">#FFf44336</color>
 	<color name="default_primaryDarkColor">#FFb71c1c</color>
 	<color name="default_secondaryColor">#FF81c784</color>

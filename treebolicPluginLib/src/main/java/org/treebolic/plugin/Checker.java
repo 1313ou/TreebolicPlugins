@@ -32,7 +32,7 @@ public class Checker
 		{
 			context.startActivity(goToMarket);
 		}
-		catch (final ActivityNotFoundException e)
+		catch (final ActivityNotFoundException ignored)
 		{
 			Toast.makeText(context, R.string.market_fail, Toast.LENGTH_LONG).show();
 		}
@@ -47,7 +47,7 @@ public class Checker
 			packageManager.getPackageInfo(uri, PackageManager.GET_ACTIVITIES);
 			isInstalled = true;
 		}
-		catch (final PackageManager.NameNotFoundException e)
+		catch (final PackageManager.NameNotFoundException ignored)
 		{
 			isInstalled = false;
 		}
