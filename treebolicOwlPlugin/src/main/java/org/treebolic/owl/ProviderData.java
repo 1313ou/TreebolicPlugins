@@ -5,7 +5,7 @@ public class ProviderData
 {
 	public static String[] getProviderClasses()
 	{
-		return new String[] { "treebolic.provider.owl.owlapi.Provider" };
+		return new String[]{"treebolic.provider.owl.owlapi.Provider"};
 	}
 
 	@SuppressWarnings("SameReturnValue")

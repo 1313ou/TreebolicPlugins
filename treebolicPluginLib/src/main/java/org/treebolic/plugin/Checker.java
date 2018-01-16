@@ -5,13 +5,14 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.support.annotation.NonNull;
 import android.widget.Toast;
 
 public class Checker
 {
 	static private final String APP = "org.treebolic";
 
-	static public void check(final Context context)
+	static public void check(@NonNull final Context context)
 	{
 		final boolean isInstalled = Checker.isAppInstalled(Checker.APP, context);
 		if (!isInstalled)
@@ -25,20 +26,20 @@ public class Checker
 		// context.startActivity(launchIntent);
 	}
 
-	static private void install(final Context context)
+	static private void install(@NonNull final Context context)
 	{
 		final Intent goToMarket = new Intent(Intent.ACTION_VIEW).setData(Uri.parse("market://details?id=" + Checker.APP));
 		try
 		{
 			context.startActivity(goToMarket);
 		}
-		catch (final ActivityNotFoundException ignored)
+		catch (@NonNull final ActivityNotFoundException ignored)
 		{
 			Toast.makeText(context, R.string.market_fail, Toast.LENGTH_LONG).show();
 		}
 	}
 
-	static private boolean isAppInstalled(@SuppressWarnings("SameParameterValue") final String uri, final Context context)
+	static private boolean isAppInstalled(@SuppressWarnings("SameParameterValue") final String uri, @NonNull final Context context)
 	{
 		final PackageManager packageManager = context.getPackageManager();
 		boolean isInstalled;
@@ -47,7 +48,7 @@ public class Checker
 			packageManager.getPackageInfo(uri, PackageManager.GET_ACTIVITIES);
 			isInstalled = true;
 		}
-		catch (final PackageManager.NameNotFoundException ignored)
+		catch (@NonNull final PackageManager.NameNotFoundException ignored)
 		{
 			isInstalled = false;
 		}

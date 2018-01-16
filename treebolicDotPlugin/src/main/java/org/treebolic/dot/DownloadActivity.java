@@ -1,6 +1,7 @@
 package org.treebolic.dot;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.view.View;
 import android.widget.Toast;
 
@@ -48,7 +49,7 @@ public class DownloadActivity extends org.treebolic.download.DownloadActivity
 	}
 
 	@Override
-	protected boolean process(final InputStream inputStream) throws IOException
+	protected boolean process(@NonNull final InputStream inputStream) throws IOException
 	{
 		if (this.expandArchive)
 		{

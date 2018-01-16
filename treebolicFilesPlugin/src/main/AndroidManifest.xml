@@ -34,7 +34,7 @@
 			tools:targetApi="jelly_bean">
 			<meta-data
 				android:name="android.support.PARENT_ACTIVITY"
-				android:value=".MainActivity" />
+				android:value=".MainActivity"/>
 		</activity>
 
 		<activity
@@ -44,7 +44,7 @@
 			tools:targetApi="jelly_bean">
 			<meta-data
 				android:name="android.support.PARENT_ACTIVITY"
-				android:value=".MainActivity" />
+				android:value=".MainActivity"/>
 		</activity>
 
 	</application>

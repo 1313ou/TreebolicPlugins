@@ -1,12 +1,12 @@
 <resources>
 
-    <string name="title_activity_settings">Settings</string>
+	<string name="title_activity_settings">Settings</string>
 
-    <!-- General settings -->
-    <string name="pref_header_general">General</string>
+	<!-- General settings -->
+	<string name="pref_header_general">General</string>
 
-    <!-- source -->
-    <string name="pref_title_source">Source</string>
-    <string name="pref_description_source">Source string</string>
+	<!-- source -->
+	<string name="pref_title_source">Source</string>
+	<string name="pref_description_source">Source string</string>
 
 </resources>

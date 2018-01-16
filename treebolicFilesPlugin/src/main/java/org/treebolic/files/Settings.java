@@ -8,6 +8,8 @@ import android.content.SharedPreferences.Editor;
 import android.net.Uri;
 import android.os.Build;
 import android.preference.PreferenceManager;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 
 import org.treebolic.TreebolicIface;
 import org.treebolic.storage.Storage;
@@ -28,8 +30,7 @@ public class Settings
 	/**
 	 * Set default initial settings
 	 *
-	 * @param context
-	 *            context
+	 * @param context context
 	 */
 	@SuppressLint({"CommitPrefEdits", "ApplySharedPref"})
 	static public void setDefaults(final Context context)
@@ -47,12 +48,11 @@ public class Settings
 	/**
 	 * Get string preference
 	 *
-	 * @param context
-	 *            context
-	 * @param key
-	 *            key
+	 * @param context context
+	 * @param key     key
 	 * @return value
 	 */
+	@Nullable
 	static public String getStringPref(final Context context, @SuppressWarnings("SameParameterValue") final String key)
 	{
 		final SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(context);
@@ -62,12 +62,9 @@ public class Settings
 	/**
 	 * Put string preference
 	 *
-	 * @param context
-	 *            context
-	 * @param key
-	 *            key
-	 * @param value
-	 *            value
+	 * @param context context
+	 * @param key     key
+	 * @param value   value
 	 */
 	@SuppressLint({"CommitPrefEdits", "ApplySharedPref"})
 	static public void putStringPref(final Context context, @SuppressWarnings("SameParameterValue") final String key, final String value)
@@ -81,12 +78,10 @@ public class Settings
 	/**
 	 * Application settings
 	 *
-	 * @param context
-	 *            context
-	 * @param pkgName
-	 *            package name
+	 * @param context context
+	 * @param pkgName package name
 	 */
-	static public void applicationSettings(final Context context, @SuppressWarnings("SameParameterValue") final String pkgName)
+	static public void applicationSettings(@NonNull final Context context, @SuppressWarnings("SameParameterValue") final String pkgName)
 	{
 		final int apiLevel = Build.VERSION.SDK_INT;
 		final Intent intent = new Intent();

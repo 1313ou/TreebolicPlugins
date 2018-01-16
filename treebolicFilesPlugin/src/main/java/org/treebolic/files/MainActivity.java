@@ -10,6 +10,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -55,7 +56,7 @@ public class MainActivity extends AppCompatCommonActivity
 	// L I F E C Y C L E
 
 	@Override
-	protected void onCreate(final Bundle savedInstanceState)
+	protected void onCreate(@Nullable final Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 
@@ -106,7 +107,7 @@ public class MainActivity extends AppCompatCommonActivity
 	}
 
 	@Override
-	public boolean onOptionsItemSelected(final MenuItem item)
+	public boolean onOptionsItemSelected(@NonNull final MenuItem item)
 	{
 		// Handle action bar item clicks here. The action bar will
 		// automatically handle clicks on the Home/Up button, so long
@@ -128,6 +129,7 @@ public class MainActivity extends AppCompatCommonActivity
 
 			case R.id.action_run:
 				final String fileUri = Settings.getStringPref(this, TreebolicIface.PREF_SOURCE);
+				assert fileUri != null;
 				MainActivity.tryStartTreebolic(this, fileUri);
 				return true;
 
@@ -191,7 +193,7 @@ public class MainActivity extends AppCompatCommonActivity
 	}
 
 	@Override
-	protected void onActivityResult(final int requestCode, final int resultCode, final Intent returnIntent)
+	protected void onActivityResult(final int requestCode, final int resultCode, @NonNull final Intent returnIntent)
 	{
 		// handle selection of input by other activity which returns selected input
 		if (resultCode == AppCompatActivity.RESULT_OK)
@@ -260,7 +262,7 @@ public class MainActivity extends AppCompatCommonActivity
 	 * @param runnable1 what to do
 	 */
 
-	private void choosePlace(final Runnable1 runnable1)
+	private void choosePlace(@NonNull final Runnable1 runnable1)
 	{
 		final Pair<CharSequence[], CharSequence[]> result = Storage.getDirectoriesTypesValues();
 		final CharSequence[] types = result.first;
@@ -338,7 +340,7 @@ public class MainActivity extends AppCompatCommonActivity
 	 * @param source source
 	 */
 	@SuppressWarnings("UnusedReturnValue")
-	private boolean query(final String source)
+	private boolean query(@Nullable final String source)
 	{
 		if (source == null || source.isEmpty())
 		{
@@ -357,9 +359,10 @@ public class MainActivity extends AppCompatCommonActivity
 	 *
 	 * @param context context
 	 */
-	static public void tryStartTreebolic(final Context context)
+	static public void tryStartTreebolic(@NonNull final Context context)
 	{
 		final String root = Settings.getStringPref(context, TreebolicIface.PREF_SOURCE);
+		assert root != null;
 		tryStartTreebolic(context, root);
 	}
 
@@ -370,7 +373,7 @@ public class MainActivity extends AppCompatCommonActivity
 	 * @param root    root directory to explore
 	 */
 	@SuppressWarnings("WeakerAccess")
-	static public void tryStartTreebolic(final Context context, final String root)
+	static public void tryStartTreebolic(@NonNull final Context context, @NonNull final String root)
 	{
 		final File file = new File(root);
 		final String source = file.getAbsolutePath();
@@ -386,8 +389,9 @@ public class MainActivity extends AppCompatCommonActivity
 	 * @param source  source
 	 * @return intent
 	 */
+	@NonNull
 	@SuppressWarnings("WeakerAccess")
-	static public Intent makeTreebolicIntent(final Context context, final String source)
+	static public Intent makeTreebolicIntent(@NonNull final Context context, final String source)
 	{
 		// parent activity to return to
 		final Intent parentIntent = new Intent();
@@ -434,7 +438,7 @@ public class MainActivity extends AppCompatCommonActivity
 	 *
 	 * @return true if source qualifies
 	 */
-	private boolean sourceQualifies(final String source)
+	private boolean sourceQualifies(@Nullable final String source)
 	{
 		if (source != null && !source.isEmpty())
 		{

@@ -9,6 +9,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -53,7 +54,7 @@ public class MainActivity extends AppCompatCommonActivity
 	// L I F E C Y C L E
 
 	@Override
-	protected void onCreate(final Bundle savedInstanceState)
+	protected void onCreate(@Nullable final Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 
@@ -104,7 +105,7 @@ public class MainActivity extends AppCompatCommonActivity
 	}
 
 	@Override
-	public boolean onOptionsItemSelected(final MenuItem item)
+	public boolean onOptionsItemSelected(@NonNull final MenuItem item)
 	{
 		// Handle action bar item clicks here. The action bar will
 		// automatically handle clicks on the Home/Up button, so long
@@ -218,7 +219,7 @@ public class MainActivity extends AppCompatCommonActivity
 	 * @return true if query was made
 	 */
 	@SuppressWarnings("WeakerAccess")
-	protected boolean query(final String source, final String base, final String imageBase, final String settings)
+	protected boolean query(@Nullable final String source, final String base, final String imageBase, final String settings)
 	{
 		if (source == null || source.isEmpty())
 		{
@@ -247,7 +248,7 @@ public class MainActivity extends AppCompatCommonActivity
 	}
 
 	@Override
-	protected void onActivityResult(final int requestCode, final int resultCode, final Intent returnIntent)
+	protected void onActivityResult(final int requestCode, final int resultCode, @NonNull final Intent returnIntent)
 	{
 		switch (requestCode)
 		{
@@ -292,7 +293,7 @@ public class MainActivity extends AppCompatCommonActivity
 	 *
 	 * @param archiveUri archive uri
 	 */
-	private void tryStartTreebolicBundle(final Uri archiveUri)
+	private void tryStartTreebolicBundle(@NonNull final Uri archiveUri)
 	{
 		try
 		{
@@ -303,7 +304,7 @@ public class MainActivity extends AppCompatCommonActivity
 				MainActivity.tryStartTreebolic(MainActivity.this, zipEntry, base, Settings.getStringPref(MainActivity.this, TreebolicIface.PREF_IMAGEBASE), Settings.getStringPref(MainActivity.this, TreebolicIface.PREF_SETTINGS));
 			});
 		}
-		catch (final IOException e)
+		catch (@NonNull final IOException e)
 		{
 			Log.d(MainActivity.TAG, "Failed to start treebolic from bundle uri " + archiveUri, e);
 		}
@@ -315,7 +316,7 @@ public class MainActivity extends AppCompatCommonActivity
 	 * @param context context
 	 * @param uri     uri of Owl file
 	 */
-	static public void tryStartTreebolic(final Context context, final Uri uri)
+	static public void tryStartTreebolic(@NonNull final Context context, @NonNull final Uri uri)
 	{
 		final String[] parsed = MainActivity.parse(uri);
 		final Intent intent = MainActivity.makeTreebolicIntent(context, parsed[0], parsed[1], Settings.getStringPref(context, TreebolicIface.PREF_IMAGEBASE), Settings.getStringPref(context, TreebolicIface.PREF_SETTINGS));
@@ -332,7 +333,7 @@ public class MainActivity extends AppCompatCommonActivity
 	 * @param settings  settings
 	 */
 	@SuppressWarnings("WeakerAccess")
-	static public void tryStartTreebolic(final Context context, final String source, final String base, final String imagebase, final String settings)
+	static public void tryStartTreebolic(@NonNull final Context context, final String source, final String base, final String imagebase, final String settings)
 	{
 		final Intent intent = MainActivity.makeTreebolicIntent(context, source, base, imagebase, settings);
 		Log.d(MainActivity.TAG, "Start treebolic from source " + source + " and base " + base);
@@ -345,7 +346,7 @@ public class MainActivity extends AppCompatCommonActivity
 	 * @param uri uri
 	 * @return string[0]=source string[1]=base
 	 */
-	static private String[] parse(final Uri uri)
+	static private String[] parse(@NonNull final Uri uri)
 	{
 		final File file = new File(uri.getPath());
 		final String source = file.getName();
@@ -363,8 +364,9 @@ public class MainActivity extends AppCompatCommonActivity
 	 * @param settings  settings
 	 * @return intent
 	 */
+	@NonNull
 	@SuppressWarnings("WeakerAccess")
-	static public Intent makeTreebolicIntent(final Context context, final String source, final String base, final String imageBase, final String settings)
+	static public Intent makeTreebolicIntent(@NonNull final Context context, final String source, final String base, final String imageBase, final String settings)
 	{
 		// parent activity to return to
 		final Intent parentIntent = new Intent();
@@ -412,7 +414,7 @@ public class MainActivity extends AppCompatCommonActivity
 	 *
 	 * @return true if source qualifies
 	 */
-	private boolean sourceQualifies(final String source)
+	private boolean sourceQualifies(@Nullable final String source)
 	{
 		final String base = Settings.getStringPref(this, TreebolicIface.PREF_BASE);
 		if (source != null && !source.isEmpty())
