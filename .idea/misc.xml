@@ -35,32 +35,126 @@
       <entry_point TYPE="implicit.constructor" FQNAME="org.treebolic.files.SettingsActivity" />
       <entry_point TYPE="implicit.constructor" FQNAME="org.treebolic.dot.SettingsActivity" />
     </entry_points>
+    <pattern value="org.treebolic.owl.DownloadActivity" method="doProcessing" />
+    <pattern value="org.treebolic.dot.DownloadActivity" method="doProcessing" />
+    <pattern value="org.treebolic.dot.DownloadActivity" />
+    <pattern value="org.treebolic.owl.DownloadActivity" />
+    <pattern value="org.treebolic.dot.SettingsActivity.GeneralPreferenceFragment" />
+    <pattern value="org.treebolic.files.SettingsActivity.GeneralPreferenceFragment" />
+    <pattern value="org.treebolic.owl.SettingsActivity.GeneralPreferenceFragment" />
+    <pattern value="org.treebolic.owl.ProviderData" method="getExtensions" />
+    <pattern value="org.treebolic.dot.ProviderData" method="getExtensions" />
+    <pattern value="org.treebolic.files.ProviderData" method="getExtensions" />
+    <pattern value="org.treebolic.owl.ProviderData" method="getMimetype" />
+    <pattern value="org.treebolic.dot.ProviderData" method="getMimetype" />
+    <pattern value="org.treebolic.files.ProviderData" method="getMimetype" />
+    <pattern value="org.treebolic.owl.ProviderData" method="getProviderClasses" />
+    <pattern value="org.treebolic.dot.ProviderData" method="getProviderClasses" />
+    <pattern value="org.treebolic.files.ProviderData" method="getProviderClasses" />
+    <pattern value="org.treebolic.owl.ProviderData" method="getStyle" />
+    <pattern value="org.treebolic.dot.ProviderData" method="getStyle" />
+    <pattern value="org.treebolic.files.ProviderData" method="getStyle" />
+    <pattern value="org.treebolic.owl.ProviderData" method="getUrlScheme" />
+    <pattern value="org.treebolic.dot.ProviderData" method="getUrlScheme" />
+    <pattern value="org.treebolic.files.ProviderData" method="getUrlScheme" />
+    <pattern value="org.treebolic.owl.MainActivity" />
+    <pattern value="org.treebolic.files.MainActivity" />
+    <pattern value="org.treebolic.dot.MainActivity" />
+    <pattern value="org.treebolic.owl.MainActivity.PlaceholderFragment" />
+    <pattern value="org.treebolic.files.MainActivity.PlaceholderFragment" />
+    <pattern value="org.treebolic.dot.MainActivity.PlaceholderFragment" />
+    <pattern value="org.treebolic.owl.ProviderData" />
+    <pattern value="org.treebolic.files.ProviderData" />
+    <pattern value="org.treebolic.dot.ProviderData" />
+    <pattern value="org.treebolic.files.MainActivity.Runnable1" />
+    <pattern value="org.treebolic.owl.SettingsActivity" />
+    <pattern value="org.treebolic.files.SettingsActivity" />
+    <pattern value="org.treebolic.dot.SettingsActivity" />
+    <pattern value="org.treebolic.owl.SettingsActivity" method="isValidFragment" />
+    <pattern value="org.treebolic.dot.SettingsActivity" method="isValidFragment" />
+    <pattern value="org.treebolic.files.SettingsActivity" method="isValidFragment" />
+    <pattern value="org.treebolic.owl.MainActivity" method="onActivityResult" />
+    <pattern value="org.treebolic.dot.MainActivity" method="onActivityResult" />
+    <pattern value="org.treebolic.files.MainActivity" method="onActivityResult" />
+    <pattern value="org.treebolic.owl.SettingsActivity" method="onBuildHeaders" />
+    <pattern value="org.treebolic.dot.SettingsActivity" method="onBuildHeaders" />
+    <pattern value="org.treebolic.files.SettingsActivity" method="onBuildHeaders" />
+    <pattern value="org.treebolic.owl.MainActivity" method="onClick" />
+    <pattern value="org.treebolic.dot.MainActivity" method="onClick" />
+    <pattern value="org.treebolic.files.MainActivity" method="onClick" />
+    <pattern value="org.treebolic.owl.DownloadActivity" method="onCreate" />
+    <pattern value="org.treebolic.dot.DownloadActivity" method="onCreate" />
+    <pattern value="org.treebolic.owl.MainActivity" method="onCreate" />
+    <pattern value="org.treebolic.dot.MainActivity" method="onCreate" />
+    <pattern value="org.treebolic.files.MainActivity" method="onCreate" />
+    <pattern value="org.treebolic.owl.SettingsActivity" method="onCreate" />
+    <pattern value="org.treebolic.dot.SettingsActivity" method="onCreate" />
+    <pattern value="org.treebolic.files.SettingsActivity" method="onCreate" />
+    <pattern value="org.treebolic.owl.MainActivity" method="onCreateOptionsMenu" />
+    <pattern value="org.treebolic.dot.MainActivity" method="onCreateOptionsMenu" />
+    <pattern value="org.treebolic.files.MainActivity" method="onCreateOptionsMenu" />
+    <pattern value="org.treebolic.owl.SettingsActivity" method="onIsMultiPane" />
+    <pattern value="org.treebolic.dot.SettingsActivity" method="onIsMultiPane" />
+    <pattern value="org.treebolic.files.SettingsActivity" method="onIsMultiPane" />
+    <pattern value="org.treebolic.owl.MainActivity" method="onOptionsItemSelected" />
+    <pattern value="org.treebolic.dot.MainActivity" method="onOptionsItemSelected" />
+    <pattern value="org.treebolic.files.MainActivity" method="onOptionsItemSelected" />
+    <pattern value="org.treebolic.owl.SettingsActivity" method="onOptionsItemSelected" />
+    <pattern value="org.treebolic.dot.SettingsActivity" method="onOptionsItemSelected" />
+    <pattern value="org.treebolic.files.SettingsActivity" method="onOptionsItemSelected" />
+    <pattern value="org.treebolic.owl.MainActivity" method="onResume" />
+    <pattern value="org.treebolic.dot.MainActivity" method="onResume" />
+    <pattern value="org.treebolic.files.MainActivity" method="onResume" />
+    <pattern value="org.treebolic.owl.DownloadActivity" method="process" />
+    <pattern value="org.treebolic.dot.DownloadActivity" method="process" />
+    <pattern value="org.treebolic.owl.DownloadActivity" method="start" />
+    <pattern value="org.treebolic.dot.DownloadActivity" method="start" />
+    <pattern value="org.treebolic.files.MainActivity" method="tryStartTreebolic" />
+    <pattern value="org.treebolic.owl.MainActivity" method="tryStartTreebolic" />
+    <pattern value="org.treebolic.dot.MainActivity" method="tryStartTreebolic" />
+    <pattern value="org.treebolic.owl.SettingsActivity.GeneralPreferenceFragment" method="onCreate" />
+    <pattern value="org.treebolic.dot.SettingsActivity.GeneralPreferenceFragment" method="onCreate" />
+    <pattern value="org.treebolic.files.SettingsActivity.GeneralPreferenceFragment" method="onCreate" />
+    <pattern value="org.treebolic.owl.MainActivity.PlaceholderFragment" method="onCreateView" />
+    <pattern value="org.treebolic.dot.MainActivity.PlaceholderFragment" method="onCreateView" />
+    <pattern value="org.treebolic.files.MainActivity.PlaceholderFragment" method="onCreateView" />
   </component>
   <component name="NullableNotNullManager">
     <option name="myDefaultNullable" value="android.support.annotation.Nullable" />
     <option name="myDefaultNotNull" value="android.support.annotation.NonNull" />
     <option name="myNullables">
       <value>
-        <list size="4">
+        <list size="10">
           <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.Nullable" />
           <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nullable" />
           <item index="2" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.Nullable" />
           <item index="3" class="java.lang.String" itemvalue="android.support.annotation.Nullable" />
+          <item index="4" class="java.lang.String" itemvalue="javax.annotation.CheckForNull" />
+          <item index="5" class="java.lang.String" itemvalue="androidx.annotation.Nullable" />
+          <item index="6" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNullable" />
+          <item index="7" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.qual.Nullable" />
+          <item index="8" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableDecl" />
+          <item index="9" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableType" />
         </list>
       </value>
     </option>
     <option name="myNotNulls">
       <value>
-        <list size="4">
+        <list size="9">
           <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.NotNull" />
           <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nonnull" />
           <item index="2" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.NonNull" />
           <item index="3" class="java.lang.String" itemvalue="android.support.annotation.NonNull" />
+          <item index="4" class="java.lang.String" itemvalue="androidx.annotation.NonNull" />
+          <item index="5" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNonNull" />
+          <item index="6" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.qual.NonNull" />
+          <item index="7" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullDecl" />
+          <item index="8" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullType" />
         </list>
       </value>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8 (1)" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

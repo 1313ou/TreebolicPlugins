@@ -2,25 +2,29 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/TreebolicPlugins.iml" filepath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/TreebolicPlugins.iml" />
-      <module fileurl="file:///mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/commonLib/commonLib.iml" filepath="/mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/commonLib/commonLib.iml" />
-      <module fileurl="file:///mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/downloadLib/downloadLib.iml" filepath="/mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/downloadLib/downloadLib.iml" />
-      <module fileurl="file:///mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/fileChooserLib/fileChooserLib.iml" filepath="/mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/fileChooserLib/fileChooserLib.iml" />
-      <module fileurl="file:///mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/guideLib/guideLib.iml" filepath="/mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/guideLib/guideLib.iml" />
-      <module fileurl="file:///mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/preferenceLib/preferenceLib.iml" filepath="/mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/preferenceLib/preferenceLib.iml" />
-      <module fileurl="file:///mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/storageLib/storageLib.iml" filepath="/mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/storageLib/storageLib.iml" />
-      <module fileurl="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/treebolicDotPlugin.iml" filepath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin/treebolicDotPlugin.iml" />
-      <module fileurl="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/treebolicFilesPlugin.iml" filepath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/treebolicFilesPlugin.iml" />
-      <module fileurl="file:///mnt/data2/devel/android-treebolic-as/TreebolicLib/treebolicGlue/treebolicGlue.iml" filepath="/mnt/data2/devel/android-treebolic-as/TreebolicLib/treebolicGlue/treebolicGlue.iml" />
-      <module fileurl="file:///mnt/data2/devel/android-treebolic-as/TreebolicLib/treebolicGlueIface/treebolicGlueIface.iml" filepath="/mnt/data2/devel/android-treebolic-as/TreebolicLib/treebolicGlueIface/treebolicGlueIface.iml" />
-      <module fileurl="file:///mnt/data2/devel/android-treebolic-as/TreebolicLib/treebolicGraph/treebolicGraph.iml" filepath="/mnt/data2/devel/android-treebolic-as/TreebolicLib/treebolicGraph/treebolicGraph.iml" />
-      <module fileurl="file:///mnt/data2/devel/android-treebolic-as/TreebolicLib/treebolicIface/treebolicIface.iml" filepath="/mnt/data2/devel/android-treebolic-as/TreebolicLib/treebolicIface/treebolicIface.iml" />
-      <module fileurl="file:///mnt/data2/devel/android-treebolic-as/TreebolicLib/treebolicLib/treebolicLib.iml" filepath="/mnt/data2/devel/android-treebolic-as/TreebolicLib/treebolicLib/treebolicLib.iml" />
-      <module fileurl="file:///mnt/data2/devel/android-treebolic-as/TreebolicLib/treebolicLibModel/treebolicLibModel.iml" filepath="/mnt/data2/devel/android-treebolic-as/TreebolicLib/treebolicLibModel/treebolicLibModel.iml" />
-      <module fileurl="file:///mnt/data2/devel/android-treebolic-as/TreebolicLib/treebolicLibView/treebolicLibView.iml" filepath="/mnt/data2/devel/android-treebolic-as/TreebolicLib/treebolicLibView/treebolicLibView.iml" />
-      <module fileurl="file:///mnt/data2/devel/android-treebolic-as/TreebolicLib/treebolicMutable/treebolicMutable.iml" filepath="/mnt/data2/devel/android-treebolic-as/TreebolicLib/treebolicMutable/treebolicMutable.iml" />
-      <module fileurl="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/treebolicOwlPlugin.iml" filepath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/treebolicOwlPlugin.iml" />
-      <module fileurl="file:///mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicPluginLib/treebolicPluginLib.iml" filepath="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicPluginLib/treebolicPluginLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TreebolicPlugins.iml" filepath="$PROJECT_DIR$/TreebolicPlugins.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TreebolicSupportLibs/commonLib/commonLib.iml" filepath="$PROJECT_DIR$/../TreebolicSupportLibs/commonLib/commonLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TreebolicSupportLibs/downloadLib/downloadLib.iml" filepath="$PROJECT_DIR$/../TreebolicSupportLibs/downloadLib/downloadLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TreebolicSupportLibs/fileChooserLib/fileChooserLib.iml" filepath="$PROJECT_DIR$/../TreebolicSupportLibs/fileChooserLib/fileChooserLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TreebolicSupportLibs/guideLib/guideLib.iml" filepath="$PROJECT_DIR$/../TreebolicSupportLibs/guideLib/guideLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TreebolicSupportLibs/preferenceLib/preferenceLib.iml" filepath="$PROJECT_DIR$/../TreebolicSupportLibs/preferenceLib/preferenceLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TreebolicSupportLibs/storageLib/storageLib.iml" filepath="$PROJECT_DIR$/../TreebolicSupportLibs/storageLib/storageLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/treebolicDotPlugin/treebolicDotPlugin.iml" filepath="$PROJECT_DIR$/treebolicDotPlugin/treebolicDotPlugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/treebolicDotPlugin/treebolicDotPlugin.iml" filepath="$PROJECT_DIR$/treebolicDotPlugin/treebolicDotPlugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/treebolicFilesPlugin/treebolicFilesPlugin.iml" filepath="$PROJECT_DIR$/treebolicFilesPlugin/treebolicFilesPlugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/treebolicFilesPlugin/treebolicFilesPlugin.iml" filepath="$PROJECT_DIR$/treebolicFilesPlugin/treebolicFilesPlugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TreebolicLib/treebolicGlue/treebolicGlue.iml" filepath="$PROJECT_DIR$/../TreebolicLib/treebolicGlue/treebolicGlue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TreebolicLib/treebolicGlueIface/treebolicGlueIface.iml" filepath="$PROJECT_DIR$/../TreebolicLib/treebolicGlueIface/treebolicGlueIface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TreebolicLib/treebolicGraph/treebolicGraph.iml" filepath="$PROJECT_DIR$/../TreebolicLib/treebolicGraph/treebolicGraph.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TreebolicLib/treebolicIface/treebolicIface.iml" filepath="$PROJECT_DIR$/../TreebolicLib/treebolicIface/treebolicIface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TreebolicLib/treebolicLib/treebolicLib.iml" filepath="$PROJECT_DIR$/../TreebolicLib/treebolicLib/treebolicLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TreebolicLib/treebolicLibModel/treebolicLibModel.iml" filepath="$PROJECT_DIR$/../TreebolicLib/treebolicLibModel/treebolicLibModel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TreebolicLib/treebolicLibView/treebolicLibView.iml" filepath="$PROJECT_DIR$/../TreebolicLib/treebolicLibView/treebolicLibView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TreebolicLib/treebolicMutable/treebolicMutable.iml" filepath="$PROJECT_DIR$/../TreebolicLib/treebolicMutable/treebolicMutable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/treebolicOwlPlugin/treebolicOwlPlugin.iml" filepath="$PROJECT_DIR$/treebolicOwlPlugin/treebolicOwlPlugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/treebolicOwlPlugin/treebolicOwlPlugin.iml" filepath="$PROJECT_DIR$/treebolicOwlPlugin/treebolicOwlPlugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/treebolicPluginLib/treebolicPluginLib.iml" filepath="$PROJECT_DIR$/treebolicPluginLib/treebolicPluginLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/treebolicPluginLib/treebolicPluginLib.iml" filepath="$PROJECT_DIR$/treebolicPluginLib/treebolicPluginLib.iml" />
     </modules>
   </component>
 </project>

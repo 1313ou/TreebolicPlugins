@@ -1,10 +1,18 @@
 <component name="ProjectDictionaryState">
   <dictionary name="bbou">
     <words>
+      <w>actionbutton</w>
       <w>demozip</w>
+      <w>filechooser</w>
       <w>graphviz</w>
+      <w>iface</w>
+      <w>imagebase</w>
       <w>inode</w>
+      <w>mimetype</w>
+      <w>nullquery</w>
       <w>owlapi</w>
+      <w>sharedpref</w>
+      <w>treebolic</w>
     </words>
   </dictionary>
 </component>

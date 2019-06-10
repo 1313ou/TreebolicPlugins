@@ -8,7 +8,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.android.tools.build:gradle:3.4.1'
     }
 }
 
@@ -23,7 +23,8 @@ allprojects {
         versionCode = 24
         versionName = '2.24'
         minSdkVersion = 14
-        targetSdkVersion = 27
-        compileSdkVersion = 27
-   }
+        targetSdkVersion = 28
+        compileSdkVersion = 28
+        multiDexEnabled = true
+    }
 }

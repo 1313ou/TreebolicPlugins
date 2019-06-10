@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: __local_aars__:/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin/libs/treebolic-provider-owl-owlapi-min.jar:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/treebolicOwlPlugin/libs/treebolic-provider-owl-owlapi-min.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

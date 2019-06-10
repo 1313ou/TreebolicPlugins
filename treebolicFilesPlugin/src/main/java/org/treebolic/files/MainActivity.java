@@ -9,12 +9,14 @@ import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
+
 import android.util.Log;
 import android.util.Pair;
 import android.view.LayoutInflater;
@@ -97,6 +99,7 @@ public class MainActivity extends AppCompatCommonActivity
 
 	// M E N U
 
+	@SuppressWarnings("SameReturnValue")
 	@Override
 	public boolean onCreateOptionsMenu(final Menu menu)
 	{
@@ -193,27 +196,23 @@ public class MainActivity extends AppCompatCommonActivity
 	}
 
 	@Override
-	protected void onActivityResult(final int requestCode, final int resultCode, @NonNull final Intent returnIntent)
+	protected void onActivityResult(final int requestCode, final int resultCode, @Nullable final Intent returnIntent)
 	{
 		// handle selection of input by other activity which returns selected input
-		if (resultCode == AppCompatActivity.RESULT_OK)
+		if (resultCode == AppCompatActivity.RESULT_OK && returnIntent != null)
 		{
 			final Uri fileUri = returnIntent.getData();
 			if (fileUri != null)
 			{
 				Toast.makeText(this, fileUri.toString(), Toast.LENGTH_SHORT).show();
-				switch (requestCode)
+				if (requestCode == REQUEST_DIR_CODE)
 				{
-					case REQUEST_DIR_CODE:
-						Settings.putStringPref(this, TreebolicIface.PREF_SOURCE, fileUri.getPath());
+					Settings.putStringPref(this, TreebolicIface.PREF_SOURCE, fileUri.getPath());
 
-						updateButton();
+					updateButton();
 
-						// query
-						// query());
-						break;
-					default:
-						break;
+					// query
+					// query());
 				}
 			}
 		}
@@ -222,6 +221,7 @@ public class MainActivity extends AppCompatCommonActivity
 
 	abstract class Runnable1
 	{
+		@SuppressWarnings("WeakerAccess")
 		abstract public void run(final String arg);
 	}
 
@@ -289,8 +289,7 @@ public class MainActivity extends AppCompatCommonActivity
 			}
 		}
 		alert.setView(input);
-		alert.setPositiveButton(R.string.action_ok, (dialog, whichButton) ->
-		{
+		alert.setPositiveButton(R.string.action_ok, (dialog, whichButton) -> {
 			dialog.dismiss();
 
 			int childCount = input.getChildCount();
@@ -315,8 +314,7 @@ public class MainActivity extends AppCompatCommonActivity
 				}
 			}
 		});
-		alert.setNegativeButton(R.string.action_cancel, (dialog, whichButton) ->
-		{
+		alert.setNegativeButton(R.string.action_cancel, (dialog, whichButton) -> {
 			// canceled.
 		});
 		alert.show();

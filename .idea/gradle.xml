@@ -3,29 +3,32 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT" />
+        </compositeConfiguration>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="/mnt/data2/devel/android-treebolic-as/TreebolicLib/treebolicGlue" />
-            <option value="/mnt/data2/devel/android-treebolic-as/TreebolicLib/treebolicGlueIface" />
-            <option value="/mnt/data2/devel/android-treebolic-as/TreebolicLib/treebolicGraph" />
-            <option value="/mnt/data2/devel/android-treebolic-as/TreebolicLib/treebolicIface" />
-            <option value="/mnt/data2/devel/android-treebolic-as/TreebolicLib/treebolicLib" />
-            <option value="/mnt/data2/devel/android-treebolic-as/TreebolicLib/treebolicLibModel" />
-            <option value="/mnt/data2/devel/android-treebolic-as/TreebolicLib/treebolicLibView" />
-            <option value="/mnt/data2/devel/android-treebolic-as/TreebolicLib/treebolicMutable" />
-            <option value="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins" />
-            <option value="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicDotPlugin" />
-            <option value="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin" />
-            <option value="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicOwlPlugin" />
-            <option value="/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicPluginLib" />
-            <option value="/mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/commonLib" />
-            <option value="/mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/downloadLib" />
-            <option value="/mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/fileChooserLib" />
-            <option value="/mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/guideLib" />
-            <option value="/mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/preferenceLib" />
-            <option value="/mnt/data2/devel/android-treebolic-as/TreebolicSupportLibs/storageLib" />
+            <option value="$PROJECT_DIR$/../TreebolicLib/treebolicGlue" />
+            <option value="$PROJECT_DIR$/../TreebolicLib/treebolicGlueIface" />
+            <option value="$PROJECT_DIR$/../TreebolicLib/treebolicGraph" />
+            <option value="$PROJECT_DIR$/../TreebolicLib/treebolicIface" />
+            <option value="$PROJECT_DIR$/../TreebolicLib/treebolicLib" />
+            <option value="$PROJECT_DIR$/../TreebolicLib/treebolicLibModel" />
+            <option value="$PROJECT_DIR$/../TreebolicLib/treebolicLibView" />
+            <option value="$PROJECT_DIR$/../TreebolicLib/treebolicMutable" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/treebolicDotPlugin" />
+            <option value="$PROJECT_DIR$/treebolicFilesPlugin" />
+            <option value="$PROJECT_DIR$/treebolicOwlPlugin" />
+            <option value="$PROJECT_DIR$/treebolicPluginLib" />
+            <option value="$PROJECT_DIR$/../TreebolicSupportLibs/commonLib" />
+            <option value="$PROJECT_DIR$/../TreebolicSupportLibs/downloadLib" />
+            <option value="$PROJECT_DIR$/../TreebolicSupportLibs/fileChooserLib" />
+            <option value="$PROJECT_DIR$/../TreebolicSupportLibs/guideLib" />
+            <option value="$PROJECT_DIR$/../TreebolicSupportLibs/preferenceLib" />
+            <option value="$PROJECT_DIR$/../TreebolicSupportLibs/storageLib" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
