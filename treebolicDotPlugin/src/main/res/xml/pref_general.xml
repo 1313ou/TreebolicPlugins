@@ -1,4 +1,4 @@
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
                   xmlns:app="http://schemas.android.com/apk/res-auto">
 
 	<EditTextPreference
@@ -53,4 +53,4 @@
 		app:labels="@array/pref_download_labels"
 		app:values="@array/pref_download_urls"/>
 
-</PreferenceScreen>
+</androidx.preference.PreferenceScreen>

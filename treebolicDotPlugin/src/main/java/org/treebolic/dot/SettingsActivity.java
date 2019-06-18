@@ -1,22 +1,22 @@
 package org.treebolic.dot;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.preference.Preference;
-import android.preference.PreferenceFragment;
-import android.preference.PreferenceManager;
-
-import androidx.annotation.NonNull;
-import androidx.core.app.NavUtils;
-import androidx.appcompat.app.ActionBar;
-
 import android.view.MenuItem;
 
 import org.treebolic.AppCompatCommonPreferenceActivity;
 import org.treebolic.TreebolicIface;
 
 import java.util.List;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
+import androidx.core.app.NavUtils;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceFragmentCompat;
+import androidx.preference.legacy.contrib.Header;
 
 /**
  * A AppCompatPreferenceActivity that presents a set of application settings.
@@ -56,7 +56,7 @@ public class SettingsActivity extends AppCompatCommonPreferenceActivity
 	// S E T U P
 
 	@Override
-	public void onBuildHeaders(final List<Header> target)
+	public void onBuildHeaders(@NonNull final List<Header> target)
 	{
 		loadHeadersFromResource(R.xml.pref_headers, target);
 	}
@@ -64,7 +64,7 @@ public class SettingsActivity extends AppCompatCommonPreferenceActivity
 	// D E T E C T I O N
 
 	@Override
-	protected boolean isValidFragment(final String fragmentName)
+	public boolean isValidFragment(final String fragmentName)
 	{
 		return GeneralPreferenceFragment.class.getName().equals(fragmentName);
 	}
@@ -83,54 +83,45 @@ public class SettingsActivity extends AppCompatCommonPreferenceActivity
 		return (context.getResources().getConfiguration().screenLayout & Configuration.SCREENLAYOUT_SIZE_MASK) >= Configuration.SCREENLAYOUT_SIZE_LARGE;
 	}
 
-	// L I S T E N E R
+	// S U M M A R Y
 
-	/**
-	 * A preference value change listener that updates the preference's summary to reflect its new value.
-	 */
-	private static final Preference.OnPreferenceChangeListener listener = (preference, value) -> {
-		// set the summary to the value's simple string representation.
-		final String stringValue = value.toString();
-		preference.setSummary(stringValue);
-		return true;
+	private static final Preference.SummaryProvider<Preference> STRING_SUMMARY_PROVIDER = (preference) -> {
+
+		final SharedPreferences sharedPrefs = preference.getSharedPreferences();
+		final String value = sharedPrefs.getString(preference.getKey(), null);
+		return value == null ? "" : value;
 	};
-
-	// B I N D
-
-	/**
-	 * Binds a preference's summary to its value. More specifically, when the preference's value is changed, its summary (line of text below the preference
-	 * title) is updated to reflect the value. The summary is also immediately updated upon calling this method. The exact display format is dependent on the
-	 * type of preference.
-	 *
-	 * @see #listener
-	 */
-	private static void bind(@NonNull final Preference preference)
-	{
-		// Set the listener to watch for value changes.
-		preference.setOnPreferenceChangeListener(SettingsActivity.listener);
-
-		// Trigger the listener immediately with the preference's current value.
-		SettingsActivity.listener.onPreferenceChange(preference, PreferenceManager.getDefaultSharedPreferences(preference.getContext()).getString(preference.getKey(), ""));
-	}
 
 	// F R A G M E N T S
 
-	public static class GeneralPreferenceFragment extends PreferenceFragment
+	public static class GeneralPreferenceFragment extends PreferenceFragmentCompat
 	{
 		@Override
-		public void onCreate(final Bundle savedInstanceState)
+		public void onCreatePreferences(@SuppressWarnings("unused") final Bundle savedInstanceState, @SuppressWarnings("unused") final String rootKey)
 		{
-			super.onCreate(savedInstanceState);
-
 			// inflate
 			addPreferencesFromResource(R.xml.pref_general);
 
 			// bind
-			SettingsActivity.bind(findPreference(TreebolicIface.PREF_SOURCE));
-			SettingsActivity.bind(findPreference(TreebolicIface.PREF_BASE));
-			SettingsActivity.bind(findPreference(TreebolicIface.PREF_IMAGEBASE));
-			SettingsActivity.bind(findPreference(TreebolicIface.PREF_SETTINGS));
-			SettingsActivity.bind(findPreference(Settings.PREF_DOWNLOAD));
+			Preference pref = findPreference(TreebolicIface.PREF_SOURCE);
+			assert pref != null;
+			pref.setSummaryProvider(STRING_SUMMARY_PROVIDER);
+
+			pref = findPreference(TreebolicIface.PREF_BASE);
+			assert pref != null;
+			pref.setSummaryProvider(STRING_SUMMARY_PROVIDER);
+
+			pref = findPreference(TreebolicIface.PREF_IMAGEBASE);
+			assert pref != null;
+			pref.setSummaryProvider(STRING_SUMMARY_PROVIDER);
+
+			pref = findPreference(TreebolicIface.PREF_SETTINGS);
+			assert pref != null;
+			pref.setSummaryProvider(STRING_SUMMARY_PROVIDER);
+
+			pref = findPreference(Settings.PREF_DOWNLOAD);
+			assert pref != null;
+			pref.setSummaryProvider(STRING_SUMMARY_PROVIDER);
 		}
 	}
 }

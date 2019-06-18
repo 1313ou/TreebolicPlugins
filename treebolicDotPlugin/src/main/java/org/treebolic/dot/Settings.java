@@ -9,13 +9,13 @@ import android.net.Uri;
 import android.os.Build;
 import android.preference.PreferenceManager;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
 import org.treebolic.TreebolicIface;
 import org.treebolic.storage.Storage;
 
 import java.io.File;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 /**
  * Settings

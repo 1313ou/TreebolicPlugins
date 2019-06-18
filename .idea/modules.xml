@@ -10,8 +10,6 @@
       <module fileurl="file://$PROJECT_DIR$/../TreebolicSupportLibs/preferenceLib/preferenceLib.iml" filepath="$PROJECT_DIR$/../TreebolicSupportLibs/preferenceLib/preferenceLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/../TreebolicSupportLibs/storageLib/storageLib.iml" filepath="$PROJECT_DIR$/../TreebolicSupportLibs/storageLib/storageLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/treebolicDotPlugin/treebolicDotPlugin.iml" filepath="$PROJECT_DIR$/treebolicDotPlugin/treebolicDotPlugin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/treebolicDotPlugin/treebolicDotPlugin.iml" filepath="$PROJECT_DIR$/treebolicDotPlugin/treebolicDotPlugin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/treebolicFilesPlugin/treebolicFilesPlugin.iml" filepath="$PROJECT_DIR$/treebolicFilesPlugin/treebolicFilesPlugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/treebolicFilesPlugin/treebolicFilesPlugin.iml" filepath="$PROJECT_DIR$/treebolicFilesPlugin/treebolicFilesPlugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/../TreebolicLib/treebolicGlue/treebolicGlue.iml" filepath="$PROJECT_DIR$/../TreebolicLib/treebolicGlue/treebolicGlue.iml" />
       <module fileurl="file://$PROJECT_DIR$/../TreebolicLib/treebolicGlueIface/treebolicGlueIface.iml" filepath="$PROJECT_DIR$/../TreebolicLib/treebolicGlueIface/treebolicGlueIface.iml" />
@@ -22,8 +20,6 @@
       <module fileurl="file://$PROJECT_DIR$/../TreebolicLib/treebolicLibView/treebolicLibView.iml" filepath="$PROJECT_DIR$/../TreebolicLib/treebolicLibView/treebolicLibView.iml" />
       <module fileurl="file://$PROJECT_DIR$/../TreebolicLib/treebolicMutable/treebolicMutable.iml" filepath="$PROJECT_DIR$/../TreebolicLib/treebolicMutable/treebolicMutable.iml" />
       <module fileurl="file://$PROJECT_DIR$/treebolicOwlPlugin/treebolicOwlPlugin.iml" filepath="$PROJECT_DIR$/treebolicOwlPlugin/treebolicOwlPlugin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/treebolicOwlPlugin/treebolicOwlPlugin.iml" filepath="$PROJECT_DIR$/treebolicOwlPlugin/treebolicOwlPlugin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/treebolicPluginLib/treebolicPluginLib.iml" filepath="$PROJECT_DIR$/treebolicPluginLib/treebolicPluginLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/treebolicPluginLib/treebolicPluginLib.iml" filepath="$PROJECT_DIR$/treebolicPluginLib/treebolicPluginLib.iml" />
     </modules>
   </component>

@@ -118,6 +118,9 @@
     <pattern value="org.treebolic.owl.MainActivity.PlaceholderFragment" method="onCreateView" />
     <pattern value="org.treebolic.dot.MainActivity.PlaceholderFragment" method="onCreateView" />
     <pattern value="org.treebolic.files.MainActivity.PlaceholderFragment" method="onCreateView" />
+    <pattern value="org.treebolic.owl.SettingsActivity.GeneralPreferenceFragment" method="onCreatePreferences" />
+    <pattern value="org.treebolic.dot.SettingsActivity.GeneralPreferenceFragment" method="onCreatePreferences" />
+    <pattern value="org.treebolic.files.SettingsActivity.GeneralPreferenceFragment" method="onCreatePreferences" />
   </component>
   <component name="NullableNotNullManager">
     <option name="myDefaultNullable" value="android.support.annotation.Nullable" />
