@@ -18,45 +18,63 @@
     <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1ad9775-637d-4494-8054-978db10d3578" name="Default" comment="androidx&#10;lint">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_0_0_beta01_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_1_1_0_rc01_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_1_0_beta01_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_resources_1_1_0_beta01_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_common_2_1_0_beta01_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_collection_collection_1_1_0_rc01_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_1_0_rc01_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_1_0_beta01_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_1_0_beta01_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_1_0_beta01_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_1_0_beta01_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_preference_preference_1_1_0_beta01_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_savedstate_savedstate_1_0_0_beta01_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_1_0_beta02_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_1_0_beta02_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_1_0_rc01_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="a1ad9775-637d-4494-8054-978db10d3578" name="Default" comment="preference 1.1.0">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_compress_1_12_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_0_0_beta01_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_0_0_beta01_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_0_2_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_1_0_beta01_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_1_0_beta01_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_resources_1_1_0_beta01_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_resources_1_1_0_beta01_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_0_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_1_0_rc01_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_1_0_rc01_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_1_0_beta01_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_1_0_beta01_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_v13_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_v13_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_v4_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_v4_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_1_0_beta01_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_1_0_beta01_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_1_0_beta01_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_1_0_beta01_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_loader_loader_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_loader_loader_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_media_media_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_media_media_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_preference_preference_1_1_0_beta01_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_preference_preference_1_1_0_beta01_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_savedstate_savedstate_1_0_0_beta01_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_savedstate_savedstate_1_0_0_beta01_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_0_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_1_0_beta02_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_1_0_beta02_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_1_0_beta02_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_1_0_beta02_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_1_0_rc01_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_1_0_rc01_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_0_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treebolicDotPlugin/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/treebolicDotPlugin/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treebolicDotPlugin/src/main/assets/dot.zip" beforeDir="false" afterPath="$PROJECT_DIR$/treebolicDotPlugin/src/main/assets/dot.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treebolicDotPlugin/src/main/java/org/treebolic/dot/DownloadActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/treebolicDotPlugin/src/main/java/org/treebolic/dot/DownloadActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treebolicDotPlugin/src/main/java/org/treebolic/dot/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/treebolicDotPlugin/src/main/java/org/treebolic/dot/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treebolicDotPlugin/src/main/java/org/treebolic/dot/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/treebolicDotPlugin/src/main/java/org/treebolic/dot/Settings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treebolicDotPlugin/src/main/java/org/treebolic/dot/SettingsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/treebolicDotPlugin/src/main/java/org/treebolic/dot/SettingsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treebolicDotPlugin/src/main/res/xml/pref_headers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/treebolicDotPlugin/src/main/res/xml/pref_headers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/treebolicDotPlugin/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/treebolicDotPlugin/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/treebolicDotPlugin/treebolicDotPlugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/treebolicDotPlugin/treebolicDotPlugin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treebolicFilesPlugin/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/treebolicFilesPlugin/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treebolicFilesPlugin/src/main/java/org/treebolic/files/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/treebolicFilesPlugin/src/main/java/org/treebolic/files/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treebolicFilesPlugin/src/main/java/org/treebolic/files/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/treebolicFilesPlugin/src/main/java/org/treebolic/files/Settings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treebolicFilesPlugin/src/main/java/org/treebolic/files/SettingsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/treebolicFilesPlugin/src/main/java/org/treebolic/files/SettingsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treebolicFilesPlugin/src/main/res/xml/pref_headers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/treebolicFilesPlugin/src/main/res/xml/pref_headers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/treebolicFilesPlugin/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/treebolicFilesPlugin/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/treebolicFilesPlugin/treebolicFilesPlugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/treebolicFilesPlugin/treebolicFilesPlugin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treebolicOwlPlugin/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/treebolicOwlPlugin/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treebolicOwlPlugin/src/main/assets/owl.zip" beforeDir="false" afterPath="$PROJECT_DIR$/treebolicOwlPlugin/src/main/assets/owl.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treebolicOwlPlugin/src/main/java/org/treebolic/owl/DownloadActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/treebolicOwlPlugin/src/main/java/org/treebolic/owl/DownloadActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treebolicOwlPlugin/src/main/java/org/treebolic/owl/SettingsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/treebolicOwlPlugin/src/main/java/org/treebolic/owl/SettingsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treebolicOwlPlugin/src/main/res/xml/pref_general.xml" beforeDir="false" afterPath="$PROJECT_DIR$/treebolicOwlPlugin/src/main/res/xml/pref_general.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treebolicOwlPlugin/src/main/res/xml/pref_headers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/treebolicOwlPlugin/src/main/res/xml/pref_headers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/treebolicOwlPlugin/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/treebolicOwlPlugin/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/treebolicOwlPlugin/treebolicOwlPlugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/treebolicOwlPlugin/treebolicOwlPlugin.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/treebolicPluginLib/treebolicPluginLib.iml" beforeDir="false" afterPath="$PROJECT_DIR$/treebolicPluginLib/treebolicPluginLib.iml" afterDir="false" />
     </list>
@@ -517,60 +535,7 @@
     <favorites_list name="TreebolicPlugins" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/treebolicDotPlugin/src/main/java/org/treebolic/dot/SettingsActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-30">
-              <caret line="80" column="37" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="37" />
-              <folding>
-                <element signature="e#3083#3110#0" expanded="true" />
-                <element signature="e#3144#3171#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/treebolicOwlPlugin/src/main/res/xml/pref_general.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-67">
-              <caret column="21" selection-start-column="1" selection-end-column="21" />
-              <folding>
-                <element signature="e#221#250#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/treebolicFilesPlugin/src/main/java/org/treebolic/files/SettingsActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="93" selection-start-line="93" selection-end-line="93" />
-              <folding>
-                <element signature="e#2731#2758#0" expanded="true" />
-                <element signature="e#2792#2819#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/treebolicOwlPlugin/src/main/java/org/treebolic/owl/SettingsActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="93" selection-start-line="93" selection-end-line="93" />
-              <folding>
-                <element signature="e#2729#2756#0" expanded="true" />
-                <element signature="e#2790#2817#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -607,7 +572,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/treebolicContacts/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/treebolicContacts/src/main/res/menu/menu_main.xml" />
         <option value="$PROJECT_DIR$/treebolicContacts/src/main/java/org/treebolic/contacts/ProviderData.java" />
         <option value="$PROJECT_DIR$/treebolicContacts/src/main/java/org/treebolic/contacts/Settings.java" />
@@ -658,6 +622,7 @@
         <option value="$PROJECT_DIR$/treebolicFilesPlugin/src/main/java/org/treebolic/files/SettingsActivity.java" />
         <option value="$PROJECT_DIR$/treebolicOwlPlugin/src/main/java/org/treebolic/owl/SettingsActivity.java" />
         <option value="$PROJECT_DIR$/treebolicOwlPlugin/src/main/res/xml/pref_general.xml" />
+        <option value="$PROJECT_DIR$/treebolicDotPlugin/src/main/res/xml/pref_general.xml" />
       </list>
     </option>
   </component>
@@ -665,10 +630,10 @@
     <scope name="Analyzed" pattern="(file[treebolicOwlPlugin]:src//*||file[treebolicDotPlugin]:src//*||file[treebolicPluginLib]:src//*||file[treebolicFilesPlugin]:src//*||file[TreebolicPlugins]:build.gradle||file[TreebolicPlugins]:local.properties||file[TreebolicPlugins]:settings.gradle||file[treebolicPluginLib]:build.gradle||file[treebolicOwlPlugin]:build.gradle||file[treebolicFilesPlugin]:build.gradle||file[treebolicDotPlugin]:build.gradle)&amp;&amp;!file[treebolicPluginLib]:src/main/res/values-fr/strings.xml&amp;&amp;!file[treebolicOwlPlugin]:src/main/res/values-fr/strings.xml&amp;&amp;!file[treebolicOwlPlugin]:src/main/res/values-fr/strings_download.xml&amp;&amp;!file[treebolicOwlPlugin]:src/main/res/values-fr/strings_settings.xml&amp;&amp;!file[treebolicFilesPlugin]:src/main/res/values-fr/strings.xml&amp;&amp;!file[treebolicFilesPlugin]:src/main/res/values-fr/strings_settings.xml&amp;&amp;!file[treebolicDotPlugin]:src/main/res/values-fr/strings.xml&amp;&amp;!file[treebolicDotPlugin]:src/main/res/values-fr/strings_download.xml&amp;&amp;!file[treebolicDotPlugin]:src/main/res/values-fr/strings_settings.xml" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="51" />
-    <option name="y" value="27" />
-    <option name="width" value="1254" />
-    <option name="height" value="1167" />
+    <option name="x" value="399" />
+    <option name="y" value="120" />
+    <option name="width" value="1248" />
+    <option name="height" value="879" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -676,10 +641,20 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="TreebolicPlugins" type="1abcf292:AndroidViewProjectNode" />
+              <item name="treebolicOwlPlugin" type="feadf853:AndroidModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1363,7 +1338,21 @@
       <option name="project" value="LOCAL" />
       <updated>1560156132807</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="preference 1.1.0">
+      <created>1560851976030</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1560851976030</updated>
+    </task>
+    <task id="LOCAL-00041" summary="preference 1.1.0">
+      <created>1560852050262</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1560852050262</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1376,9 +1365,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="51" y="27" width="1254" height="1167" extended-state="0" />
+    <frame x="423" y="293" width="1248" height="879" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15264027" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15257049" />
       <window_info id="Structure" order="1" weight="0.24876982" />
       <window_info id="Designer" order="2" />
       <window_info id="Captures" order="3" side_tool="true" weight="0.21832359" />
@@ -1398,13 +1387,13 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.500821" side_tool="true" weight="0.3297456" />
       <window_info anchor="bottom" id="Logcat" order="9" />
       <window_info anchor="bottom" id="Android Monitor" order="10" sideWeight="0.6380789" weight="0.4490566" />
-      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.41762453" weight="0.20964567" />
+      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.41762453" weight="0.4478022" />
       <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.48713738" weight="0.32843137" />
       <window_info anchor="bottom" id="Gradle Console" order="13" sideWeight="0.49092907" side_tool="true" weight="0.506986" />
       <window_info anchor="bottom" id="Dependency Viewer" order="14" sideWeight="0.50907093" weight="0.506986" />
-      <window_info active="true" anchor="bottom" id="Inspection Results" order="15" sideWeight="0.56431305" visible="true" weight="0.32677165" />
+      <window_info anchor="bottom" id="Inspection Results" order="15" sideWeight="0.56431305" weight="0.32677165" />
       <window_info anchor="bottom" id="Messages" order="16" sideWeight="0.5407772" weight="0.35686275" />
-      <window_info anchor="bottom" id="Build" order="17" sideWeight="0.49917898" weight="0.3297244" />
+      <window_info anchor="bottom" id="Build" order="17" sideWeight="0.49917898" visible="true" weight="0.32967034" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.16183707" />
@@ -1433,7 +1422,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="download&#10;main&#10;lint" />
     <MESSAGE value="trim down dependencies" />
     <MESSAGE value="fake 'provided' with aar" />
     <MESSAGE value="change process to specific on activities" />
@@ -1458,7 +1446,8 @@
     <MESSAGE value="pre lint" />
     <MESSAGE value="lint&#10;null analysis" />
     <MESSAGE value="androidx&#10;lint" />
-    <option name="LAST_COMMIT_MESSAGE" value="androidx&#10;lint" />
+    <MESSAGE value="preference 1.1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="preference 1.1.0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1484,13 +1473,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/treebolicDotPlugin/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/treebolicPluginLib/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="91">
@@ -1638,18 +1620,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../dist/releases/treebolicOwlPlugin-release.apk">
-      <provider selected="true" editor-type-id="apk-viewer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../dist/releases/archive/plugin-owl/release/treebolicOwlPlugin-release.apk">
-      <provider selected="true" editor-type-id="apk-viewer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../dist/releases/treebolicDotPlugin-release.apk">
-      <provider selected="true" editor-type-id="apk-viewer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../dist/releases/treebolicContacts-release.apk">
-      <provider selected="true" editor-type-id="apk-viewer" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../dist/releases/treebolicOwlPlugin-release.apk" />
+    <entry file="file://$PROJECT_DIR$/../dist/releases/archive/plugin-owl/release/treebolicOwlPlugin-release.apk" />
+    <entry file="file://$PROJECT_DIR$/../dist/releases/treebolicDotPlugin-release.apk" />
+    <entry file="file://$PROJECT_DIR$/../dist/releases/treebolicContacts-release.apk" />
     <entry file="file://$PROJECT_DIR$/treebolicPluginLib/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="91">
@@ -1777,7 +1751,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/treebolicOwlPlugin/src/main/java/org/treebolic/owl/SettingsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
+        <state relative-caret-position="114">
           <caret line="93" selection-start-line="93" selection-end-line="93" />
           <folding>
             <element signature="e#2729#2756#0" expanded="true" />
@@ -1785,17 +1759,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/treebolicOwlPlugin/src/main/res/xml/pref_general.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-67">
-          <caret column="21" selection-start-column="1" selection-end-column="21" />
-          <folding>
-            <element signature="e#221#250#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/treebolicDotPlugin/src/main/java/org/treebolic/dot/SettingsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1810,7 +1773,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/treebolicFilesPlugin/src/main/java/org/treebolic/files/SettingsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
+        <state relative-caret-position="845">
           <caret line="93" selection-start-line="93" selection-end-line="93" />
           <folding>
             <element signature="e#2731#2758#0" expanded="true" />
@@ -1818,6 +1781,28 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/treebolicOwlPlugin/src/main/res/xml/pref_general.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+          <folding>
+            <element signature="e#221#250#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/treebolicDotPlugin/src/main/res/xml/pref_general.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="50" column="24" lean-forward="true" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+          <folding>
+            <element signature="e#1691#1726#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
   </component>
   <component name="masterDetails">
