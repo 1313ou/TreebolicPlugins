@@ -45,6 +45,7 @@ dependencies {
     implementation project(':treebolicPluginLib')
     implementation project(':treebolicIface')
     implementation files('libs/treebolic-provider-files.jar')
+    implementation files('libs/treebolic-balancer.jar')
 
     implementation project(':commonLib')
     implementation project(':storageLib')

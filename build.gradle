@@ -20,11 +20,11 @@ allprojects {
     }
 
     ext {
-        versionCode = 24
-        versionName = '2.24'
+        versionCode = 25
+        versionName = '2.25'
         minSdkVersion = 14
         targetSdkVersion = 28
         compileSdkVersion = 28
-        multiDexEnabled = true
+        multiDexEnabled = false
     }
 }
