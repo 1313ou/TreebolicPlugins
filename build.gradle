@@ -25,6 +25,6 @@ allprojects {
         minSdkVersion = 14
         targetSdkVersion = 28
         compileSdkVersion = 28
-        multiDexEnabled = false
+        multiDexEnabled = true
     }
 }
