@@ -121,6 +121,7 @@
     <pattern value="org.treebolic.owl.SettingsActivity.GeneralPreferenceFragment" method="onCreatePreferences" />
     <pattern value="org.treebolic.dot.SettingsActivity.GeneralPreferenceFragment" method="onCreatePreferences" />
     <pattern value="org.treebolic.files.SettingsActivity.GeneralPreferenceFragment" method="onCreatePreferences" />
+    <pattern value="org.treebolic.owl.SettingsActivity.GeneralPreferenceFragment" method="onDisplayPreferenceDialog" />
   </component>
   <component name="NullableNotNullManager">
     <option name="myDefaultNullable" value="android.support.annotation.Nullable" />

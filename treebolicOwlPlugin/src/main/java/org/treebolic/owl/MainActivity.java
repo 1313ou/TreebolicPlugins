@@ -1,6 +1,7 @@
 package org.treebolic.owl;
 
 import android.annotation.SuppressLint;
+import android.content.ActivityNotFoundException;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -8,14 +9,6 @@ import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.fragment.app.Fragment;
-
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -35,6 +28,13 @@ import org.treebolic.storage.Storage;
 
 import java.io.File;
 import java.io.IOException;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
 
 /**
  * Treebolic Owl main activity
@@ -314,6 +314,14 @@ public class MainActivity extends AppCompatCommonActivity
 	 */
 	static public void tryStartTreebolic(@NonNull final Context context, @NonNull final Uri uri)
 	{
+		try
+		{
+			Checker.checkFail(context);
+		}
+		catch (ActivityNotFoundException e)
+		{
+			return;
+		}
 		final String[] parsed = MainActivity.parse(uri);
 		final Intent intent = MainActivity.makeTreebolicIntent(context, parsed[0], parsed[1], Settings.getStringPref(context, TreebolicIface.PREF_IMAGEBASE), Settings.getStringPref(context, TreebolicIface.PREF_SETTINGS));
 		context.startActivity(intent);
@@ -331,6 +339,14 @@ public class MainActivity extends AppCompatCommonActivity
 	@SuppressWarnings("WeakerAccess")
 	static public void tryStartTreebolic(@NonNull final Context context, final String source, final String base, final String imagebase, final String settings)
 	{
+		try
+		{
+			Checker.checkFail(context);
+		}
+		catch (ActivityNotFoundException e)
+		{
+			return;
+		}
 		final Intent intent = MainActivity.makeTreebolicIntent(context, source, base, imagebase, settings);
 		Log.d(MainActivity.TAG, "Start treebolic from source " + source + " and base " + base);
 		context.startActivity(intent);

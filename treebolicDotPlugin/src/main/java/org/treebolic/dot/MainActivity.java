@@ -1,6 +1,7 @@
 package org.treebolic.dot;
 
 import android.annotation.SuppressLint;
+import android.content.ActivityNotFoundException;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -316,6 +317,14 @@ public class MainActivity extends AppCompatCommonActivity
 	@SuppressWarnings("WeakerAccess")
 	static public void tryStartTreebolic(@NonNull final Context context, final String source, final String base, final String imagebase, final String settings)
 	{
+		try
+		{
+			Checker.checkFail(context);
+		}
+		catch (ActivityNotFoundException e)
+		{
+			return;
+		}
 		final Intent intent = MainActivity.makeTreebolicIntent(context, source, base, imagebase, settings);
 		Log.d(MainActivity.TAG, "Start treebolic from source " + source + " and base " + base);
 		context.startActivity(intent);
@@ -329,6 +338,14 @@ public class MainActivity extends AppCompatCommonActivity
 	 */
 	static public void tryStartTreebolic(@NonNull final Context context, @NonNull final Uri uri)
 	{
+		try
+		{
+			Checker.checkFail(context);
+		}
+		catch (ActivityNotFoundException e)
+		{
+			return;
+		}
 		final String[] parsed = MainActivity.parse(uri);
 		final Intent intent = MainActivity.makeTreebolicIntent(context, parsed[0], parsed[1], Settings.getStringPref(context, TreebolicIface.PREF_IMAGEBASE), Settings.getStringPref(context, TreebolicIface.PREF_SETTINGS));
 		Log.d(MainActivity.TAG, "Start treebolic from uri " + uri);

@@ -1,6 +1,7 @@
 package org.treebolic.files;
 
 import android.annotation.SuppressLint;
+import android.content.ActivityNotFoundException;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -372,6 +373,14 @@ public class MainActivity extends AppCompatCommonActivity
 	@SuppressWarnings("WeakerAccess")
 	static public void tryStartTreebolic(@NonNull final Context context, @NonNull final String root)
 	{
+		try
+		{
+			Checker.checkFail(context);
+		}
+		catch (ActivityNotFoundException e)
+		{
+			return;
+		}
 		final File file = new File(root);
 		final String source = file.getAbsolutePath();
 		final Intent intent = MainActivity.makeTreebolicIntent(context, source);
