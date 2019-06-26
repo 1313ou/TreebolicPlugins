@@ -8,6 +8,7 @@ import android.view.MenuItem;
 
 import org.treebolic.AppCompatCommonPreferenceActivity;
 import org.treebolic.TreebolicIface;
+import org.treebolic.preference.OpenEditTextPreference;
 
 import java.util.List;
 
@@ -122,6 +123,15 @@ public class SettingsActivity extends AppCompatCommonPreferenceActivity
 			pref = findPreference(Settings.PREF_DOWNLOAD);
 			assert pref != null;
 			pref.setSummaryProvider(STRING_SUMMARY_PROVIDER);
+		}
+
+		@Override
+		public void onDisplayPreferenceDialog(final Preference preference)
+		{
+			if (!OpenEditTextPreference.onDisplayPreferenceDialog(this, preference))
+			{
+				super.onDisplayPreferenceDialog(preference);
+			}
 		}
 	}
 }
