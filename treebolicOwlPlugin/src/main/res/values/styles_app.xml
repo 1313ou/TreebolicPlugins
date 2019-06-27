@@ -15,7 +15,7 @@
 		<item name="android:gravity">center</item>
 		<item name="android:layout_height">wrap_content</item>
 		<item name="android:layout_marginLeft">8dp</item>
-		<item name="android:textColor">#FF0000</item>
+		<item name="android:textColor">#F44336</item>
 		<item name="android:textSize">14sp</item>
 		<item name="android:paddingLeft">4dp</item>
 		<item name="android:paddingRight">4dp</item>
