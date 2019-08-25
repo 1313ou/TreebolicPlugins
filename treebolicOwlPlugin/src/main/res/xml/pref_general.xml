@@ -2,7 +2,6 @@
                   xmlns:app="http://schemas.android.com/apk/res-auto">
 
 	<EditTextPreference
-		android:capitalize="none"
 		android:defaultValue="@string/pref_default_source"
 		android:inputType="text"
 		android:key="pref_source"
@@ -13,7 +12,6 @@
 		android:title="@string/pref_title_source"/>
 
 	<EditTextPreference
-		android:capitalize="none"
 		android:defaultValue="@string/pref_default_base"
 		android:inputType="textUri"
 		android:key="pref_base"
@@ -24,7 +22,6 @@
 		android:title="@string/pref_title_base"/>
 
 	<EditTextPreference
-		android:capitalize="none"
 		android:defaultValue="@string/pref_default_imagebase"
 		android:inputType="textUri"
 		android:key="pref_imagebase"
@@ -35,7 +32,6 @@
 		android:title="@string/pref_title_imagebase"/>
 
 	<EditTextPreference
-		android:capitalize="none"
 		android:defaultValue="@string/pref_default_settings"
 		android:inputType="textUri"
 		android:key="pref_settings"
