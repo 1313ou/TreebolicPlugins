@@ -358,6 +358,7 @@ public class MainActivity extends AppCompatCommonActivity
 	 * @param uri uri
 	 * @return string[0]=source string[1]=base
 	 */
+	@NonNull
 	static private String[] parse(@NonNull final Uri uri)
 	{
 		final File file = new File(uri.getPath());
