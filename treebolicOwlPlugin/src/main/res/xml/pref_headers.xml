@@ -1,8 +1,13 @@
-<preference-headers
-	xmlns:app="http://schemas.android.com/apk/res-auto">
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019. Bernard Bou <1313ou@gmail.com>
+  -->
 
-	<header
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+	<Preference
 		app:fragment="org.treebolic.owl.SettingsActivity$GeneralPreferenceFragment"
-		app:title="@string/pref_header_general"/>
+		app:icon="@null"
+		app:key="pref_general"
+		app:title="@string/pref_header_general" />
 
-</preference-headers>
+</PreferenceScreen>

@@ -17,18 +17,7 @@
     <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1ad9775-637d-4494-8054-978db10d3578" name="Default" comment="toolbar">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_compress_1_19_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treebolicDotPlugin/src/main/res/values/theme.xml" beforeDir="false" afterPath="$PROJECT_DIR$/treebolicDotPlugin/src/main/res/values/theme.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treebolicDotPlugin/treebolicDotPlugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/treebolicDotPlugin/treebolicDotPlugin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treebolicFilesPlugin/src/main/res/values/theme.xml" beforeDir="false" afterPath="$PROJECT_DIR$/treebolicFilesPlugin/src/main/res/values/theme.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treebolicFilesPlugin/treebolicFilesPlugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/treebolicFilesPlugin/treebolicFilesPlugin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treebolicOwlPlugin/src/main/res/values/theme.xml" beforeDir="false" afterPath="$PROJECT_DIR$/treebolicOwlPlugin/src/main/res/values/theme.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treebolicOwlPlugin/treebolicOwlPlugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/treebolicOwlPlugin/treebolicOwlPlugin.iml" afterDir="false" />
-    </list>
+    <list default="true" id="a1ad9775-637d-4494-8054-978db10d3578" name="Default" comment="theming materialcomponents&#10;infer nullity" />
     <ignored path="TreebolicPlugins.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -600,10 +589,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1013,13 +1002,6 @@
       <option name="presentableId" value="Default" />
       <updated>1491459799301</updated>
     </task>
-    <task id="LOCAL-00002" summary="download&#10;main&#10;lint">
-      <created>1493977266198</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1493977266198</updated>
-    </task>
     <task id="LOCAL-00003" summary="trim down dependencies">
       <created>1494321152956</created>
       <option name="number" value="00003" />
@@ -1356,7 +1338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566725952703</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="theming materialcomponents&#10;infer nullity">
+      <created>1566984956949</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1566984956949</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1371,7 +1360,7 @@
   <component name="ToolWindowManager">
     <frame x="53" y="31" width="1465" height="1155" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2382291" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2382291" />
       <window_info id="Structure" order="1" weight="0.24876982" />
       <window_info id="Designer" order="2" />
       <window_info id="Captures" order="3" side_tool="true" weight="0.21832359" />
@@ -1381,23 +1370,23 @@
       <window_info id="Image Layers" order="7" />
       <window_info id="Resources Explorer" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.60864806" weight="0.27984345" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.60716796" weight="0.27888447" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49587685" weight="0.40660378" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32924527" />
       <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Logcat" order="8" sideWeight="0.50175685" side_tool="true" visible="true" weight="0.20219123" />
+      <window_info anchor="bottom" id="Logcat" order="8" sideWeight="0.6978215" side_tool="true" visible="true" weight="0.4442231" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.500821" side_tool="true" weight="0.3297456" />
       <window_info anchor="bottom" id="Android Monitor" order="10" sideWeight="0.6380789" weight="0.4490566" />
-      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.30358398" weight="0.4442231" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.48713738" weight="0.32843137" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="11" sideWeight="0.3021785" visible="true" weight="0.4442231" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.48629656" weight="0.32768923" />
       <window_info anchor="bottom" id="Gradle Console" order="13" sideWeight="0.49092907" side_tool="true" weight="0.506986" />
       <window_info anchor="bottom" id="Dependency Viewer" order="14" sideWeight="0.50907093" weight="0.506986" />
-      <window_info anchor="bottom" id="Inspection Results" order="15" sideWeight="0.56431305" weight="0.32387474" />
+      <window_info anchor="bottom" id="Inspection Results" order="15" sideWeight="0.5628953" weight="0.32370517" />
       <window_info anchor="bottom" id="Messages" order="16" sideWeight="0.5407772" weight="0.35686275" />
-      <window_info anchor="bottom" id="Build" order="17" sideWeight="0.49824315" visible="true" weight="0.20219123" />
+      <window_info anchor="bottom" id="Build" order="17" sideWeight="0.49824315" weight="0.20219123" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.04337152" />
@@ -1476,7 +1465,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="permission on files&#10;places" />
     <MESSAGE value="update openedittext" />
     <MESSAGE value="minor fixes" />
     <MESSAGE value="3.7.0" />
@@ -1501,7 +1489,8 @@
     <MESSAGE value="finish activity if app not available&#10;openedit handling" />
     <MESSAGE value="version number" />
     <MESSAGE value="toolbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="toolbar" />
+    <MESSAGE value="theming materialcomponents&#10;infer nullity" />
+    <option name="LAST_COMMIT_MESSAGE" value="theming materialcomponents&#10;infer nullity" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
