@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Gradle: __local_aars__:/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/libs/treebolic-provider-files.jar:unspecified@jar">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/treebolicFilesPlugin/libs/treebolic-provider-files.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
