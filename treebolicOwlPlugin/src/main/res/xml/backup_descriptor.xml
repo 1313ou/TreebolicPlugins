@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <full-backup-content>
-	<!-- TODO Remove the following "exclude" elements to make them a part of the auto backup -->
-	<!-- Exclude the shared preferences file that contains the GCM registrationId -->
+	<!-- Remove the following "exclude" elements to make them a part of the auto backup -->
+	<!--
 	<exclude
 		domain="sharedpref"
-		path="org.treebolic.trial_trial.xml"/>
+		path="org.treebolic.etc.xml"/>
+	-->
 </full-backup-content>
