@@ -140,5 +140,65 @@
     <orderEntry type="module" module-name="treebolicLibModel" />
     <orderEntry type="module" module-name="treebolicGlue" />
     <orderEntry type="module" module-name="treebolicGlueIface" />
+    <orderEntry type="module" module-name="treebolicPluginLib" />
+    <orderEntry type="module" module-name="treebolicIface" />
+    <orderEntry type="module" module-name="treebolicGraph" />
+    <orderEntry type="module" module-name="commonLib" />
+    <orderEntry type="module" module-name="storageLib" />
+    <orderEntry type="module" module-name="downloadLib" />
+    <orderEntry type="module" module-name="fileChooserLib" />
+    <orderEntry type="module" module-name="preferenceLib" />
+    <orderEntry type="module" module-name="treebolicMutable" />
+    <orderEntry type="module" module-name="treebolicLibModel" />
+    <orderEntry type="module" module-name="treebolicGlue" />
+    <orderEntry type="module" module-name="treebolicGlueIface" />
+    <orderEntry type="module" module-name="treebolicPluginLib" />
+    <orderEntry type="module" module-name="treebolicIface" />
+    <orderEntry type="module" module-name="treebolicGraph" />
+    <orderEntry type="module" module-name="commonLib" />
+    <orderEntry type="module" module-name="storageLib" />
+    <orderEntry type="module" module-name="downloadLib" />
+    <orderEntry type="module" module-name="fileChooserLib" />
+    <orderEntry type="module" module-name="preferenceLib" />
+    <orderEntry type="module" module-name="treebolicMutable" />
+    <orderEntry type="module" module-name="treebolicLibModel" />
+    <orderEntry type="module" module-name="treebolicGlue" />
+    <orderEntry type="module" module-name="treebolicGlueIface" />
+    <orderEntry type="module" module-name="treebolicPluginLib" />
+    <orderEntry type="module" module-name="treebolicIface" />
+    <orderEntry type="module" module-name="treebolicGraph" />
+    <orderEntry type="module" module-name="commonLib" />
+    <orderEntry type="module" module-name="storageLib" />
+    <orderEntry type="module" module-name="downloadLib" />
+    <orderEntry type="module" module-name="fileChooserLib" />
+    <orderEntry type="module" module-name="preferenceLib" />
+    <orderEntry type="module" module-name="treebolicMutable" />
+    <orderEntry type="module" module-name="treebolicLibModel" />
+    <orderEntry type="module" module-name="treebolicGlue" />
+    <orderEntry type="module" module-name="treebolicGlueIface" />
+    <orderEntry type="module" module-name="treebolicPluginLib" />
+    <orderEntry type="module" module-name="treebolicIface" />
+    <orderEntry type="module" module-name="treebolicGraph" />
+    <orderEntry type="module" module-name="commonLib" />
+    <orderEntry type="module" module-name="storageLib" />
+    <orderEntry type="module" module-name="downloadLib" />
+    <orderEntry type="module" module-name="fileChooserLib" />
+    <orderEntry type="module" module-name="preferenceLib" />
+    <orderEntry type="module" module-name="treebolicMutable" />
+    <orderEntry type="module" module-name="treebolicLibModel" />
+    <orderEntry type="module" module-name="treebolicGlue" />
+    <orderEntry type="module" module-name="treebolicGlueIface" />
+    <orderEntry type="module" module-name="treebolicPluginLib" />
+    <orderEntry type="module" module-name="treebolicIface" />
+    <orderEntry type="module" module-name="treebolicGraph" />
+    <orderEntry type="module" module-name="commonLib" />
+    <orderEntry type="module" module-name="storageLib" />
+    <orderEntry type="module" module-name="downloadLib" />
+    <orderEntry type="module" module-name="fileChooserLib" />
+    <orderEntry type="module" module-name="preferenceLib" />
+    <orderEntry type="module" module-name="treebolicMutable" />
+    <orderEntry type="module" module-name="treebolicLibModel" />
+    <orderEntry type="module" module-name="treebolicGlue" />
+    <orderEntry type="module" module-name="treebolicGlueIface" />
   </component>
 </module>
