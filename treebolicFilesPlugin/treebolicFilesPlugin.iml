@@ -89,12 +89,14 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 28 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.multidex:multidex-instrumentation:2.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: __local_aars__:/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/libs/treebolic-provider-files.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: __local_aars__:/mnt/data2/devel/android-treebolic-as/TreebolicPlugins/treebolicFilesPlugin/libs/treebolic-balancer.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.collection:collection:1.1.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-common:2.1.0-rc01@jar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.arch.core:core-common:2.1.0-rc01@jar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.annotation:annotation:1.1.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.multidex:multidex:2.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.preference:preference:1.1.0-rc01@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.material:material:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.appcompat:appcompat:1.1.0-rc01@aar" level="project" />
@@ -135,35 +137,8 @@
     <orderEntry type="module" module-name="storageLib" />
     <orderEntry type="module" module-name="fileChooserLib" />
     <orderEntry type="module" module-name="preferenceLib" />
-    <orderEntry type="module" module-name="treebolicPluginLib" />
-    <orderEntry type="module" module-name="treebolicIface" />
-    <orderEntry type="module" module-name="commonLib" />
-    <orderEntry type="module" module-name="storageLib" />
-    <orderEntry type="module" module-name="fileChooserLib" />
-    <orderEntry type="module" module-name="preferenceLib" />
-    <orderEntry type="module" module-name="treebolicPluginLib" />
-    <orderEntry type="module" module-name="treebolicIface" />
-    <orderEntry type="module" module-name="commonLib" />
-    <orderEntry type="module" module-name="storageLib" />
-    <orderEntry type="module" module-name="fileChooserLib" />
-    <orderEntry type="module" module-name="preferenceLib" />
-    <orderEntry type="module" module-name="treebolicPluginLib" />
-    <orderEntry type="module" module-name="treebolicIface" />
-    <orderEntry type="module" module-name="commonLib" />
-    <orderEntry type="module" module-name="storageLib" />
-    <orderEntry type="module" module-name="fileChooserLib" />
-    <orderEntry type="module" module-name="preferenceLib" />
-    <orderEntry type="module" module-name="treebolicPluginLib" />
-    <orderEntry type="module" module-name="treebolicIface" />
-    <orderEntry type="module" module-name="commonLib" />
-    <orderEntry type="module" module-name="storageLib" />
-    <orderEntry type="module" module-name="fileChooserLib" />
-    <orderEntry type="module" module-name="preferenceLib" />
-    <orderEntry type="module" module-name="treebolicPluginLib" />
-    <orderEntry type="module" module-name="treebolicIface" />
-    <orderEntry type="module" module-name="commonLib" />
-    <orderEntry type="module" module-name="storageLib" />
-    <orderEntry type="module" module-name="fileChooserLib" />
-    <orderEntry type="module" module-name="preferenceLib" />
+    <orderEntry type="module" module-name="rateLib" />
+    <orderEntry type="module" module-name="othersLib" />
+    <orderEntry type="module" module-name="donateLib" />
   </component>
 </module>

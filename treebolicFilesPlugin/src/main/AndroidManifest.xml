@@ -47,6 +47,24 @@
 				android:value=".MainActivity"/>
 		</activity>
 
+		<activity
+			android:name="com.bbou.others.OthersActivity"
+			android:parentActivityName=".MainActivity"
+			tools:targetApi="jelly_bean">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity"/>
+		</activity>
+
+		<activity
+			android:name="com.bbou.donate.DonateActivity"
+			android:parentActivityName=".MainActivity"
+			tools:targetApi="jelly_bean">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity"/>
+		</activity>
+
 	</application>
 
 </manifest>
