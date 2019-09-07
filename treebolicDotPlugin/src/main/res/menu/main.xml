@@ -1,47 +1,59 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-      xmlns:app="http://schemas.android.com/apk/res-auto"
-      xmlns:tools="http://schemas.android.com/tools"
-      tools:context="org.treebolic.dot.MainActivity">
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	tools:context="org.treebolic.dot.MainActivity">
 
 	<item
 		android:id="@+id/action_query"
 		android:title="@string/title_query"
-		app:showAsAction="never"/>
+		app:showAsAction="never" />
 	<item
 		android:id="@+id/action_source"
 		android:title="@string/title_source"
-		app:showAsAction="never"/>
+		app:showAsAction="never" />
 	<item
 		android:id="@+id/action_demo"
 		android:title="@string/title_demo"
-		app:showAsAction="never"/>
-	<item
-		android:id="@+id/action_download"
-		android:title="@string/title_download"
-		app:showAsAction="never"/>
+		app:showAsAction="never" />
+	<item android:title="@string/title_menu_data">
+		<menu>
+			<item
+				android:id="@+id/action_download"
+				android:title="@string/title_download"
+				app:showAsAction="never" />
+		</menu>
+	</item>
 	<item
 		android:id="@+id/action_settings"
 		android:title="@string/title_settings"
-		app:showAsAction="never"/>
-	<item
-		android:id="@+id/action_rate"
-		android:title="@string/title_rate"
 		app:showAsAction="never" />
-	<item
-		android:id="@+id/action_others"
-		android:title="@string/title_others"
-		app:showAsAction="never" />
-	<item
-		android:id="@+id/action_donate"
-		android:title="@string/title_donate"
-		app:showAsAction="never" />
-	<item
-		android:id="@+id/action_app_settings"
-		android:title="@string/title_activity_app_settings"
-		app:showAsAction="never"/>
-	<item
-		android:id="@+id/action_finish"
-		android:title="@string/title_finish"
-		app:showAsAction="never"/>
+	<item android:title="@string/title_menu_about">
+		<menu>
+			<item
+				android:id="@+id/action_rate"
+				android:title="@string/title_rate"
+				app:showAsAction="never" />
+			<item
+				android:id="@+id/action_others"
+				android:title="@string/title_others"
+				app:showAsAction="never" />
+			<item
+				android:id="@+id/action_donate"
+				android:title="@string/title_donate"
+				app:showAsAction="never" />
+		</menu>
+	</item>
+	<item android:title="@string/title_menu_app">
+		<menu>
+			<item
+				android:id="@+id/action_app_settings"
+				android:title="@string/title_activity_app_settings"
+				app:showAsAction="never" />
+			<item
+				android:id="@+id/action_finish"
+				android:title="@string/title_finish"
+				app:showAsAction="never" />
+		</menu>
+	</item>
 
 </menu>
