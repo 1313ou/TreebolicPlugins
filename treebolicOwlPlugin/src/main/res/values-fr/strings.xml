@@ -12,6 +12,7 @@
 	<string name="title_source">Source</string>
 	<string name="title_demo">Démo</string>
 	<string name="title_finish">Finir</string>
+	<string name="title_kill">Terminer</string>
 
 	<!-- ok/errors -->
 	<string name="fail_nullquery">Requête nulle</string>
