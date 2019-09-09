@@ -50,7 +50,7 @@ public class Checker
 		}
 		catch (@NonNull final ActivityNotFoundException ignored)
 		{
-			Toast.makeText(context, R.string.market_fail, Toast.LENGTH_LONG).show();
+			Toast.makeText(context, R.string.market_fail_treebolic, Toast.LENGTH_LONG).show();
 		}
 	}
 
