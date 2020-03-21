@@ -243,7 +243,7 @@ public class MainActivity extends AppCompatCommonActivity
 		super.onActivityResult(requestCode, resultCode, returnIntent);
 	}
 
-	abstract class Runnable1
+	abstract static class Runnable1
 	{
 		@SuppressWarnings("WeakerAccess")
 		abstract public void run(final String arg);
