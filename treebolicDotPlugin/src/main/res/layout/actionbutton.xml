@@ -27,6 +27,7 @@
 		android:onClick="onClick"
 		android:visibility="invisible"
 		app:fabSize="normal"
+		app:tint="@android:color/white"
 		app:useCompatPadding="true"
 		app:srcCompat="@drawable/ic_treebolic"
 		tools:ignore="UnusedAttribute"/>
