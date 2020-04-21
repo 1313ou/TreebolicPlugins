@@ -496,6 +496,7 @@ public class MainActivity extends AppCompatCommonActivity
 	/**
 	 * A placeholder fragment containing a simple view.
 	 */
+	@SuppressWarnings("WeakerAccess")
 	public static class PlaceholderFragment extends Fragment
 	{
 		@Override
