@@ -7,7 +7,6 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.net.Uri;
 import android.os.Build;
-import android.preference.PreferenceManager;
 
 import org.treebolic.TreebolicIface;
 import org.treebolic.storage.Storage;
@@ -16,6 +15,7 @@ import java.io.File;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.preference.PreferenceManager;
 
 /**
  * Settings

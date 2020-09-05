@@ -9,7 +9,6 @@ import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Process;
-import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -40,6 +39,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
+import androidx.preference.PreferenceManager;
 
 /**
  * Treebolic Dot main activity
@@ -205,7 +205,8 @@ public class MainActivity extends AppCompatCommonActivity
 		final File dir = Storage.getTreebolicStorage(this);
 		if (dir.isDirectory())
 		{
-			if (dir.list().length == 0)
+			final String[] dirContent = dir.list();
+			if (dirContent == null || dirContent.length == 0)
 			{
 				// deploy
 				Storage.expandZipAssetFile(this, Settings.DEMOZIP);
@@ -285,16 +286,25 @@ public class MainActivity extends AppCompatCommonActivity
 				if (fileUri != null)
 				{
 					Toast.makeText(this, fileUri.toString(), Toast.LENGTH_SHORT).show();
-					final File file = new File(fileUri.getPath());
+					final String path = fileUri.getPath();
+					if (path == null)
+					{
+						return;
+					}
+					final File file = new File(path);
 					final String parent = file.getParent();
+					if (parent == null)
+					{
+						return;
+					}
 					final File parentFile = new File(parent);
 					final Uri parentUri = Uri.fromFile(parentFile);
-					final String query = file.getName();
 					String base = parentUri.toString();
 					if (!base.endsWith("/"))
 					{
 						base += '/';
 					}
+					final String query = file.getName();
 					Settings.save(this, query, base);
 
 					updateButton();
@@ -318,11 +328,15 @@ public class MainActivity extends AppCompatCommonActivity
 	{
 		try
 		{
-			// choose bundle entry
-			EntryChooser.choose(this, new File(archiveUri.getPath()), zipEntry -> {
-				final String base = "jar:" + archiveUri.toString() + "!/";
-				MainActivity.tryStartTreebolic(MainActivity.this, zipEntry, base, Settings.getStringPref(MainActivity.this, TreebolicIface.PREF_IMAGEBASE), Settings.getStringPref(MainActivity.this, TreebolicIface.PREF_SETTINGS));
-			});
+			final String path = archiveUri.getPath();
+			if (path != null)
+			{
+				// choose bundle entry
+				EntryChooser.choose(this, new File(archiveUri.getPath()), zipEntry -> {
+					final String base = "jar:" + archiveUri.toString() + "!/";
+					MainActivity.tryStartTreebolic(MainActivity.this, zipEntry, base, Settings.getStringPref(MainActivity.this, TreebolicIface.PREF_IMAGEBASE), Settings.getStringPref(MainActivity.this, TreebolicIface.PREF_SETTINGS));
+				});
+			}
 		}
 		catch (@NonNull final IOException e)
 		{
@@ -385,10 +399,16 @@ public class MainActivity extends AppCompatCommonActivity
 	@NonNull
 	static private String[] parse(@NonNull final Uri uri)
 	{
-		final File file = new File(uri.getPath());
-		final String source = file.getName();
-		final String base = Uri.fromFile(new File(file.getParent())).toString() + '/';
-		return new String[]{source, base};
+		final String path = uri.getPath();
+		if (path != null)
+		{
+			final File file = new File(path);
+			final String source = file.getName();
+			final String parent = file.getParent();
+			final String base = parent == null ? null : Uri.fromFile(new File(parent)).toString() + '/';
+			return new String[]{source, base};
+		}
+		return new String[2];
 	}
 
 	/**
@@ -458,10 +478,15 @@ public class MainActivity extends AppCompatCommonActivity
 		final String base = Settings.getStringPref(this, TreebolicIface.PREF_BASE);
 		if (source != null && !source.isEmpty())
 		{
-			final File baseFile = base == null ? null : new File(Uri.parse(base).getPath());
-			final File file = new File(baseFile, source);
-			Log.d(MainActivity.TAG, "file=" + file);
-			return file.exists();
+			final Uri baseUri = Uri.parse(base);
+			final String path = baseUri.getPath();
+			if (path != null)
+			{
+				final File baseFile = base == null ? null : new File(path);
+				final File file = new File(baseFile, source);
+				Log.d(MainActivity.TAG, "file=" + file);
+				return file.exists();
+			}
 		}
 		return false;
 	}

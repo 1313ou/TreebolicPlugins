@@ -1,9 +1,6 @@
 package org.treebolic.dot;
 
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-
 import android.view.View;
 import android.widget.Toast;
 
@@ -13,6 +10,8 @@ import org.treebolic.storage.Storage;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+
+import androidx.annotation.NonNull;
 
 /**
  * Dot download activity
@@ -62,7 +61,12 @@ public class DownloadActivity extends org.treebolic.download.DownloadActivity
 			return true;
 		}
 
-		final File destFile = new File(storage, this.downloadUri.getLastPathSegment());
+		final String lastSegment = this.downloadUri.getLastPathSegment();
+		if (lastSegment == null)
+		{
+			return false;
+		}
+		final File destFile = new File(storage, lastSegment);
 		Deploy.copy(inputStream, destFile);
 		return true;
 	}
