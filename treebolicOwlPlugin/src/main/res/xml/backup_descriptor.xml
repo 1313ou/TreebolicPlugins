@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <full-backup-content>
-	<!-- Remove the following "exclude" elements to make them a part of the auto backup -->
-	<!--
 	<exclude
-		domain="sharedpref"
-		path="org.treebolic.etc.xml"/>
-	-->
+		domain="root"
+		path="." />
 </full-backup-content>
