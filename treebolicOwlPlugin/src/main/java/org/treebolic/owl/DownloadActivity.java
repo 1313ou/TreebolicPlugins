@@ -1,5 +1,6 @@
 package org.treebolic.owl;
 
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -62,7 +63,8 @@ public class DownloadActivity extends org.treebolic.download.DownloadActivity
 			return true;
 		}
 
-		final String lastSegment = this.downloadUri.getLastPathSegment();
+		final Uri downloadUri = Uri.parse(this.downloadUrl);
+		final String lastSegment = downloadUri.getLastPathSegment();
 		if (lastSegment == null)
 		{
 			return false;
