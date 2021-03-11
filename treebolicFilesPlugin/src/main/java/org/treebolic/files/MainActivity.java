@@ -113,7 +113,6 @@ public class MainActivity extends AppCompatCommonActivity
 	{
 		// inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
-
 		return true;
 	}
 
@@ -124,59 +123,69 @@ public class MainActivity extends AppCompatCommonActivity
 		// automatically handle clicks on the Home/Up button, so long
 		// as you specify a parent activity in AndroidManifest.xml.
 		final int id = item.getItemId();
-		switch (id)
+		if (R.id.action_places == id)
 		{
-			case R.id.action_places:
-				chooseAndSave();
-				return true;
-
-			case R.id.action_source:
-				requestSource();
-				return true;
-
-			case R.id.action_settings:
-				startActivity(new Intent(this, SettingsActivity.class));
-				return true;
-
-			case R.id.action_run:
-				final String fileUri = Settings.getStringPref(this, TreebolicIface.PREF_SOURCE);
-				assert fileUri != null;
-				MainActivity.tryStartTreebolic(this, fileUri);
-				return true;
-
-			case R.id.action_demo:
-				//MainActivity.tryStartTreebolic(this, Environment.getExternalStorageDirectory().getAbsolutePath());
-				chooseAndTryStartTreebolic();
-				return true;
-
-			case R.id.action_others:
-				startActivity(new Intent(this, OthersActivity.class));
-				return true;
-
-			case R.id.action_donate:
-				startActivity(new Intent(this, DonateActivity.class));
-				return true;
-
-			case R.id.action_rate:
-				AppRate.rate(this);
-				return true;
-
-			case R.id.action_app_settings:
-				Settings.applicationSettings(this, "org.treebolic.files");
-				return true;
-
-			case R.id.action_finish:
-				finish();
-				return true;
-
-			case R.id.action_kill:
-				Process.killProcess(Process.myPid());
-				return true;
-
-			default:
-				break;
+			chooseAndSave();
+			return true;
 		}
-		return super.onOptionsItemSelected(item);
+		else if (R.id.action_source == id)
+		{
+			requestSource();
+			return true;
+		}
+		else if (R.id.action_settings == id)
+		{
+			startActivity(new Intent(this, SettingsActivity.class));
+			return true;
+		}
+		else if (R.id.action_run == id)
+		{
+			final String fileUri = Settings.getStringPref(this, TreebolicIface.PREF_SOURCE);
+			assert fileUri != null;
+			MainActivity.tryStartTreebolic(this, fileUri);
+			return true;
+		}
+		else if (R.id.action_demo == id)
+		{
+			//MainActivity.tryStartTreebolic(this, Environment.getExternalStorageDirectory().getAbsolutePath());
+			chooseAndTryStartTreebolic();
+			return true;
+		}
+		else if (R.id.action_others == id)
+		{
+			startActivity(new Intent(this, OthersActivity.class));
+			return true;
+		}
+		else if (R.id.action_donate == id)
+		{
+			startActivity(new Intent(this, DonateActivity.class));
+			return true;
+		}
+		else if (R.id.action_rate == id)
+		{
+			AppRate.rate(this);
+			return true;
+
+		}
+		else if (R.id.action_app_settings == id)
+		{
+			Settings.applicationSettings(this, "org.treebolic.files");
+			return true;
+		}
+		else if (R.id.action_finish == id)
+		{
+			finish();
+			return true;
+		}
+		else if (R.id.action_kill == id)
+		{
+			Process.killProcess(Process.myPid());
+			return true;
+		}
+		else
+		{
+			return super.onOptionsItemSelected(item);
+		}
 	}
 
 	// I N I T I A L I Z E

@@ -1,9 +1,9 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
 	<string name="title_activity_settings">Settings</string>
 
 	<!-- General settings -->
-	<string name="pref_header_general">General</string>
+	<string name="pref_header_general" tools:keep="@string/pref_header_general">General</string>
 
 	<!-- source -->
 	<string name="pref_title_source">Source</string>

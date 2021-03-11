@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
 	<!-- base colors override -->
-	<color name="default_primaryColor">#FF009688</color>
-	<color name="default_primaryDarkColor">#FF004d40</color>
-	<color name="default_secondaryColor">#FFf4511e</color>
+	<color name="default_primaryColor" tools:keep="@color/default_primaryColor">#FF009688</color>
+	<color name="default_primaryDarkColor" tools:keep="@color/default_primaryDarkColor">#FF004d40</color>
+	<color name="default_secondaryColor" tools:keep="@color/default_secondaryColor">#FFf4511e</color>
 
 </resources>
