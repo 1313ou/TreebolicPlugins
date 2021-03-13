@@ -30,7 +30,6 @@ import org.treebolic.AppCompatCommonActivity;
 import org.treebolic.TreebolicIface;
 import org.treebolic.filechooser.FileChooserActivity;
 import org.treebolic.plugin.Checker;
-import org.treebolic.storage.Storage;
 
 import java.io.File;
 
@@ -221,7 +220,7 @@ public class MainActivity extends AppCompatCommonActivity
 	{
 		final Intent intent = new Intent(this, org.treebolic.filechooser.FileChooserActivity.class);
 		intent.setType("inode/directory");
-		intent.putExtra(FileChooserActivity.ARG_FILECHOOSER_INITIAL_DIR, Storage.getExternalStorage());
+		intent.putExtra(FileChooserActivity.ARG_FILECHOOSER_INITIAL_DIR, StorageExplorer.discoverExternalStorage(this));
 		intent.putExtra(FileChooserActivity.ARG_FILECHOOSER_CHOOSE_DIR, true);
 		intent.putExtra(FileChooserActivity.ARG_FILECHOOSER_EXTENSION_FILTER, new String[]{});
 		intent.addCategory(Intent.CATEGORY_OPENABLE);
@@ -297,7 +296,7 @@ public class MainActivity extends AppCompatCommonActivity
 
 	private void choosePlace(@NonNull final Runnable1 runnable1)
 	{
-		final Pair<CharSequence[], CharSequence[]> result = Storage.getDirectoriesTypesValues();
+		final Pair<CharSequence[], CharSequence[]> result = StorageExplorer.getDirectoriesTypesValues(this);
 		final CharSequence[] types = result.first;
 		final CharSequence[] values = result.second;
 

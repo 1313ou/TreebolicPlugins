@@ -29,6 +29,7 @@ import org.treebolic.filechooser.EntryChooser;
 import org.treebolic.filechooser.FileChooserActivity;
 import org.treebolic.plugin.Checker;
 import org.treebolic.storage.Storage;
+import org.treebolic.storage.Deployer;
 
 import java.io.File;
 import java.io.IOException;
@@ -139,7 +140,7 @@ public class MainActivity extends AppCompatCommonActivity
 		}
 		else if (R.id.action_demo == id)
 		{
-			final Uri archiveFileUri = Storage.copyAssetFile(this, Settings.DEMOZIP);
+			final Uri archiveFileUri = Deployer.copyAssetFile(this, Settings.DEMOZIP);
 			if (archiveFileUri != null)
 			{
 				tryStartTreebolicBundle(archiveFileUri);
@@ -218,7 +219,7 @@ public class MainActivity extends AppCompatCommonActivity
 			if (dirContent == null || dirContent.length == 0)
 			{
 				// deploy
-				Storage.expandZipAssetFile(this, Settings.DEMOZIP);
+				Deployer.expandZipAssetFile(this, Settings.DEMOZIP);
 			}
 		}
 	}
