@@ -479,6 +479,7 @@ public class StorageExplorer
 	/**
 	 * User id
 	 *
+	 * @param context context
 	 * @return user id
 	 */
 	@NonNull
