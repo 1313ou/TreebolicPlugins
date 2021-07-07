@@ -1,6 +1,7 @@
 package org.treebolic.files;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.ComponentName;
 import android.content.Context;
@@ -33,11 +34,12 @@ import org.treebolic.plugin.Checker;
 
 import java.io.File;
 
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.preference.PreferenceManager;
@@ -55,9 +57,9 @@ public class MainActivity extends AppCompatCommonActivity
 	static private final String TAG = "PluginFilesA";
 
 	/**
-	 * Dir request code
+	 * Activity result launcher
 	 */
-	private static final int REQUEST_DIR_CODE = 1;
+	protected ActivityResultLauncher<Intent> activityResultLauncher;
 
 	// L I F E C Y C L E
 
@@ -82,6 +84,30 @@ public class MainActivity extends AppCompatCommonActivity
 		{
 			actionBar.setDisplayOptions(ActionBar.DISPLAY_USE_LOGO | ActionBar.DISPLAY_SHOW_TITLE);
 		}
+
+		// activity launcher
+		this.activityResultLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), result -> {
+
+			boolean success = result.getResultCode() == Activity.RESULT_OK;
+			if (success)
+			{
+				Intent data = result.getData();
+				if (data != null)
+				{
+					final Uri fileUri = data.getData();
+					if (fileUri != null)
+					{
+						Toast.makeText(this, fileUri.toString(), Toast.LENGTH_SHORT).show();
+						Settings.putStringPref(this, TreebolicIface.PREF_SOURCE, fileUri.getPath());
+
+						updateButton();
+
+						// query
+						// query());
+					}
+				}
+			}
+		});
 
 		// initialize
 		initialize();
@@ -224,31 +250,7 @@ public class MainActivity extends AppCompatCommonActivity
 		intent.putExtra(FileChooserActivity.ARG_FILECHOOSER_CHOOSE_DIR, true);
 		intent.putExtra(FileChooserActivity.ARG_FILECHOOSER_EXTENSION_FILTER, new String[]{});
 		intent.addCategory(Intent.CATEGORY_OPENABLE);
-		startActivityForResult(intent, MainActivity.REQUEST_DIR_CODE);
-	}
-
-	@Override
-	protected void onActivityResult(final int requestCode, final int resultCode, @Nullable final Intent returnIntent)
-	{
-		// handle selection of input by other activity which returns selected input
-		if (resultCode == AppCompatActivity.RESULT_OK && returnIntent != null)
-		{
-			final Uri fileUri = returnIntent.getData();
-			if (fileUri != null)
-			{
-				Toast.makeText(this, fileUri.toString(), Toast.LENGTH_SHORT).show();
-				if (requestCode == REQUEST_DIR_CODE)
-				{
-					Settings.putStringPref(this, TreebolicIface.PREF_SOURCE, fileUri.getPath());
-
-					updateButton();
-
-					// query
-					// query());
-				}
-			}
-		}
-		super.onActivityResult(requestCode, resultCode, returnIntent);
+		this.activityResultLauncher.launch(intent);
 	}
 
 	abstract static class Runnable1
@@ -460,6 +462,7 @@ public class MainActivity extends AppCompatCommonActivity
 	private void updateButton()
 	{
 		final ImageButton button = findViewById(R.id.queryButton);
+		button.setOnClickListener(this::onClick);
 		final TextView sourceText = findViewById(R.id.querySource);
 		final String source = Settings.getStringPref(this, TreebolicIface.PREF_SOURCE);
 		final boolean qualifies = sourceQualifies(source);

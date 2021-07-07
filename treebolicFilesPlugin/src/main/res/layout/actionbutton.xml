@@ -23,7 +23,6 @@
 		android:layout_centerHorizontal="true"
 		android:contentDescription="@string/title_run"
 		android:elevation="4dp"
-		android:onClick="onClick"
 		android:visibility="invisible"
 		app:fabSize="normal"
 		app:tint="@android:color/white"

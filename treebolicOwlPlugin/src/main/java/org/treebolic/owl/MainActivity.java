@@ -1,6 +1,7 @@
 package org.treebolic.owl;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.ComponentName;
 import android.content.Context;
@@ -28,16 +29,17 @@ import org.treebolic.TreebolicIface;
 import org.treebolic.filechooser.EntryChooser;
 import org.treebolic.filechooser.FileChooserActivity;
 import org.treebolic.plugin.Checker;
-import org.treebolic.storage.Storage;
 import org.treebolic.storage.Deployer;
+import org.treebolic.storage.Storage;
 
 import java.io.File;
 import java.io.IOException;
 
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.preference.PreferenceManager;
@@ -55,9 +57,9 @@ public class MainActivity extends AppCompatCommonActivity
 	static private final String TAG = "PluginOwlA";
 
 	/**
-	 * File request code
+	 * Activity result launcher
 	 */
-	private static final int REQUEST_FILE_CODE = 1;
+	protected ActivityResultLauncher<Intent> activityResultLauncher;
 
 	// L I F E C Y C L E
 
@@ -75,6 +77,47 @@ public class MainActivity extends AppCompatCommonActivity
 		// toolbar
 		final Toolbar toolbar = findViewById(org.treebolic.download.R.id.toolbar);
 		setSupportActionBar(toolbar);
+
+		// activity launcher
+		this.activityResultLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), result -> {
+
+			boolean success = result.getResultCode() == Activity.RESULT_OK;
+			if (success)
+			{
+				Intent data = result.getData();
+				if (data != null)
+				{
+					final Uri fileUri = data.getData();
+					if (fileUri != null)
+					{
+						Toast.makeText(this, fileUri.toString(), Toast.LENGTH_SHORT).show();
+						final String path = fileUri.getPath();
+						if (path != null)
+						{
+							final File file = new File(path);
+							final String parent = file.getParent();
+							if (parent != null)
+							{
+								final File parentFile = new File(parent);
+								final Uri parentUri = Uri.fromFile(parentFile);
+								final String query = file.getName();
+								String base = parentUri.toString();
+								if (!base.endsWith("/"))
+								{
+									base += '/';
+								}
+								Settings.save(this, query, base);
+
+								updateButton();
+
+								// query
+								// query();
+							}
+						}
+					}
+				}
+			}
+		});
 
 		// set up the action bar
 		final ActionBar actionBar = getSupportActionBar();
@@ -282,49 +325,9 @@ public class MainActivity extends AppCompatCommonActivity
 		intent.putExtra(FileChooserActivity.ARG_FILECHOOSER_INITIAL_DIR, Settings.getStringPref(this, TreebolicIface.PREF_BASE));
 		intent.putExtra(FileChooserActivity.ARG_FILECHOOSER_EXTENSION_FILTER, new String[]{"owl", "rdf"});
 		intent.addCategory(Intent.CATEGORY_OPENABLE);
-		startActivityForResult(intent, MainActivity.REQUEST_FILE_CODE);
+		this.activityResultLauncher.launch(intent);
 	}
-
-	@Override
-	protected void onActivityResult(final int requestCode, final int resultCode, @Nullable final Intent returnIntent)
-	{
-		if (requestCode == REQUEST_FILE_CODE)
-		{
-			if (resultCode == AppCompatActivity.RESULT_OK && returnIntent != null)
-			{
-				final Uri fileUri = returnIntent.getData();
-				if (fileUri != null)
-				{
-					Toast.makeText(this, fileUri.toString(), Toast.LENGTH_SHORT).show();
-					final String path = fileUri.getPath();
-					if (path != null)
-					{
-						final File file = new File(path);
-						final String parent = file.getParent();
-						if (parent != null)
-						{
-							final File parentFile = new File(parent);
-							final Uri parentUri = Uri.fromFile(parentFile);
-							final String query = file.getName();
-							String base = parentUri.toString();
-							if (!base.endsWith("/"))
-							{
-								base += '/';
-							}
-							Settings.save(this, query, base);
-
-							updateButton();
-
-							// query
-							// query();
-						}
-					}
-				}
-			}
-		}
-		super.onActivityResult(requestCode, resultCode, returnIntent);
-	}
-
+	
 	// S T A R T
 
 	/**
@@ -469,6 +472,7 @@ public class MainActivity extends AppCompatCommonActivity
 	private void updateButton()
 	{
 		final ImageButton button = findViewById(R.id.queryButton);
+		button.setOnClickListener(this::onClick);
 		final TextView sourceText = findViewById(R.id.querySource);
 		final String source = Settings.getStringPref(this, TreebolicIface.PREF_SOURCE);
 		final boolean qualifies = sourceQualifies(source);
