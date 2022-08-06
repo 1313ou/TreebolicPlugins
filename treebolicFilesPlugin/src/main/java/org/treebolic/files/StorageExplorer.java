@@ -78,7 +78,7 @@ public class StorageExplorer
 				case APP_INTERNAL:
 					return "internal";
 			}
-			return null;
+			return "unexpected";
 		}
 	}
 
