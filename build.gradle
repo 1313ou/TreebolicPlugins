@@ -23,8 +23,8 @@ allprojects {
         versionCode = 1
         versionName = '0.1'
         minSdkVersion = 14
-        targetSdkVersion = 30
-        compileSdkVersion = 30
+        targetSdkVersion = 32
+        compileSdkVersion = 32
         multiDexEnabled = true
     }
 }
