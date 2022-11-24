@@ -1,22 +1,22 @@
 // CORE
 
-include ':treebolicLibModel'
-project(':treebolicLibModel').projectDir = new File('../TreebolicLib/treebolicLibModel/')
+//include ':treebolicLibModel'
+//project(':treebolicLibModel').projectDir = new File('../TreebolicLib/treebolicLibModel/')
 
-include ':treebolicLibView'
-project(':treebolicLibView').projectDir = new File('../TreebolicLib/treebolicLibView/')
+//include ':treebolicLibView'
+//project(':treebolicLibView').projectDir = new File('../TreebolicLib/treebolicLibView/')
 
-include ':treebolicGraph'
-project(':treebolicGraph').projectDir = new File('../TreebolicLib/treebolicGraph/')
+//include ':treebolicGraph'
+//project(':treebolicGraph').projectDir = new File('../TreebolicLib/treebolicGraph/')
 
-include ':treebolicMutable'
-project(':treebolicMutable').projectDir = new File('../TreebolicLib/treebolicMutable/')
+//include ':treebolicMutable'
+//project(':treebolicMutable').projectDir = new File('../TreebolicLib/treebolicMutable/')
+
+//include ':treebolicGlueIface'
+//project(':treebolicGlueIface').projectDir = new File('../TreebolicLib/treebolicGlueIface/')
 
 include ':treebolicGlue'
 project(':treebolicGlue').projectDir = new File('../TreebolicLib/treebolicGlue/')
-
-include ':treebolicGlueIface'
-project(':treebolicGlueIface').projectDir = new File('../TreebolicLib/treebolicGlueIface/')
 
 include ':treebolicIface'
 project(':treebolicIface').projectDir = new File('../TreebolicLib/treebolicIface/')
