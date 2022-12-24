@@ -346,7 +346,7 @@ public class MainActivity extends AppCompatCommonActivity
 			{
 				// choose bundle entry
 				EntryChooser.choose(this, new File(archiveUri.getPath()), zipEntry -> {
-					final String base = "jar:" + archiveUri.toString() + "!/";
+					final String base = "jar:" + archiveUri + "!/";
 					MainActivity.tryStartTreebolic(MainActivity.this, zipEntry, base, Settings.getStringPref(MainActivity.this, TreebolicIface.PREF_IMAGEBASE), Settings.getStringPref(MainActivity.this, TreebolicIface.PREF_SETTINGS));
 				});
 			}
