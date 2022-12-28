@@ -6,6 +6,8 @@ keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 
 android {
 
+    namespace "org.treebolic.owl"
+
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {
