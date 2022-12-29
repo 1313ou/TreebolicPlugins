@@ -9,7 +9,7 @@ public class ProviderData
 	@NonNull
 	public static String[] getProviderClasses()
 	{
-		return new String[]{"treebolic.provider.owl.owlapi.Provider"};
+		return new String[]{"treebolic.provider.owl.sax.Provider"};
 	}
 
 	@NonNull

@@ -452,7 +452,7 @@ public class MainActivity extends AppCompatCommonActivity
 
 		// model passing
 		intent.putExtra(TreebolicIface.ARG_PLUGINPKG, "org.treebolic.owl");
-		intent.putExtra(TreebolicIface.ARG_PROVIDER, "treebolic.provider.owl.owlapi.Provider");
+		intent.putExtra(TreebolicIface.ARG_PROVIDER, "treebolic.provider.owl.sax.Provider");
 		intent.putExtra(TreebolicIface.ARG_SOURCE, source);
 
 		// other parameters passing
