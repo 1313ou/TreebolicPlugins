@@ -47,11 +47,7 @@ android {
 dependencies {
     implementation project(':treebolicPluginLib')
     implementation project(':treebolicIface')
-
-    implementation ('io.github.treebolic:treebolic-loadbalancer:4.0-SNAPSHOT')
-
-    implementation files('libs/treebolic-provider-files.jar')
-    // implementation files('libs/treebolic-balancer.jar')
+    implementation project(':treebolicFilesProvider')
 
     implementation project(':commonLib')
     implementation project(':storageLib')

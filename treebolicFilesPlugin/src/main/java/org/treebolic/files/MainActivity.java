@@ -443,7 +443,7 @@ public class MainActivity extends AppCompatCommonActivity
 
 		// model passing
 		intent.putExtra(TreebolicIface.ARG_PLUGINPKG, "org.treebolic.files");
-		intent.putExtra(TreebolicIface.ARG_PROVIDER, "treebolic.provider.files.Provider");
+		intent.putExtra(TreebolicIface.ARG_PROVIDER, "treebolic.provider.files.Provider2");
 		intent.putExtra(TreebolicIface.ARG_SOURCE, source);
 
 		// other parameters passing
