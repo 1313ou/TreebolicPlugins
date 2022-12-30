@@ -49,9 +49,7 @@ dependencies {
     implementation project(':treebolicIface')
     // implementation project(':treebolicGraph')
 
-    implementation ('io.github.treebolic:treebolic-graph:4.0-SNAPSHOT')
-
-    implementation files('libs/treebolic-provider-graphviz.jar')
+    implementation 'io.github.treebolic:provider-graphviz:4.0-SNAPSHOT'
 
     implementation project(':commonLib')
     implementation project(':storageLib')
