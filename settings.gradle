@@ -35,6 +35,14 @@ project(':othersLib').projectDir = new File('../TreebolicSponsorLibs/othersLib/'
 include ':donateLib'
 project(':donateLib').projectDir = new File('../TreebolicSponsorLibs/donateLib/')
 
+// P R O V I D E R
+
+include ':treebolicFilesProvider'
+project(':treebolicFilesProvider').projectDir = new File('../TreebolicFiles/treebolicFilesProvider/')
+
+include ':treebolicOwlProvider'
+project(':treebolicOwlProvider').projectDir = new File('../TreebolicOne/treebolicOwlProvider/')
+
 // LIB
 
 include ':treebolicPluginLib'
