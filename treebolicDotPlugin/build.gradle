@@ -45,12 +45,10 @@ android {
 }
 
 dependencies {
-    implementation project(':treebolicPluginLib')
-    implementation project(':treebolicIface')
-    // implementation project(':treebolicGraph')
-
     implementation 'io.github.treebolic:provider-graphviz:4.0-0'
 
+    implementation project(':treebolicPluginLib')
+    implementation project(':treebolicIface')
     implementation project(':commonLib')
     implementation project(':storageLib')
     implementation project(':downloadLib')

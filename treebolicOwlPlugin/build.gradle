@@ -48,7 +48,6 @@ dependencies {
     implementation project(':treebolicPluginLib')
     implementation project(':treebolicIface')
     implementation project(':treebolicOwlProvider')
-
     implementation project(':commonLib')
     implementation project(':storageLib')
     implementation project(':downloadLib')
