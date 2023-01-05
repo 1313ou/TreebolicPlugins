@@ -61,7 +61,7 @@ public class Checker
 		boolean isInstalled;
 		try
 		{
-			final PackageInfo ignored = android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.TIRAMISU ? //
+			@SuppressWarnings("unused") final PackageInfo ignored = android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.TIRAMISU ? //
 					packageManager.getPackageInfo(packageName, PackageManager.PackageInfoFlags.of(PackageManager.GET_ACTIVITIES)) : //
 					packageManager.getPackageInfo(packageName, PackageManager.GET_ACTIVITIES);
 			isInstalled = true;
