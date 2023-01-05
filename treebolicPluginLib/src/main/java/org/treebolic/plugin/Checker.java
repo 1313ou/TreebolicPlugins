@@ -4,12 +4,13 @@ import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.net.Uri;
-import androidx.annotation.NonNull;
-
 import android.util.Log;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
 
 public class Checker
 {
@@ -60,7 +61,9 @@ public class Checker
 		boolean isInstalled;
 		try
 		{
-			packageManager.getPackageInfo(packageName, PackageManager.GET_ACTIVITIES);
+			final PackageInfo ignored = android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.TIRAMISU ? //
+					packageManager.getPackageInfo(packageName, PackageManager.PackageInfoFlags.of(PackageManager.GET_ACTIVITIES)) : //
+					packageManager.getPackageInfo(packageName, PackageManager.GET_ACTIVITIES);
 			isInstalled = true;
 		}
 		catch (@NonNull final PackageManager.NameNotFoundException ignored)
