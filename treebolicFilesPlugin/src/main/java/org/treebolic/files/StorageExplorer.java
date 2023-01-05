@@ -105,6 +105,7 @@ public class StorageExplorer
 			return this.type;
 		}
 
+		@NonNull
 		CharSequence getValue()
 		{
 			if (DirType.AUTO == this.type)

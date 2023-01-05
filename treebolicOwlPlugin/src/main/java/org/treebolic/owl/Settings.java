@@ -72,7 +72,7 @@ public class Settings
 	 * @param source  source
 	 * @param base    base
 	 */
-	public static void save(final Context context, final String source, final String base)
+	public static void save(@NonNull final Context context, final String source, final String base)
 	{
 		Settings.putStringPref(context, TreebolicIface.PREF_SOURCE, source);
 		Settings.putStringPref(context, TreebolicIface.PREF_BASE, base);
@@ -86,7 +86,7 @@ public class Settings
 	 * @return value
 	 */
 	@Nullable
-	static public String getStringPref(final Context context, final String key)
+	static public String getStringPref(@NonNull final Context context, final String key)
 	{
 		final SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(context);
 		return sharedPref.getString(key, null);
@@ -100,7 +100,7 @@ public class Settings
 	 * @param value   value
 	 */
 	@SuppressLint({"CommitPrefEdits", "ApplySharedPref"})
-	static public void putStringPref(final Context context, final String key, final String value)
+	static public void putStringPref(@NonNull final Context context, final String key, final String value)
 	{
 		final SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(context);
 		sharedPref.edit().putString(key, value).commit();
