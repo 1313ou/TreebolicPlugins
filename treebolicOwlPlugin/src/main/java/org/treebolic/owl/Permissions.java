@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2023. Bernard Bou
+ */
+
 package org.treebolic.owl;
 
 import android.Manifest;
