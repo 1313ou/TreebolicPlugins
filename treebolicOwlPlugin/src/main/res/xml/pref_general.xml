@@ -1,5 +1,5 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-                  xmlns:app="http://schemas.android.com/apk/res-auto">
+	xmlns:app="http://schemas.android.com/apk/res-auto">
 
 	<EditTextPreference
 		android:defaultValue="@string/pref_default_source"
@@ -9,7 +9,7 @@
 		android:selectAllOnFocus="true"
 		android:singleLine="true"
 		android:summary="@string/pref_description_source"
-		android:title="@string/pref_title_source"/>
+		android:title="@string/pref_title_source" />
 
 	<EditTextPreference
 		android:defaultValue="@string/pref_default_base"
@@ -19,7 +19,7 @@
 		android:selectAllOnFocus="true"
 		android:singleLine="true"
 		android:summary="@string/pref_description_base"
-		android:title="@string/pref_title_base"/>
+		android:title="@string/pref_title_base" />
 
 	<EditTextPreference
 		android:defaultValue="@string/pref_default_imagebase"
@@ -29,7 +29,7 @@
 		android:selectAllOnFocus="true"
 		android:singleLine="true"
 		android:summary="@string/pref_description_imagebase"
-		android:title="@string/pref_title_imagebase"/>
+		android:title="@string/pref_title_imagebase" />
 
 	<EditTextPreference
 		android:defaultValue="@string/pref_default_settings"
@@ -39,7 +39,7 @@
 		android:selectAllOnFocus="true"
 		android:singleLine="true"
 		android:summary="@string/pref_description_settings"
-		android:title="@string/pref_title_settings"/>
+		android:title="@string/pref_title_settings" />
 
 	<org.treebolic.preference.OpenEditTextPreference
 		android:defaultValue="@string/pref_download_url_default"
@@ -47,6 +47,6 @@
 		android:summary="@string/pref_description_download"
 		android:title="@string/pref_title_download"
 		app:labels="@array/pref_download_labels"
-		app:values="@array/pref_download_urls"/>
+		app:values="@array/pref_download_urls" />
 
 </PreferenceScreen>

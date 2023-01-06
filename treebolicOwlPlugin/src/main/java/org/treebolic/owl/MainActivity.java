@@ -327,7 +327,7 @@ public class MainActivity extends AppCompatCommonActivity
 		intent.addCategory(Intent.CATEGORY_OPENABLE);
 		this.activityResultLauncher.launch(intent);
 	}
-	
+
 	// S T A R T
 
 	/**

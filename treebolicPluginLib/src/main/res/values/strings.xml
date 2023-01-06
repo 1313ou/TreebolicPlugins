@@ -1,5 +1,5 @@
 <resources>
 
-    <string name="market_fail_treebolic">No handler for market://details?id=org.treebolic</string>
+	<string name="market_fail_treebolic">No handler for market://details?id=org.treebolic</string>
 
 </resources>
