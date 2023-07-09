@@ -3,7 +3,8 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	android:sharedUserId="org.treebolic.userId">
 
-	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="18" />
 
 	<application
 		android:allowBackup="true"
