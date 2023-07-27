@@ -8,7 +8,7 @@ android {
 
     namespace "org.treebolic.files"
 
-    compileSdkVersion rootProject.ext.compileSdkVersion
+    compileSdk rootProject.ext.compileSdk
 
     defaultConfig {
         applicationId "org.treebolic.files"
@@ -57,7 +57,7 @@ dependencies {
     implementation project(':donateLib')
 
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'androidx.preference:preference:1.2.0'
+    implementation 'androidx.preference:preference:1.2.1'
     implementation 'com.google.android.material:material:1.9.0'
 
     coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.0.3'

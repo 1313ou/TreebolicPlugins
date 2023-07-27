@@ -4,7 +4,7 @@ android {
 
     namespace "org.treebolic.plugin"
 
-    compileSdkVersion rootProject.ext.compileSdkVersion
+    compileSdk rootProject.ext.compileSdk
 
     defaultConfig {
         minSdkVersion rootProject.ext.minSdkVersion
