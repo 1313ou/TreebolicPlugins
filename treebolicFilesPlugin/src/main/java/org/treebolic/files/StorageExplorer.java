@@ -4,7 +4,6 @@
 
 package org.treebolic.files;
 
-import android.annotation.TargetApi;
 import android.content.Context;
 import android.os.Build;
 import android.os.Environment;
@@ -23,7 +22,6 @@ import java.util.TreeSet;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.annotation.RequiresApi;
 
 public class StorageExplorer
 {
@@ -164,7 +162,7 @@ public class StorageExplorer
 		if (emulatedStorageTarget != null && !emulatedStorageTarget.isEmpty())
 		{
 			// device has emulated extStorage; external extStorage paths should have userId burned into them.
-			final String userId = Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN_MR1 ? "" : getUserId(context);
+			final String userId = getUserId(context);
 
 			// /extStorage/emulated/0[1,2,...]
 			if (userId.isEmpty())
@@ -242,7 +240,6 @@ public class StorageExplorer
 	 * @return list of storage directories
 	 */
 	@NonNull
-	@TargetApi(Build.VERSION_CODES.KITKAT)
 	static private Collection<Directory> getDirectories(@NonNull final Context context)
 	{
 		final String[] tags = {Environment.DIRECTORY_PODCASTS, Environment.DIRECTORY_RINGTONES, Environment.DIRECTORY_ALARMS, Environment.DIRECTORY_NOTIFICATIONS, Environment.DIRECTORY_PICTURES, Environment.DIRECTORY_MOVIES, Environment.DIRECTORY_DOWNLOADS, Environment.DIRECTORY_DCIM};
@@ -367,7 +364,7 @@ public class StorageExplorer
 		if (emulatedStorageTarget != null && !emulatedStorageTarget.isEmpty())
 		{
 			// device has emulated extStorage; external extStorage paths should have userId burned into them.
-			final String userId = Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN_MR1 ? "" : getUserId(context);
+			final String userId = getUserId(context);
 
 			// /extStorage/emulated/0[1,2,...]
 			if (!userId.isEmpty())
@@ -400,7 +397,6 @@ public class StorageExplorer
 	 * @param context context
 	 * @return primary emulated external storage directory
 	 */
-	@RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)
 	@Nullable
 	static public File discoverPrimaryEmulatedExternalStorage(@NonNull final Context context)
 	{
@@ -410,7 +406,7 @@ public class StorageExplorer
 		{
 			// device has emulated extStorage
 			// external extStorage paths should have userId burned into them
-			final String userId = Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN_MR1 ? "" : getUserId(context);
+			final String userId = getUserId(context);
 
 			// /extStorage/emulated/0[1,2,...]
 			if (userId.isEmpty())
@@ -484,7 +480,6 @@ public class StorageExplorer
 	 * @return user id
 	 */
 	@NonNull
-	@RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)
 	static private String getUserId(@NonNull final Context context)
 	{
 		final UserManager manager = (UserManager) context.getSystemService(Context.USER_SERVICE);
